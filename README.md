@@ -40,9 +40,6 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ♾️ 22 > [E ](Days/day22.md)
 - [✔️] ♾️ 23 > [N](Days/day23.md)
 - [✔️] ♾️ 24 > [G](Days/day24.md)
-
-## Desafios Semanales  
-
 - [✔️] ☁️ 25 > [Desafíos semanales - Utilizacion de Process Explorer Para Analisis de Malware - Sysinternals ](Days/day25.md)
 - [✔️] ☁️ 26 > [Desafíos semanales - Comandos Utiles y Necesarios PowerShell - BootCamp DevOps](Days/day26.md)
 - [✔️] ☁️ 27 > [Desafíos semanales - Windows - Analisis de Procesos en Memoria Virtual con VMMAP y en RAM (Monitoreo)](Days/day27.md)
