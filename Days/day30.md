@@ -30,14 +30,17 @@ Las redes de tipo “bridge” son locales y exclusivas del host en donde fueron
 
 #
 #
-## 2 Bridge Driver en acción.
+## 2 - Bridge Driver en acción.
 
 Bridge Driver en acción
 
 
+![Screenshot_56](https://user-images.githubusercontent.com/96561825/173254861-7e6f4353-823a-4fc0-a522-bc7f49f79dae.png)
+
+
 #
 #
-## 3 Resolución de nombres
+## 3 - Resolución de nombres
 
 
 Las IPs son efímeras y más aún en el mundo de los containers —estos también deberían serlo—. De modo que necesitamos una forma que le permita a un container hablar con otro sin conocer necesariamente la IP que le fue asignada.
