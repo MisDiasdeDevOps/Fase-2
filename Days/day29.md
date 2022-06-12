@@ -46,7 +46,7 @@ Podés seleccionar una ***visibilidad pública o privada.*** También podés int
 Una vez que todo esté hecho, se debe hacer clic en ***‘’Crear’’***. Con estos pasos podés crear tus primeros repositorios. En la próxima diapositiva podés ver cómo se verán.
 
 
-zzzzzzzzzzz
+![Screenshot_44](https://user-images.githubusercontent.com/96561825/173252466-1df37a61-da38-4ab2-b4b8-8739b881b779.png)
 
 
 Docker Hub nos ofrece ***solo un repositorio privado de forma gratuita.***
@@ -54,6 +54,11 @@ Docker Hub nos ofrece ***solo un repositorio privado de forma gratuita.***
 Si necesitamos más repositorios privados, podemos actualizar nuestra cuenta a un plan pago.
 
 Con la herramienta terminal de ***Docker Desktop***, descargada e instalada, podremos iniciar sesión en Docker Hub mediante un comando.
+
+
+![Screenshot_45](https://user-images.githubusercontent.com/96561825/173252505-20cd513a-52c5-4062-904d-6035b2e22024.png)
+
+
 
 
 
@@ -67,10 +72,11 @@ Hay dos formas de buscar imágenes y repositorios públicos desde Docker Hub.
 
 Podés buscarlo en el ***sitio web de Docker Hub*** o usar la ***herramienta de línea de comandos*** y ejecutar el siguiente comando, suponiendo que queremos buscar en la imagen del repositorio de MySQL.
 
-zzzzzzzzzzzzz
+![Screenshot_46](https://user-images.githubusercontent.com/96561825/173252528-a5dddd6a-cb7c-4fa2-bbc5-1d7f2a4d94b5.png)
 
-zzzzzzzzzzzzz
 
+
+![Screenshot_47](https://user-images.githubusercontent.com/96561825/173252530-0e10f3a3-f4ec-4523-bd77-042462ef50e3.png)
 
 
 
@@ -82,15 +88,16 @@ zzzzzzzzzzzzz
 
 Podemos descargar una imagen de Docker Hub usando el comando ***pull*** de la siguiente manera:
 
+![Screenshot_48](https://user-images.githubusercontent.com/96561825/173252560-876d92b3-3e92-4805-b864-b1efb76c3473.png)
 
-zzzzzzzzzzzzz
 
 Si ya tenemos ***mysql image*** en nuestra máquina, el comando anterior actualizará automáticamente la imagen a la última versión. Una cosa a tener en cuenta aquí es
 que si notamos la salida del comando de búsqueda de la ventana acoplable, hay muchas imágenes de MySQL en Docker Hub, y eso se debe a que cualquiera puede enviar una imagen. Pero depende de nosotros saber cuál usar en función de nuestro caso de uso y asegurarnos de que sea el apropiado.
 
 Digamos que queremos extraer una imagen ***bitnami/mysql:***
 
-zzzzzzzzzzzzzzzzz
+
+![Screenshot_49](https://user-images.githubusercontent.com/96561825/173252556-bb58ba23-7ea9-45b3-9b1d-e04800e69e0c.png)
 
 
 
@@ -108,14 +115,17 @@ El proceso de crear una imagen requiere un Dockerfile. Podemos pensar un Dockerf
 Docker lee las instrucciones de un Dockerfile y crea imágenes automáticamente. La imagen de Docker es un sistema de archivos en capas y consta de varias capas de solo
 lectura. Cada capa de una imagen de Docker representa las instrucciones de un Dockerfile. A continuación, sigamos los pasos para crear una imagen usando un
 
+![Screenshot_50](https://user-images.githubusercontent.com/96561825/173252554-14e76d67-83c4-4611-85be-5f0d3977c7f8.png)
 
-zzzzzzzzzzzzzzz
+
 
 
 Nota: el nombre del archivo debe ser Dockerfile con “D” mayúscula.
 
 
-zzzzzzzz
+![Screenshot_51](https://user-images.githubusercontent.com/96561825/173252576-9fa95b60-8b54-4562-a892-5a3009403450.png)
+
+
 
 
 #
@@ -137,14 +147,16 @@ Una vez que nuestro Dockerfile se ha creado correctamente, debemos ejecutar ***d
 
 
 
-zzzzzzzzzzz
+
+![Screenshot_52](https://user-images.githubusercontent.com/96561825/173252597-17d479c4-c416-43fe-9c5c-bed81dbf5173.png)
 
 
 Podemos verificar que la imagen está creada con la siguiente línea de código:
 
 
 
-zzzzzzzzzzzzzzzzzzzzzz
+
+![Screenshot_53](https://user-images.githubusercontent.com/96561825/173252595-598948d8-84be-40d1-9a26-4b65aa6485fd.png)
 
 
 
@@ -154,12 +166,13 @@ zzzzzzzzzzzzzzzzzzzzzz
 
 Una vez que nuestra imagen se ha creado correctamente y se está ejecutando, podemos enviarla a Docker Hub mediante el comando push.
 
-zzzzzzzzzzzzzz
+
+![Screenshot_54](https://user-images.githubusercontent.com/96561825/173252623-32cee799-ed9c-4318-9aa3-70294e5212a9.png)
 
 Podemos verificar las etiquetas de la imagen y el estado en Docker Hub, que se verá así.
 
 
-zzzzzzzzzzzzzz
+![Screenshot_55](https://user-images.githubusercontent.com/96561825/173252615-d8e68b33-2351-4f8c-a392-e5f0049e781f.png)
 
 
 #
