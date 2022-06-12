@@ -70,29 +70,27 @@ Para todas las redes que creemos —las redes creadas por defecto no nos proveen
   
 ## ¿Dónde encontrar más información?
   
-  Documentación de Docker:
   
-– docker network create=(https://docs.docker.com/engine/reference/commandline/network_create/#specify-advanced-options)
+  ### Documentación de Docker:
   
-– Networking Overview https://docs.docker.com/network/
+– [docker network create](https://docs.docker.com/engine/reference/commandline/network_create/#specify-advanced-options)
   
-– Networking with standalone containers  https://docs.docker.com/network/network-tutorial-standalone/
+– [Networking Overview](https://docs.docker.com/network/)
   
-  
-  Blogs:
-– How Docker Container Networking Works - Mimic It Using Linux  https://dev.to/polarbit/how-docker-container-networking-works-mimic-it-using-linux-network-namespaces-9mj
-  
-Network Namespaces https://dev.to/polarbit/how-docker-container-networking-works-mimic-it-using-linux-network-namespaces-9mj 
+– [Networking with standalone containers](https://docs.docker.com/network/network-tutorial-standalone/)
   
   
-  Libro:
-– Poulton, N. (2017). Docker Deep Dive. https://www.amazon.com/-/es/Nigel-Poulton/dp/1521822808 
+  ### Blogs:
+  
+– [How Docker Container Networking Works - Mimic It Using Linux](https://dev.to/polarbit/how-docker-container-networking-works-mimic-it-using-linux-network-namespaces-9mj)
+  
+### Network Namespaces
+  - https://dev.to/polarbit/how-docker-container-networking-works-mimic-it-using-linux-network-namespaces-9mj 
+  
+ ### Libro:
+– [Poulton, N. (2017). Docker Deep Dive](https://www.amazon.com/-/es/Nigel-Poulton/dp/1521822808)
   
   
-  
-  
-
-
 
 
 
@@ -103,4 +101,4 @@ Network Namespaces https://dev.to/polarbit/how-docker-container-networking-works
 #
 
 
-See you on [Day 31](day31.md)
+Nos vemos en el [Dia 31](day31.md)
