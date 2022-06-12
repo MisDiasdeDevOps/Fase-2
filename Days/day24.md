@@ -3,24 +3,27 @@
 
 
 #
+#
 
 
+## Objetivos
 
-Objetivos
 En el siguiente ejercicio vamos a comparar la arquitectura de Docker vista previamente (Clase de Docker ) con el funcionamiento de un restaurante.
 
-¿Qué recibimos?
+### ¿Qué recibimos?
 
 Un Jamboard ilustrando el funcionamiento de Docker y el restaurante, de forma desordenada y el comando para ejecutar nuestro primer contenedor, el cual es un servidor web modificado:
 
 
 ![Screenshot_36](https://user-images.githubusercontent.com/96561825/173250150-4e87a80e-115f-48e8-b18d-61dbc68bae23.png)
 
+docker container run -d --name spaghettidocker -p 80:80 davidpigna/spaghettidocker
 
+#
 
-Instrucciones
+# Instrucciones
 
-Ejercicio 1 
+## Ejercicio 1 
 
 Debatir con la mesa de trabajo qué elementos de ambas estructuras son similares y reordenar la arquitectura de Docker para que coincidan en su funcionamiento.
 
@@ -30,7 +33,7 @@ Debatir con la mesa de trabajo qué elementos de ambas estructuras son similares
 
 
 #
-
+#
 # Ejercicio 2
 
 
@@ -44,31 +47,34 @@ Una vez dentro, deberemos crear una instancia nueva:
 
 
 
-
+#
 Aparecerá una línea de comandos en la cual ejecutaremos nuestro primer container:
 
 ![Screenshot_40](https://user-images.githubusercontent.com/96561825/173250186-fa55504d-bf88-4d28-a645-d6da93342d0e.png)
 
-
-
+#
+#
 ***Tip:*** Esto es lo que realizó nuestro comando:
 
 
-***docker container run:*** le estamos diciendo al Daemon que ejecute un contenedor.
+- ***docker container run:*** le estamos diciendo al Daemon que ejecute un contenedor.
 
--d o --detach: ejecuta nuestro container en segundo plano.
+- ***d o --detach:*** ejecuta nuestro container en segundo plano.
 
---name: le damos un nombre al container, de lo contrario le asignará un nombre aleatorio.
+- ***--name:***  le damos un nombre al container, de lo contrario le asignará un nombre aleatorio.
 
--p o --publish: mapea los puertos del host al puerto del container.
+- ***-p o --publish:*** mapea los puertos del host al puerto del container.
 
-davidpigna/spaghettidocker: es la dirección en la cual se encuentra este container en Docker Hub (Registry).
+- ***davidpigna/spaghettidocker:*** es la dirección en la cual se encuentra este container en Docker Hub (Registry).
 
+#
+#
 
 
 Una vez finalizado, vamos a abrir el puerto de nuestro container para ver el servidor web que instalamos:
 
 ![Screenshot_41](https://user-images.githubusercontent.com/96561825/173250211-05d1226b-cb67-44d1-9cfc-1bf46d16be93.png)
+#
 
 
 
