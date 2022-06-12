@@ -24,7 +24,7 @@
 
 #
 #
-## ¿Para qué sirve Docker Hub?
+## 1 - ¿Para qué sirve Docker Hub?
 
 
 Nos permite extraer y enviar imágenes de la ventana acoplable hacia y desde Docker Hub. Podemos tratar esto como un GitHub, donde obtenemos y enviamos nuestro código fuente, pero en el caso de Docker Hub descargamos o publicamos nuestras imágenes de contenedor.
@@ -33,9 +33,58 @@ Es un repositorio en línea basado en la nube que almacena ambos tipos de reposi
 
 #
 #
-## Características de Docker Hub
+## 2 - Características de Docker Hub
 
 
+***#1. Repositorios de imágenes***
+
+Nos ayuda a encontrar y extraer imágenes de contenedores de Docker Hub. También nos ayuda a enviar imágenes como un repositorio público o privado a Docker Hub.
+
+
+***#2. Equipo y Organizaciones***
+
+Nos permite crear grupos de trabajo e impulsar los repositorios como uno privado, que está disponible para su uso únicamente dentro de nuestra organización. De esta forma, hemos gestionado el acceso a nuestros repositorios privados de imágenes de contenedores.
+
+
+***#3. Integración de GitHub y Bitbucket***
+
+Permite la integración con repositorios de código fuente como GitHub y BitBucket.
+
+***#4. Construcciones automatizadas***
+
+Si se ha enviado algún cambio en el código fuente a los repositorios de código fuente, automáticamente detecta y crea imágenes de contenedor desde GitHub o BitBucket y las envía a Docker Hub.
+
+
+***#5. Webhooks***
+
+Una vez que hemos enviado nuestras imágenes con éxito, con la ayuda de un webhook, desencadena una acción para integrar Docker Hub con otros servicios.
+
+***#6. Imágenes oficiales y del editor***
+
+Las imágenes de alta calidad proporcionadas por los dockers se consideran imágenes oficiales y se pueden extraer y utilizar. 
+
+Del mismo modo, las imágenes de alta calidad proporcionadas por proveedores externos son imágenes del editor, también llamadas imágenes certificadas, que brindan soporte y garantía de compatibilidad con Docker Enterprise. 
+
+Discutiremos más imágenes certificadas más adelante en este artículo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+#
+## 3 - Creación del primer repositorio
 
 Una vez que hayas iniciado sesión, podés crear el repositorio haciendo clic en ***“Crear repositorio”*** en la página de bienvenida.
 
@@ -63,7 +112,7 @@ Con la herramienta terminal de ***Docker Desktop***, descargada e instalada, pod
 
 #
 #
-## Explorar
+## 4 - Explorar
 
 ### Explorar las imágenes
 #
@@ -82,7 +131,8 @@ Podés buscarlo en el ***sitio web de Docker Hub*** o usar la ***herramienta de 
 
 
 #
-## Descargar una imagen
+#
+## 5 - Descargar una imagen
 
 
 
@@ -102,14 +152,15 @@ Digamos que queremos extraer una imagen ***bitnami/mysql:***
 
 
 #
-## Crear una imagen 
+#
+## 6 - Crear una imagen 
 
 
 
 El proceso de crear una imagen requiere un Dockerfile. Podemos pensar un Dockerfile como un ***manual de instrucciones*** que le dice a Docker qué ensamblar. En resumen, es un archivo de configuración que sigue ensamblando instrucciones.
 
 
-###¿Cómo funciona?
+### ¿Cómo funciona?
 
 
 Docker lee las instrucciones de un Dockerfile y crea imágenes automáticamente. La imagen de Docker es un sistema de archivos en capas y consta de varias capas de solo
@@ -136,16 +187,18 @@ Echemos un vistazo a algunas de las palabras clave importantes que se utilizan e
 
 
 
-- FROM (de): define la imagen base que se utilizará.
-- MANTEINER (mantenedores): persona que va a mantener esa imagen.
-- RUN (correr): se utiliza para ejecutar la instrucción dada para la imagen. En nuestro caso, primero actualiza el sistema y luego instala MySQL.
-- CMD: se utiliza para ejecutar un comando una vez que se ha lanzado el contenedor.
-- COPY (copiar): se utiliza para copiar un archivo de nuestro sistema operativo host al contenedor de la ventana acoplable.
-- EXPOSE (exponer): se utiliza para especificar el número de puerto en el que el contenedor ejecutará su proceso.
+- ***FROM*** (de): define la imagen base que se utilizará.
+- ***MANTEINER*** (mantenedores): persona que va a mantener esa imagen.
+- ***RUN*** (correr): se utiliza para ejecutar la instrucción dada para la imagen. En nuestro caso, primero actualiza el sistema y luego instala MySQL.
+- ***CMD***: se utiliza para ejecutar un comando una vez que se ha lanzado el contenedor.
+- ***COPY*** (copiar): se utiliza para copiar un archivo de nuestro sistema operativo host al contenedor de la ventana acoplable.
+- ***EXPOSE*** (exponer): se utiliza para especificar el número de puerto en el que el contenedor ejecutará su proceso.
 
 
 
-Una vez que nuestro Dockerfile se ha creado correctamente, debemos ejecutar ***docker build*** para “armar” nuestra imagen localmente, para luego enviarla a Docker Hub. Este comando debemos ejecutarlo dentro de la carpeta donde se encuentra el Dockerfile.
+Una vez que nuestro Dockerfile se ha creado correctamente, debemos ejecutar ***docker build*** para “armar” nuestra imagen localmente, para luego enviarla a Docker Hub. 
+
+Este comando debemos ejecutarlo dentro de la carpeta donde se encuentra el Dockerfile.
 
 
 
@@ -164,7 +217,8 @@ Podemos verificar que la imagen está creada con la siguiente línea de código:
 
 
 #
-## Empujar una imagen
+#
+## 7 - Empujar una imagen
 
 Una vez que nuestra imagen se ha creado correctamente y se está ejecutando, podemos enviarla a Docker Hub mediante el comando push.
 
@@ -176,17 +230,20 @@ Podemos verificar las etiquetas de la imagen y el estado en Docker Hub, que se v
 
 ![Screenshot_55](https://user-images.githubusercontent.com/96561825/173252615-d8e68b33-2351-4f8c-a392-e5f0049e781f.png)
 
-
 #
-# ¿Qué son las imágenes certificadas por Docker?
+#
+## 8 - ¿Qué son las imágenes certificadas por Docker?
 
 
-Estas son las ***imágenes oficiales*** impulsadas por proveedores o contribuyentes. Una imagen solo puede ser certificada por Docker Hub si su contenido cumple con las ***reglas, estándares y leyes proporcionadas por Docker Hub***. En resumen, esa imagen debe pasar ciertas pruebas de referencia.
+Estas son las ***imágenes oficiales*** impulsadas por proveedores o contribuyentes. Una imagen solo puede ser certificada por Docker Hub si su contenido cumple con las ***reglas, estándares y leyes proporcionadas por Docker Hub***.
+
+En resumen, esa imagen debe pasar ciertas pruebas de referencia.
 
 Docker Hub proporciona ***inspectDockerImage***  , herramienta a través de la cual un proveedor puede autocertificar las imágenes y los complementos (por lo general, el proveedor o contribuyente publica sus complementos para registrar volúmenes y redes).
 
 #
-## Imágenes populares
+#
+## 9 - Imágenes populares
 
 
 
@@ -201,11 +258,16 @@ Para obtener una lista detallada de los repositorios más populares, podés visi
 
 El uso de una imagen también depende del sistema operativo y su arquitectura.
 
+#
 
 Si conocemos para qué sistema operativo y arquitectura se utilizarán las imágenes, debemos considerar los siguientes factores clave antes de extraer una imagen:
+
 ● Buscar una versión específica utilizando etiquetas (principalmente la última). 
+
 ● Optar por el que tenga máxima cantidad descargas y estrellas.
+
 ● Buscar la fecha de su última actualización.
+
 ● Si es posible, verificar su tipo, ya sea del editor verificado u oficial (Docker Certified).
 
 
