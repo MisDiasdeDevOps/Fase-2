@@ -26,7 +26,7 @@ Podemos descargarla desde el sitio web del desarrollador de la tecnología.
 #
 ## Cómo ejecutarlo
 
-Terminado el proceso de instalación, podemos encontrar Docker en el menú de Inicio, ahí podremos hacer clic sobre el icono para ejecutarlo.
+Terminado el proceso de instalación, podemos encontrar ***Docker*** en el menú de ***Inicio***, ahí podremos hacer clic sobre el icono para ejecutarlo.
 
 #
 ## Play with Docker, ¿qué es?
