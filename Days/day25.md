@@ -1,33 +1,59 @@
-# Desafio BootCamp DevOps Enginner - FASE I - Administracion de Windows Con Systernals
+# Guía de instalación  Linux 
 
-Para realizar este desafio Semanal , deberemos atender al documento que nos ayudara, el cual es este de aqui :https://docs.google.com/document/d/1652r3OF6INGyE5jCAH2D7KmLW6Up4vwXcQvZlV_Zhfk/edit?usp=sharing ( Si no podes acceder, pedile ayuda al tutor)
-
-En el siguiente desafio, debemos tomar capturas de pantalla y enviarlas al tutor mediante el drive consignado para las entregas por alumno, ordenado por carpeta, fase y nombre del desafio, de lo siguiente.
-
-Abrimos Process Explorer
+#
+## ¿Cómo puedo descargar Docker?
 
 
-![Screenshot_4](https://user-images.githubusercontent.com/96561825/172941621-35171c31-0049-4c7a-943a-6943bc3d7a3d.png)
+Docker en Linux es una herramienta nativa pensada tanto para desarrolladores como para ambientes productivos. 
+
+Al instalarlo en nuestra estación de trabajo lo utilizaremos como desarrolladores.
+
+#
+### ¿Cómo instalarlo?
 
 
 
-De acuerdo a lo aprendido en clase, debemos obtener , capturar y entregar
+1) Desde una terminal ejecutar el siguiente comando: sudo apt-get update 
+2) Luego, en la misma terminal, ejecutar el comando: sudo apt-get install docker-ce docker-ce-cli containerd.io
+3) Para instalar Docker-Compose, ejecutar el siguiente comando: sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose 
+4) Finalmente ejecutar: sudo chmod +x /usr/local/bin/docker-compose
 
-● Los usuarios Logeados en tu VM
 
-● Un MiniDump de tu sesion (con una captura de pantalla es suficiente)
+#
+### Cómo ejecutarlo
 
-● La verificacion de todos los procesos de tu equipo
 
-Los procesos que no tengan PID
+Una vez finalizado el proceso de instalación, desde una consola de bash podemos ejecutar ***docker --version*** para validar la instalación.
 
-Aqui debes encontrar un proceso que de acuerdo a los criterios de busqueda de Malware estudiados en clase, sea un caso Anomalo, es decir, un proceso sin
+#
+### Play with Docker, ¿qué es?
 
-● SIN PID
 
-● SIN FIRMA
+En caso de no poder instalar Docker, Play with Docker es una herramienta que nos permite usar Docker de forma temporal en el la nube sin la necesidad de instalarlo
+localmente.
+Para ello, debemos estar registrados en Docker Hub. Visitando https://labs.play-with-docker.com/, hacemos clic en Login ¡y estamos listos para empezar!
 
-● Con Strings que nombran pagos en bitcoin, malware o dirigen a direcciones IP sospechosas de actividad maliciosa.---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #
