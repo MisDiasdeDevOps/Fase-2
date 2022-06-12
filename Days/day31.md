@@ -1,114 +1,88 @@
----
-title: '#90DaysOfDevOps - Microsoft Azure Compute Models - Day 31'
-published: false
-description: 90DaysOfDevOps - Microsoft Azure Compute Models
-tags: 'devops, 90daysofdevops, learning'
-cover_image: null
-canonical_url: null
-id: 1049040
----
-## Microsoft Azure Compute Models
 
-Following on from covering the basics around security models within Microsoft Azure yesterday today we are going to look into the various compute services available to us in Azure. 
+# ¿Qué es una nube híbrida?
 
-### Service Availability Options 
 
-This section is close to my heart given my role within Data Management. As with on-premises, it is critical to ensure the availability of your services. 
+## Introducción a la nube híbrida
 
-- High Availability (Protection within a region)
-- Disaster Recovery (Protection between regions)
-- Backup (Recovery from a point in time)
+#
 
-Microsoft deploys multiple regions within a geopolitical boundary. 
+La nube híbrida es una arquitectura de IT que incorpora cierto grado de gestión, organización y portabilidad de las cargas de trabajo en dos o más entornos. Según a quién le consulte, es posible que esos entornos deban incluir lo siguiente:
 
-Two concepts with Azure for Service Availability. Both sets and zones. 
 
-Availability Sets - Provide resiliency within a datacenter 
+● Al menos una nube privada y una pública.
 
-Availability Zones - Provide resiliency between data centres within a region.  
+● Dos o más nubes privadas.
 
-### Virtual Machines 
+● Dos o más nubes públicas.
 
-Most likely the starting point for anyone in the public cloud. 
+● Un entorno virtual o sin sistema operativo conectado a al menos una nube, ya sea pública o privada.
 
-- Provides a VM from a variety of series and sizes with different capabilities (Sometimes an overwhelming) [Sizes for Virtual machines in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes)
-- There are many different options and focuses for VMs from high performance, low latency to high memory option VMs. 
-- We also have a burstable VM type which can be found under the B-Series. This is great for workloads where you can have a low CPU requirement for the most part but require that maybe once a month performance spike requirement. 
--  Virtual Machines are placed on a virtual network that can provide connectivity to any network. 
--  Windows and Linux guest OS support. 
--  There are also Azure-tuned kernels when it comes to specific Linux distributions. [Azure Tuned Kernals](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/endorsed-distros#azure-tuned-kernels)
+#
+#
+## Funciones de las nubes híbridas
 
-### Templating 
 
-I have mentioned before that everything behind or underneath Microsoft Azure is JSON. 
+Todas las nubes híbridas deben poder realizar lo siguiente: 
 
-There are several different management portals and consoles we can use to create our resources the preferred route is going to be via JSON templates. 
+● Conectar varias computadoras a través de una red.
 
-Idempotent deployments in incremental or complete mode - i.e repeatable desired state. 
+● Consolidar los recursos de IT.
 
-There is a large selection of templates that can export deployed resource definitions. I like to think about this templating feature to something like AWS CloudFormation or could be Terraform for a multi-cloud option. We will cover Terraform more in the Infrastructure as code section. 
+● Escalar horizontalmente e implementar los recursos nuevos con rapidez.
 
-### Scaling
+● Poder trasladar las cargas de trabajo entre los entornos.
 
-Automatic scaling is a large feature of the Public Cloud, being able to spin down resources you are not using or spinning up when you need them. 
+● Incorporar una sola herramienta de gestión unificada. 
 
-In Azure, we have something called Virtual Machine Scale Sets (VMSS) for IaaS. This enables the automatic creation and scale from a gold standard image based on schedules and metrics. 
+● Organizar los procesos con la ayuda de la automatización.
 
-This is ideal for updating windows so that you can update your images and roll those out with the least impact. 
+#
+#
+## ¿Cómo funcionan las nubes híbridas?
 
-Other services such as Azure App Services have auto-scaling built-in. 
 
-### Containers 
+La forma en que las nubes públicas y privadas funcionan como parte de una nube híbrida es similar a cómo lo hacen de forma independiente:
 
-We have not covered containers as a use case and what and how they can and should be needed in our DevOps learning journey but we need to mention that Azure have some specific container focused services to mention. 
+● Una red de área local (LAN), una red de área amplia (WAN), una red privada virtual (VPN) y las interfaces de programación de aplicaciones (API) conectan varias computadoras entre sí. 
 
-Azure Kubernetes Service (AKS) - Provides a managed Kubernetes solution, no need to worry about the control plane or management of the underpinning cluster management. More on Kubernetes also later on. 
+● La virtualización, los contenedores o el almacenamiento definido por software extraen los recursos, que pueden agruparse en lagos de datos.
 
-Azure Container Instances - Containers as a service with Per-Second Billing. Run an image and integrate with your virtual network, no need for Container Orchestration. 
+● El sistema de software de gestión asigna esos recursos a entornos donde las aplicaciones pueden ejecutarse, los cuales luego se implementan, según se solicite, con la ayuda de un servicio de autenticación.
 
-Service Fabric - Has many capabilities but includes orchestration for container instances. 
 
-Azure also has the Container Registry which provides a private registry for Docker Images, Helm charts, OCI Artifacts and images. More on this again when we reach the containers section. 
+Las nubes independientes se vuelven híbridas cuando esos entornos se conectan de la forma más sencilla posible. Esa interconectividad es lo único que permite que las nubes híbrida trasladan las cargas de trabajo, se unifica la gestión y se organizan los procesos. La calidad de las conexiones tiene un efecto directo sobre el funcionamiento de su nube híbrida.
 
-We should also mention that a lot of the container services may indeed also leverage containers under the hood but this is abstracted away from your requirement to manage. 
+#
+#
+## Arquitectura moderna de la nube híbrida
 
-These mentioned container focused services we also find similar services in all other public clouds. 
 
-### Application Services 
+Actualmente, las nubes híbridas ya no necesitan una red amplia de API para trasladar las cargas de trabajo de una nube a otra. Para diseñar nubes híbridas, los equipos modernos de IT ejecutan el mismo sistema operativo en todos los entornos de IT; desarrollan e implementan aplicaciones como grupos de servicios pequeños, independientes y sin conexión directa; y gestionan todo con una PaaS unificada.
 
-- Azure Application Services provides an application hosting solution that provides an easy method to establish services. 
-- Automatic Deployment and Scaling. 
-- Supports Windows & Linux based solutions. 
-- Services run in an App Service Plan which has a type and size. 
-- Number of different services including web apps, API apps and mobile apps. 
-- Support for Deployment slots for reliable testing and promotion. 
 
-### Serverless Computing 
+Si se utiliza el mismo sistema operativo, se extraen todos los requisitos del sistema de hardware, mientras que la plataforma de organización extrae todos los de las aplicaciones. Esto genera un entorno informático uniforme e interconectado en el que las aplicaciones pueden trasladarse de un entorno a otro sin tener que mantener un mapa complejo de las API que falle cada vez que se actualicen las aplicaciones o que cambie de proveedores de nube.
 
-Serverless for me is an exciting next step that I am extremely interested in learning more about. 
 
-The goal with serverless is that we only pay for the runtime of the function and do not have to have running virtual machines or PaaS applications running all the time. We simply run our function when we need it and then it goes away. 
+Esta interconectividad permite que los equipos de desarrollo y operaciones trabajen juntos en un modelo de DevOps, que es un proceso con el cual los equipos trabajan en conjunto en entornos integrados utilizando una arquitectura de microservicios compatible con los contenedores.
 
-Azure Functions - Provides serverless code. If we remember back to our first look into the public cloud you will remember the abstraction layer of management, with serverless functions you are only going to be managing the code. 
 
-Event-Driven with massive scale, I have a plan to build something when I get some hands-on here hopefully later on. 
+#
+#
+## ¿Las nubes híbridas son seguras?
 
-Provides input and output binding to many Azure and 3rd Party Services. 
+Una nube híbrida diseñada, integrada y gestionada de forma correcta puede ser tan segura como una infraestructura de IT local. Aunque hay algunos desafíos exclusivos de la seguridad de la nube híbrida (como la migración de datos, el aumento de la complejidad y una mayor superficie de ataque), la presencia de varios entornos puede constituir una de las defensas más sólidas contra los riesgos de seguridad. Gracias a todos esos entornos interconectados, las empresas pueden elegir dónde colocar los datos confidenciales en función de los requisitos, y los equipos de seguridad pueden adoptar de manera uniforme un sistema de almacenamiento en la nube que sea redundante y pueda aumentar los esfuerzos de recuperación ante desastres.
 
-Supports many different programming languages. (C#, NodeJS, Python, PHP, batch, bash, Golang and Rust. Or any Executable)
 
-Azure Event Grid enables logic to be triggered from services and events. 
 
-Azure Logic App provides a graphical-based workflow and integration. 
 
-We can also look at Azure Batch which can run large-scale jobs on both Windows and Linux nodes with consistent management & scheduling. 
 
-## Resources 
 
-- [Hybrid Cloud and MultiCloud](https://www.youtube.com/watch?v=qkj5W98Xdvw)
-- [Microsoft Azure Fundamentals](https://www.youtube.com/watch?v=NKEFWyqJ5XA&list=WL&index=130&t=12s)
-- [Google Cloud Digital Leader Certification Course](https://www.youtube.com/watch?v=UGRDM86MBIQ&list=WL&index=131&t=10s)
-- [AWS Basics for Beginners - Full Course](https://www.youtube.com/watch?v=ulprqHHWlng&t=5352s)
+
+#
+#
+#
+#
+#
 
 See you on [Day 32](day32.md) 
 
