@@ -31,7 +31,7 @@ Nos permite extraer y enviar imágenes de la ventana acoplable hacia y desde Doc
 
 Es un repositorio en línea basado en la nube que almacena ambos tipos de repositorios, es decir, el repositorio público y el privado. Los repositorios públicos son accesibles para todos, pero el privado es accesible para el propietario interesado de los repositorios. También hay un costo asociado si almacenamos más de un cierto número de repositorios como privado.
 
-
+#
 #
 ## Características de Docker Hub
 
@@ -61,10 +61,10 @@ Con la herramienta terminal de ***Docker Desktop***, descargada e instalada, pod
 
 
 
-
+#
 #
 ## Explorar
-#
+
 ### Explorar las imágenes
 #
 
@@ -130,7 +130,9 @@ Nota: el nombre del archivo debe ser Dockerfile con “D” mayúscula.
 
 #
 #
-Echemos un vistazo a algunas de las palabras clave importantes que se utilizan en Dockerfile. Podemos utilizar # para agregar un comentario en un Dockerfile.
+Echemos un vistazo a algunas de las palabras clave importantes que se utilizan en Dockerfile. 
+
+-Podemos utilizar ***#*** para agregar un comentario en un Dockerfile.
 
 
 
@@ -181,7 +183,7 @@ Podemos verificar las etiquetas de la imagen y el estado en Docker Hub, que se v
 
 Estas son las ***imágenes oficiales*** impulsadas por proveedores o contribuyentes. Una imagen solo puede ser certificada por Docker Hub si su contenido cumple con las ***reglas, estándares y leyes proporcionadas por Docker Hub***. En resumen, esa imagen debe pasar ciertas pruebas de referencia.
 
-Docker Hub proporciona ***inspectDockerImage***, herramienta a través de la cual un proveedor puede autocertificar las imágenes y los complementos (por lo general, el proveedor o contribuyente publica sus complementos para registrar volúmenes y redes).
+Docker Hub proporciona ***inspectDockerImage***  , herramienta a través de la cual un proveedor puede autocertificar las imágenes y los complementos (por lo general, el proveedor o contribuyente publica sus complementos para registrar volúmenes y redes).
 
 #
 ## Imágenes populares
