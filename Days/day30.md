@@ -1,6 +1,7 @@
 
 
 # Docker Networking
+#
 
 Índice
 
@@ -95,8 +96,6 @@ Para todas las redes que creemos —las redes creadas por defecto no nos proveen
   
   
 
-
-
 #
 #
 #
@@ -104,4 +103,4 @@ Para todas las redes que creemos —las redes creadas por defecto no nos proveen
 #
 
 
-Nos vemos en el [Dia 31](day31.md)
+Seguimos en el [Día 31](day31.md)
