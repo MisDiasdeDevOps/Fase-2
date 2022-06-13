@@ -17,11 +17,11 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 # FASE 2
 
 - [✔️] ♾️ 1 > [Introduction](Days/day01.md)
-- [✔️] ♾️ 2 > [Associate Cloud Engineer](Days/day02.md)
+- [✔️] ♾️ 2 > [Associate Cloud Engineer en español](Days/day02.md)
 - [✔️] ♾️ 3 > [AWS Certified Cloud Practitioner Exam Guide en Ingles ](Days/day03.md)
 - [✔️] ♾️ 4 > [Exam AZ-900: Microsoft Azure Fundamentals – Skills Measured en Ingles](Days/day04.md)
 - [✔️] ♾️ 5 > [Rubricas de Dinamicas y Evaluativas FASE II ](Days/day05.md)
-- [✔️] ♾️ 6 > [Trabajo Integrador ](Days/day06.md)
+- [✔️] ♾️ 6 > [Trabajo Integrador FASE II  ](Days/day06.md)
 - [✔️] ♾️ 7 > [¿Qué puedo guardar en la nube? - Almacenamiento en la nube](Days/day07.md)
 - [✔️] ♾️ 8 > [Ejercitación: Amazon S3 - Almacenamiento en la nube](Days/day08.md)
 - [✔️] ♾️ 9 > [Una mirada en profundidad de Amazon S3 - Almacenamiento en la nube](Days/day09.md)
