@@ -151,4 +151,4 @@ Para cargar un objeto a un bucket se deben realizar los siguientes pasos:
 
 
 
-See you on [Day 9](day09.md).
+Seguimos en el [Día 9](day09.md).
