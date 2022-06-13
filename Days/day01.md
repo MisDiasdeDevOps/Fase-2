@@ -1,14 +1,17 @@
-  # Organización del Bootcamp
-
+# Organización del Bootcamp
 ## DevOps Engineer
 #
-Organización del bootcamp
+### Organización del bootcamp
 
 ● Fase 1: SysAdmin
 
 ● Fase 2: Cloud Computing
 
- # Objetivos
+ 
+#
+#
+
+# Objetivos
  #
 ## En este módulo verás
  #
