@@ -19,7 +19,7 @@ Podemos descargarla desde el sitio web del desarrollador de la tecnología.
 4) Arrastrar la aplicación Docker a la carpeta de aplicaciones
 
 #
-##Cómo ejecutarlo
+## Cómo ejecutarlo
 
 
 Una vez finalizado el proceso de instalación, podemos buscar Docker en la carpeta de aplicaciones y ejecutarlo.
