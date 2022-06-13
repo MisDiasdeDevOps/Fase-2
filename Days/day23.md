@@ -1,5 +1,6 @@
 
 # Dockerfile
+#
 
 
 ## ¿Qué es Dockerfile?
@@ -42,30 +43,11 @@ Los tags o etiquetas sirven para identificar las versiones de las imágenes, a l
 Pueden agrupar sus imágenes usando nombres y etiquetas (si no proporcionan ninguna etiqueta, se asume el valor predeterminado de la última).
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #
 #
 #
 #
-
-
-See you on [Day 24](day24.md)
+Seguimos en el [Día 24](day24.md)
 
 
