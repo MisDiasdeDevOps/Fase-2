@@ -1,6 +1,7 @@
 
 
 # Modelo de responsabilidades
+#
 
 ## ¿Por qué es necesario?
 
@@ -132,4 +133,4 @@ La mejor manera de entender este modelo de responsabilidad es pensar en ejemplos
 
 
 
-See you on [Day22](day22.md)
+Seguimos en el [Día 22](day22.md)
