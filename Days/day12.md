@@ -13,15 +13,11 @@ La solución de integración de Informática Intelligent Cloud Services para Ama
 
 
 
-
-
-
-
 #
 #
 #
 #
 #
 
-See you on [Day 13](day13.md).
+Seguimos en el [Día 13](day13.md).
 
