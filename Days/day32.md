@@ -1,5 +1,6 @@
 
 # Tipos de algoritmos criptográficos
+#
 
 
 ## Algoritmos criptográficos
@@ -136,24 +137,9 @@ La ***esteganografía*** es una forma de ocultación, pero vale la pena menciona
 
 Consta de ***ocultar un mensaje dentro de un archivo de datos*** — imagen, audio— sin alterar el contenido original del archivo.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #
 #
 #
 #
-
-See you on [Day 33](day33.md) 
+Seguimos en el [Día 33](day33.md) 
