@@ -2,8 +2,11 @@
 # AWS Certified Cloud Practitioner  -  (CLF-C01) Exam Guide
 
 
+#
+#
 
-Introduction
+## Introduction
+
 The AWS Certified Cloud Practitioner (CLF-C01) exam is intended for individuals who can effectively demonstrate an overall knowledge of the AWS Cloud independent of a specific job role.
 
 The exam validates a candidate’s ability to complete the following tasks:
@@ -19,11 +22,12 @@ The exam validates a candidate’s ability to complete the following tasks:
 
  Identify AWS services for common use cases 
 
-Target candidate description
+#
+## Target candidate description
 
 The target candidate should have 6 months, or the equivalent, of active engagement with the AWS Cloud,with exposure to AWS Cloud design, implementation, and/or operations. Candidates will demonstrate an understanding of well-designed AWS Cloud solutions.
-
-Recommended AWS knowledge
+#
+## Recommended AWS knowledge
 
 The target candidate should have the following knowledge:
 
@@ -35,7 +39,7 @@ The target candidate should have the following knowledge:
 
  Understanding of the economics of the AWS Cloud
 
-What is considered out of scope for the target candidate?
+## What is considered out of scope for the target candidate?
 
 The following is a non-exhaustive list of related job tasks that the target candidate is not expected to be able to perform. These items are considered out of scope for the exam:
 
@@ -58,10 +62,10 @@ To view a detailed list of specific tools and technologies that might be covered
 Version 2.1 CLF-C01 2 | PAGE
 
 #
-
+# 
 # Exam content
 
-Response types
+## Response types
 
 There are two types of questions on the exam:
 
@@ -74,13 +78,12 @@ Select one or more responses that best complete the statement or answer the ques
 Distractors are generally plausible responses that match the content area.
 
 Unanswered questions are scored as incorrect; there is no penalty for guessing. The exam includes 50 questions that will affect your score.
-
-Unscored content
+#
+### Unscored content
 
 The exam includes 15 unscored questions that do not affect your score. AWS collects information about candidate performance on these unscored questions to evaluate these questions for future use as scored questions. These unscored questions are not identified on the exam.
 
 #
-
 ## Exam results
 
 The AWS Certified Cloud Practitioner exam is a pass or fail exam. The exam is scored against a minimum standard established by AWS professionals who follow certification industry best practices and guidelines.
@@ -93,7 +96,8 @@ Your score report may contain a table of classifications of your performance at 
 
 Each section of the exam has a specific weighting, so some sections have more questions than others. The table contains general information that highlights your strengths and weaknesses. Use caution when interpreting section-level feedback. 
 
-Content outline
+#
+### Content outline
 
 This exam guide includes weightings, test domains, and objectives for the exam. It is not a comprehensive listing of the content on the exam. However, additional context for each of the objectives is available to help guide your preparation for the exam. The following table lists the main content domains and their
 weightings. The table precedes the complete exam content outline, which includes the additional context.
@@ -107,7 +111,7 @@ The percentage in each domain represents only scored content
 
 # Domain 1: Cloud Concepts 
 
-## 1.1 Define the AWS Cloud and its value proposition
+### 1.1 Define the AWS Cloud and its value proposition
 
  Define the benefits of the AWS cloud including:
 
@@ -134,7 +138,7 @@ o Economy of scale
 o Shifting technical resources to revenue-generating activities as opposed to managing
 infrastructure
 
-## 1.2 Identify aspects of AWS Cloud economics
+### 1.2 Identify aspects of AWS Cloud economics
 
  Define items that would be part of a Total Cost of Ownership proposal
 
@@ -156,7 +160,7 @@ o Reduce compliance scope (for example, reporting)
 
 o Managed services (for example, RDS, ECS, EKS, DynamoDB)
 
-## 1.3 Explain the different cloud architecture design principles
+### 1.3 Explain the different cloud architecture design principles
 
  Explain the design principles
 
@@ -173,7 +177,7 @@ o Think parallel
 
 # Domain 2: Security and Compliance
 
-## 2.1 Define the AWS shared responsibility model
+### 2.1 Define the AWS shared responsibility model
 
  Recognize the elements of the Shared Responsibility Model
 
@@ -181,7 +185,7 @@ o Think parallel
 
  Describe AWS responsibilities
 
-## 2.2 Define AWS Cloud security and compliance concepts
+### 2.2 Define AWS Cloud security and compliance concepts
 
  Identify where to find AWS compliance information o Locations of lists of recognized available compliance controls (for example, HIPPA, SOCs)
 
@@ -198,7 +202,7 @@ logs) o Define Amazon CloudWatch, AWS Config, and AWS CloudTrail
  Explain the concept of least privileged access
 
 
-## 2.3 Identify AWS access management capabilities 
+### 2.3 Identify AWS access management capabilities 
 
  Understand the purpose of User and Identity Management 
 
@@ -219,7 +223,7 @@ o Tasks that require use of root accounts
 
 Protection of root accounts
 
-## 2.4 Identify resources for security support
+### 2.4 Identify resources for security support
 
  Recognize there are different network security capabilities o Native AWS services (for example, security groups, Network ACLs, AWS WAF)
 o 3rd party security products from the AWS Marketplace 
@@ -235,7 +239,7 @@ o Partner Systems Integrators
 
 # Domain 3: Technology
 
-## 3.1 Define methods of deploying and operating in the AWS Cloud 
+### 3.1 Define methods of deploying and operating in the AWS Cloud 
 
  Identify at a high level different ways of provisioning and operating in the AWS cloud o Programmatic access, APIs, SDKs, AWS Management Console, CLI, Infrastructure as Code 
 
@@ -249,7 +253,7 @@ o AWS Direct Connect
 o Public internet
 
 
-## 3.2 Define the AWS global infrastructure
+### 3.2 Define the AWS global infrastructure
 
  Describe the relationships among Regions, Availability Zones, and Edge Locations
 
@@ -273,7 +277,7 @@ o Amazon CloudFront
 
 o AWS Global Accelerator
 
-## 3.3 Identify the core AWS services
+### 3.3 Identify the core AWS services
 
  Describe the categories of services on AWS (compute, storage, network, database)
 
@@ -321,7 +325,7 @@ o Identify Amazon DynamoDB
 
 o Identify Amazon Redshift
 
-## 3.4 Identify resources for technology support
+### 3.4 Identify resources for technology support
 
  Recognize there is documentation (best practices, whitepapers, AWS Knowledge Center,forums, blogs)
 
@@ -346,7 +350,7 @@ o Technical Account Managers
 
 # Domain 4: Billing and Pricing
 
-## 4.1 Compare and contrast the various pricing models for AWS (for example, On-Demand Instances, Reserved Instances, and Spot Instance pricing)
+### 4.1 Compare and contrast the various pricing models for AWS (for example, On-Demand Instances, Reserved Instances, and Spot Instance pricing)
 
  Identify scenarios/best fit for On-Demand Instance pricing
 
@@ -358,13 +362,13 @@ o Describe Reserved-Instances behavior in AWS Organizations
 
  Identify scenarios/best fit for Spot Instance pricing
 
-## 4.2 Recognize the various account structures in relation to AWS billing and pricing
+### 4.2 Recognize the various account structures in relation to AWS billing and pricing
 
  Recognize that consolidated billing is a feature of AWS Organizations
 
  Identify how multiple accounts aid in allocating costs across departments
 
-## 4.3 Identify resources available for billing support
+### 4.3 Identify resources available for billing support
 
  Identify ways to get billing support and information
 
