@@ -1,5 +1,6 @@
 
 # Máquinas virtuales en la nube
+#
 
 ### La computación en la nube es la tecnología informática que más ha crecido en los últimos años.
 #
@@ -33,4 +34,4 @@ En este caso solo tenés 2 opciones.
 #
 #
 #
-See you on [Day21](day21.md)
+Seguimos en el [Día 21](day21.md)
