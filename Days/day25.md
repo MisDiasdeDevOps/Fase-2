@@ -33,34 +33,9 @@ En caso de no poder instalar Docker, Play with Docker es una herramienta que nos
 localmente.
 Para ello, debemos estar registrados en Docker Hub. Visitando https://labs.play-with-docker.com/, hacemos clic en Login ¡y estamos listos para empezar!
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #
 #
 #
 #
-
-
-See you on [Day 26](day26.md)
+Seguimos en el [Día 26](day26.md)
