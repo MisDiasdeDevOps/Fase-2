@@ -131,4 +131,4 @@ Fin
 #
 
 
-See you on [Day 10](day10.md).
+Seguimos en el [Día 10](day10.md).
