@@ -59,4 +59,4 @@ Se puede ***diseñar la arquitectura*** de nube que mejor se adapte a las necesi
 #
 
 
-See you on [Day17](day17.md)
+Seguimos en el [Día 17](day17.md)
