@@ -11,7 +11,8 @@ En el siguiente ejercicio vamos a hacer uso de la criptografía viendo cómo fun
 
 
 
-## Instrucciones
+## Instrucciones![Screenshot_44](https://user-images.githubusercontent.com/96561825/173273022-7efbeba0-3a3a-478a-8d57-7247833ef0de.png)
+
 
 1) Creación de la instancia EC2 en la VPC.
 2) Generación del dominio en noip. 
@@ -34,15 +35,15 @@ Seleccionamos  la opción ***AWS Educate Starter Account***.
 
 ![Screenshot_4](https://user-images.githubusercontent.com/96561825/173269387-fc01cbc6-ad05-4622-97d9-bc02353d065a.png)
 
-
+#
 Luego, presionamos el botón de acceso a ***AWS Console***  y verificamos que el navegador no bloquee ventanas emergentes en este sitio.
 
 ![Screenshot_5](https://user-images.githubusercontent.com/96561825/173269661-daa4fb7c-32b7-47e1-bc25-beedd0f6bf72.png)
-
+#
 Nos encontramos con la consola de gestión de la plataforma AWS.
 
 ![Screenshot_6](https://user-images.githubusercontent.com/96561825/173269710-d1db6f3d-009f-414c-8b1d-d96e56c3a5ab.png)
-
+#
 Una vez allí, hacemos clic en EC2.
 
 
@@ -56,12 +57,12 @@ Una vez allí, hacemos clic en EC2.
 Nos posicionamos en la parte superior derecha de la pantalla y hacemos clic en el botón ***Launch instances***. 
 
 ![Screenshot_8](https://user-images.githubusercontent.com/96561825/173269946-9385d08f-9f0b-4c42-a26f-08f883e3c672.png)
-
+#
 Luego, elegimos Ubuntu Server 20.04 LTS.
 
 ![Screenshot_9](https://user-images.githubusercontent.com/96561825/173269995-18a35323-8b7d-4279-8e77-59eafca4becd.png)
 
-
+#
 Seleccionamos el modelo de máquina ***Family T2.micro (capa free)*** 
 
 Y hacemo clic en NEXT .
@@ -69,7 +70,7 @@ Y hacemo clic en NEXT .
 
 ![Screenshot_10](https://user-images.githubusercontent.com/96561825/173270124-a8346d5b-ac70-4eb4-ada3-60c83703177c.png)
 
-
+#
 
 En la interfaz, el Step 3 lo dejamos tal cual está y apretamos ***Next***. 
 
@@ -80,7 +81,7 @@ En el Step 5, hacemos lo mismo.
 Mientras que en el Step 6 vamos a configurar, por ahora, un grupo de seguridad para el acceso a la instancia.
 
 ![Screenshot_11](https://user-images.githubusercontent.com/96561825/173270193-fbb463d2-ff00-4011-ad63-7f1e472f8da6.png)
-
+#
 
 Lo importante es darle un nombre y una descripción que nos ayude a identificarlo y dar acceso a los protocolos.
 
@@ -93,7 +94,7 @@ Corroboramos la configuración de la instancia y hacemos clic en ***Launch insta
 
 ![Screenshot_13](https://user-images.githubusercontent.com/96561825/173270263-be1c39f3-e0ea-4079-8ed3-65846ce58f5f.png)
 
-
+#
 
 Creamos un nuevo key pair, si no tenemos, y descargamos el archivo ***.pem.***
 
@@ -134,12 +135,16 @@ Vamos a buscar la IP de la “Instancia01” que está online.
 ![Screenshot_17](https://user-images.githubusercontent.com/96561825/173270494-73316736-4e21-4954-9a8f-5a60ce372fba.png)
 
 
-Una vez dentro, tenemos que instalar un servidor Apache para deployar nuestro código. Con este objetivo, ponemos el siguiente comando:
+Una vez dentro, tenemos que instalar un servidor Apache para deployar nuestro código. 
+
+Con este objetivo, ponemos el siguiente comando:
 
 ![Screenshot_18](https://user-images.githubusercontent.com/96561825/173270528-e93c6788-d5ce-4089-90fe-0e4b7b0bdc12.png)
 
 
-Comprobamos que el servicio esté andando. Ingresamos a un explorador y colocamos la IP de nuestra instancia y nos debe contestar: ***Apache2 recientemente instalado***
+Comprobamos que el servicio esté andando.
+
+Ingresamos a un explorador y colocamos la IP de nuestra instancia y nos debe contestar: ***Apache2 recientemente instalado***
 
 ![Screenshot_19](https://user-images.githubusercontent.com/96561825/173270592-571def0d-fee3-43e1-8e1f-df05d89b84dc.png)
 
@@ -149,30 +154,15 @@ Luego, clonamos el repositorio del proyecto  En este caso, lo tenemos en el repo
 
 ![Screenshot_20](https://user-images.githubusercontent.com/96561825/173270616-a4fa23c8-3608-4d56-a445-0af06b1f679c.png)
 
+
 Ingresamos nuevamente a la instancia a través del navegador web.
 
 ![Screenshot_21](https://user-images.githubusercontent.com/96561825/173270662-0ddf7172-6db6-4657-93c7-5ce097b968cf.png)
 
-![Screenshot_38](https://user-images.githubusercontent.com/96561825/173272105-aff01bda-98b7-46e9-9cba-876ac58acc19.png)
 
 
-![Screenshot_39](https://user-images.githubusercontent.com/96561825/173272100-76603476-9dd3-4d5f-b15e-b3845c32a63b.png)
-
-![Screenshot_40](https://user-images.githubusercontent.com/96561825/173272127-84fe7746-b844-44f2-80c2-3334495ceee5.png)
-
-La ejecución de este comando permitirá obtener un certificado SSL y Certbot modificará automáticamente la configuración de Apache. 
-
-De lo contrario, podríamos obtener el certificado SSL y luego configurar Apache manualmente con el siguiente comando:
-
-![Screenshot_41](https://user-images.githubusercontent.com/96561825/173272173-9a7c0afb-f07e-43fb-904a-620394a900b0.png)
 
 
-Ingresamos nuestro dominio, en este casodevops.ddns.net.
-
-![Screenshot_42](https://user-images.githubusercontent.com/96561825/173272195-5a088615-ac80-4283-aa7f-8b4200d2fcaa.png)
-
-
-![Screenshot_43](https://user-images.githubusercontent.com/96561825/173272219-2e87f867-6a1f-4b63-9de6-e628b28acfec.png)
 
 
 
@@ -289,21 +279,40 @@ Certbot utiliza el complemento Apache para obtener certificados SSL:
 
 Nos va a pedir un mail para registrarnos, y la configuración de los directorios que podemos responder “mail”,“y” y “a”.
 
-![Screenshot_34](https://user-images.githubusercontent.com/96561825/173271364-bf1f05bd-f830-4300-9ab1-80fc3ed6adb6.png)
 
-![Screenshot_35](https://user-images.githubusercontent.com/96561825/173271369-8504fa0e-7fc3-4b49-8cdd-85eeb273753e.png)
+![Screenshot_56](https://user-images.githubusercontent.com/96561825/173274203-2d67921b-a3a2-4a68-9128-563ea6d57a45.png)
 
-![Screenshot_36](https://user-images.githubusercontent.com/96561825/173271377-c6787182-7ac1-47c4-8a7a-056e36bf171d.png)
+
+![Screenshot_57](https://user-images.githubusercontent.com/96561825/173273908-7515592a-d576-4be2-b528-7d2aa9ed2701.png)
+
+![Screenshot_58](https://user-images.githubusercontent.com/96561825/173273898-821b3650-7721-45b6-8df7-29514ee3347b.png)
+
+![Screenshot_59](https://user-images.githubusercontent.com/96561825/173273884-b6d29ea0-c69b-405c-bb0f-58156a57d2cc.png)
+
+![Screenshot_61](https://user-images.githubusercontent.com/96561825/173273877-8f4bf6e5-9651-4eed-a0e1-87dae5fe9698.png)
+
+![Screenshot_62](https://user-images.githubusercontent.com/96561825/173273869-0efbe615-93fb-4c35-8afc-9b0247450239.png)
+
+![Screenshot_63](https://user-images.githubusercontent.com/96561825/173273867-e953a319-f865-483b-a779-771681659410.png)
 
 
 
 La ejecución de este comando permitirá obtener un certificado SSL y Certbot modificará automáticamente la configuración de Apache. De lo contrario, podríamos obtener el certificado SSL y luego configurar Apache manualmente con el siguiente comand
 
+![Screenshot_48](https://user-images.githubusercontent.com/96561825/173273262-22f52f27-3fec-4db1-b45b-bbc0f14c9219.png)
 
 
 
-Ingresamos nuestro dominio, en este casodevops.ddns.net.
+Ingresamos nuestro dominio, en este casodevops***.ddns.net.***
 
+
+
+![Screenshot_64](https://user-images.githubusercontent.com/96561825/173274420-20e91258-13e5-4852-82e1-24fc48a39ef7.png)
+
+![Screenshot_65](https://user-images.githubusercontent.com/96561825/173274414-42ace3d4-37cc-429b-bb31-f4f3a23871a7.png)
+
+
+![Screenshot_66](https://user-images.githubusercontent.com/96561825/173274408-f8001b9d-28fa-4b32-bdad-34d02aaa49d0.png)
 
 #
 #
@@ -312,13 +321,13 @@ Ingresamos nuestro dominio, en este casodevops.ddns.net.
 
 Los paquetes de Certbot vienen con un trabajo Cron que renovará automáticamente sus certificados antes de que caduquen. Dado que los certificados Let's Encrypt duran 90 días, se recomienda encarecidamente aprovechar esta función. Podemos verificar la renovación automática de certificados ejecutando este comando:
 
-
-zzzzzzzz
+![Screenshot_45](https://user-images.githubusercontent.com/96561825/173273102-4994c8f4-c99f-47e4-a62f-2b08bfff8577.png)
 
 
 El comando para renovar Certbot se instala en una de las siguientes ubicaciones:
 
 
+![Screenshot_44](https://user-images.githubusercontent.com/96561825/173273076-2becc60e-c8aa-4896-99c8-bc6be956a3ae.png)
 
 
 
@@ -333,43 +342,6 @@ De esta manera hemos concluido con el tutorial para armar nuestro sitio con cert
 
 
 Esta nos permitirá brindar la seguridad necesaria para adjuntar información cifrada.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #
