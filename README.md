@@ -48,13 +48,9 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ♾️ 36 > [Usando la Criptografia para validar Integridad - Criptografia ](Days/day36.md)
 - [✔️] ♾️ 37 > [Introduccion ITSM, ITL y alternativas  - ITSM ](Days/day37.md)
 - [✔️] ♾️ 38 > [0](Days/day38.md)
- 
- ### Use Git Effectively
- 
- 
-- [✔️] 📚 39 > [Viewing, unstaging, discarding & restoring](Days/day39.md)
-- [✔️] 📚 40 > [Social Network for code](Days/day40.md)
-- [✔️] 📚 41 > [The Open Source Workflow](Days/day41.md)
+- [✔️] ♾️ 39 > [0](Days/day39.md)
+- [✔️] ♾️ 40 > [0](Days/day40.md)
+- [✔️] ♾️ 41 > [0](Days/day41.md)
 
 
 
