@@ -1,143 +1,200 @@
----
-title: '#90DaysOfDevOps - The Big Picture: Git - Version Control - Day 35'
-published: false
-description: 90DaysOfDevOps - The Big Picture Git - Version Control
-tags: 'devops, 90daysofdevops, learning'
-cover_image: null
-canonical_url: null
-id: 1049041
----
-## The Big Picture: Git - Version Control
+# Usando la Criptografía para generar Confidencialidad
 
-Before we get into git, we need to understand what version control is and why? In this opener for Git, we will take a look at what version control is, the basics of git.  
+## Índice
 
-### What is Version Control? 
+1. Introducción 
+2. Datos en tránsito: Criptografía simetrica 
+3. Datos en tránsito: Criptografía Asimétrica
 
-Git is not the only version control system so here we want to cover what options and what methodologies are available around version control. 
+#
+## 1- Introducción
+### Uno de los usos principales de la criptografía es habilitar la confidencialidad en otras palabras, mantener datos o información ininteligibles a ojos no autorizados.
+#
 
-The most obvious and a big benefit of Version Control is the ability to track a project's history. We can look back over this repository using `git log` and see that we have many commits and many comments and what has happened so far in the project. Don't worry we will get into the commands later. Now think if this was an actual software project full of source code and multiple people are committing to our software at different times, different authors and then reviewers all are logged here so that we know what has happened, when, by whom and who reviewed. 
+### Clasificación de Datos según su estado
 
-![](Images/Day35_Git1.png)
+Tal y como la materia, los datos también tienen 3 estados (bueno, si, la materia puede tener 4 estados, pero para el caso digamos que son 3). Estos no son gaseoso, líquido y sólido, sino: 
 
-Version Control before it was cool, would have been something like manually creating a copy of your version before you made changes. It might be that you also comment out old useless code with the just in case mentality. 
+● Data at ***rest***: que son los datos en reposo, que no están siendo consultados por nadie ni nada (por ejemplo: un registro de una base de datos).
 
-![](Images/Day35_Git2.png)
+● Data in ***transit***: que son los datos viajando de los sistemas que los albergan en reposo hacia el cliente o sistema que los haya consultado.
 
-I have started using version control over not just source code but pretty much anything, talks about projects like this (90DaysOfDevOps) because why would you not want that rollback and log of everything that has gone on. 
+● Data in ***use***: que son los datos siendo visualizados o procesados en el cliente o sistema que los haya consultado.
 
-However, a big disclaimer **Version Control is not a Backup!**
+# 
 
-Another benefit of Version Control is the ability to manage multiple versions of a project, Let's create an example, we have a free app that is available on all operating systems and then we have a paid-for app also available on all operating systems. The majority of the code is shared between both applications. We could copy and paste our code each commit to each app but that is going to be very messy especially as you scale your development to more than just one person, also mistakes will be made. 
-
-The premium app is where we are going to have additional features, let's call them premium commits, the free edition will just contain the normal commits. 
-
-The way this is achieved in Version Control is through branching. 
-
-![](Images/Day35_Git3.png)
-
-Branching allows for two code streams for the same app as we stated above. But we will still want new features that land in our source code free version to be in our premium and to achieve this we have something called merging. 
-
-![](Images/Day35_Git4.png)
-
-Now, this same easy but merging can be complicated because you could have a team working on the free edition and you could have another team working on the premium paid for version and what if both change code that affects aspects of the overall code. Maybe a variable gets updated and breaks something. Then you have a conflict that breaks one of the features. Version Control cannot fix the conflicts that are down to you. But version control allows this to be easily managed. 
-
-The primary reason if you have not picked up so far for version control, in general, is the ability to collaborate. The ability to share code amongst developers and when I say code as I said before more and more we are seeing much more use cases for other reasons to use source control, maybe its a joint presentation you are working on with a colleague or a 90DaysOfDevOps challenge where you have the community offering their corrections and updates throughout the project. 
-
-Without version control how did teams of software developers even handle this? I find it hard enough when I am working on my projects to keep track of things. I expect they would split out the code into each functional module. Maybe a little part of the puzzle then was bringing the pieces together and then problems and issues before anything would get released. 
-
-With version control, we have a single source of truth. We might all still work on different modules but it enables us to collaborate better. 
-
-![](Images/Day35_Git5.png)
-
-Another thing to mention here is that it's not just developers that can benefit from Version Control, it's all members of the team to have visibility but also tools all having awareness or leverage, Project Management tools can be linked here, tracking the work. We might also have a build machine for example Jenkins which we will talk about in another module. A tool that Builds and Packages the system, automating the deployment tests and metrics. 
-
-### What is Git? 
-
-Git is a tool that tracks changes to source code or any file, or we could also say Git is an open-source distributed version control system. 
-
-There are many ways in which git can be used on our systems, most commonly or at least for me I have seen it in at the command line, but we also have graphical user interfaces and tools like Visual Studio Code that have git aware operations we can take advantage of. 
-
-Now we are going to run through a high-level overview before we even get Git installed on our local machine. 
-
-Let's take the folder we created earlier. 
-
-![](Images/Day35_Git2.png)
-
-To use this folder with version control we first need to initiate this directory using the `git init command. For now, just think that this command puts our directory as a repository in a database somewhere on our computer. 
-
-![](Images/Day35_Git6.png)
-
-Now we can create some files and folders and our source code can begin or maybe it already has and we have something in here already. We can use the `git add .` command which puts all files and folders in our directory into a snapshot but we have not yet committed anything to that database. We are just saying all files with the `.` are ready to be added.   
-
-![](Images/Day35_Git7.png)
-
-Then we want to go ahead and commit our files, we do this with the `git commit -m "My First Commit"` command. We can give a reason for our commit and this is suggested so we know what has happened for each commit. 
-
-![](Images/Day35_Git8.png)
-
-We can now see what has happened within the history of the project. Using the `git log` command.
-
-![](Images/Day35_Git9.png)
-
-We can also check the status of our repository by using `git status` this shows we have nothing to commit and we can add a new file called samplecode.ps1. If we then run the same `git status you will see that we file to be committed. 
-
-![](Images/Day35_Git10.png)
-
-Add our new file using the `git add samplecode.ps1` command and then we can run `git status` again and see our file is ready to be committed. 
-
-![](Images/Day35_Git11.png)
-
-Then issue `git commit -m "My Second Commit"` command.
-
-![](Images/Day35_Git12.png)
-
-Another `git status` now shows everything is clean again.
-
-![](Images/Day35_Git13.png)
-
-We can then use the `git log` command which shows the latest changes and first commit. 
-
-![](Images/Day35_Git14.png)
-
-If we wanted to see the changes between our commits i.e what files have been added or modified we can use the `git diff b8f8 709a`
-
-![](Images/Day35_Git15.png)
-
-Which then displays what has changed in our case we added a new file. 
-
-![](Images/Day35_Git16.png)
-
-We can also and we will go deeper into this later on but we can jump around our commits i.e we can go time travelling! By using our commit number we can use the `git checkout 709a` command to jump back in time without losing our new file. 
-
-![](Images/Day35_Git17.png)
-
-But then equally we will want to move forward as well and we can do this the same way with the commit number or you can see here we are using the `git switch -` command to undo our operation. 
-
-![](Images/Day35_Git18.png)
-
-The TLDR; 
-
-- Tracking a projects history
-- Managing multiple versions of a project
-- Sharing code amongst developers and a wider scope of teams and tools
-- Coordinating teamwork
-- Oh and there is some time travel! 
-
-
-This might have seemed a jump around but hopefully, you can see without really knowing the commands used the powers and the big picture behind Version Control. 
-
-Next up we will be getting git installed and set up on your local machine and diving a little deeper into some other use cases and commands that we can achieve in Git. 
+![Screenshot_71](https://user-images.githubusercontent.com/96561825/173277445-c646d11e-d8e7-4563-b28c-675dca0a1cad.png)
 
 
 
-## Resources 
 
-- [What is Version Control?](https://www.youtube.com/watch?v=Yc8sCSeMhi4)
-- [Types of Version Control System](https://www.youtube.com/watch?v=kr62e_n6QuQ)
-- [Git Tutorial for Beginners](https://www.youtube.com/watch?v=8JJ101D3knE&t=52s) 
-- [Git for Professionals Tutorial](https://www.youtube.com/watch?v=Uszj_k0DGsg) 
-- [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk&t=8s) 
-- [Complete Git and GitHub Tutorial](https://www.youtube.com/watch?v=apGV9Kg7ics)
+
+
+#
+
+### Protección de Datos según su estado
+
+Desde la perspectiva de la seguridad, dependiendo del estado de los datos se pueden implementar distintas técnicas o medidas para segurizarlos.
+
+Estos se pueden agrupar en dos grandes categorías: Seguridad Física y Seguridad Lógica.}
+
+#
+### Algunos ejemplos
+
+![Screenshot_68](https://user-images.githubusercontent.com/96561825/173275604-123ae8a8-9ff6-4811-a0e1-29b4e46bc90a.png)
+
+
+#
+### Protegiendo los datos en tránsito
+
+Como pudimos ver en el slide anterior, la criptografía (mencionada como encripción o encriptación) puede ser utilizada en diferentes niveles dependiendo el estado de los datos para protegerlos. Nosotros nos vamos a enfocar en cómo podemos utilizar la criptografía para proteger los datos en tránsito.
+
+#
+#
+
+# Datos 
+#
+## Criptografía simétrica
+#
+
+Tomemos en consideración este escenario: las empresas 1 y 2 están conectadas por medio de una VPN.
+
+Una computadora en la Empresa 1 necesita acceder a un recurso en la Empresa 2. 
+
+Vamos a ver como la criptografía asimétrica nos puede ayudar en este 
+
+![Screenshot_69](https://user-images.githubusercontent.com/96561825/173275820-cfb2b637-35d7-4da3-9f27-dd6cf570dcd5.png)
+
+
+#
+## Criptografía simétrica: el paso a paso
+
+Ambas empresas se ponen de acuerdo en el algoritmo a utilizar y la clave que
+utilizarán.
+
+Por cada mensaje que la Empresa 1 enviara, se produce un paquete cifrado, utilizando el algoritmo definido, la clave compartida y los datos a intercambiar.
+
+Cuando la Empresa 2 recibe el mensaje cifrado, utiliza el mismo algoritmo y clave para realizar la operación inversa y así obtener el mensaje original.
+
+#
+## Desafíos de la criptografía simétrica
+
+
+La mayor dificultad que tiene el uso de criptografía simétrica es que la clave a utilizar para codificar los mensajes debe ser conocidas por todas las partes involucradas en la conversación. 
+
+Esto es factible cuando conocemos a las partes que van a interactuar y en consecuencia podemos compartir con ellos la clave privada.
+
+Pero qué pasa cuando no sabemos con quienes vamos a interactuar y aun así queremos proteger las comunicaciones? Claramente no podemos distribuir la clave privada a todo el mundo, eso rompería con el principio de la confidencialidad y de autenticación...
+
+Un ejemplo podría ser visitar un sitio de home banking desde nuestras casas. El banco no sabe desde que computadoras o redes accederemos al sitio, y aun asi es
+su responsabilidad asegurar que las comunicaciones sean protegidas.
+
+¡Criptografía asimétrica al rescate!
+Desafíos de la criptografía simétrica
+
+#
+#
+## Datos en tránsito: Criptografía Asimétrica
+
+En contraste con la criptografía simétrica donde se usa una misma clave para codificar los mensajes entre todas las partes, en la criptografía asimétrica se hace
+uso de dos claves.
+
+Ambas claves son generadas matemáticamente y en conjunto. 
+
+De este modo, los mensajes que son codificados con la clave 1, pueden ser decodificados con la clave 2 y viceversa.
+
+En los pares de claves, una se conoce por el nombre de clave pública mientras que la otra se conoce por el nombre de clave privada.
+
+#
+## Certificados
+
+Repasemos el ejemplo anterior: Acceder a un sitio de home banking desde nuestras casas. El banco no sabe desde que computadoras o redes accederemos al sitio, y
+aun así es su responsabilidad asegurar que las comunicaciones sean protegidas. Para poder proteger la comunicación, el banco debe distribuir la clave pública a
+quien sea que visite el sitio. ¡Y esto es posible gracias a los ***certificados***!
+
+![Screenshot_70](https://user-images.githubusercontent.com/96561825/173275959-9c8d77ce-d708-4341-89c4-aab14521f88b.png)
+
+#
+## ¿Qué tiene un certificado adentro?
+
+
+Un certificado contiene los siguientes datos:
+
+● Una forma de identificación del sitio que implementa el certificado (IP o nombre de la página)
+
+● Las fechas entre las cuales será válido el certificado (***¡los certificados expiran!***)
+
+● La clave pública que se usará para codificar la comunicación
+
+● La firma de la entidad certificante que emitió el certificado
+
+● Otros datos que hacen a la seguridad del certificado
+
+#
+## Entidad certificante
+
+También conocidas como CA’s o Certification Authorities. Para poder cumplir con el principio de autenticación, no cualquiera puede emitir un certificado.
+
+Sino que hay entidades conocidas como Certification Authorities (del ingles, Autoridad Certificante) que son las encargadas de verificar que quien solicita el
+certificado es realmente quien dice ser. 
+
+En caso de que el certificado vaya a ser usado internamente en la organización, es la organización quien puede tener una CA interna y así emitir el certificado. 
+
+Pero si el certificado va a ser utilizado de forma externa (como en el caso del sitio de Home Banking), entonces el certificado debe ser emitido por una organización pública que sea conocida y ***confiada*** por todos.
+
+#
+## Certificados Auto-Firmados (self-signed)
+
+Existe la posibilidad de generar certificados auto-firmados. Es decir, generar un certificado y que seamos nosotros mismos los que lo firmamos.
+
+***¿De qué sirve?***  No mucho más que para hacer pruebas, un certificado de este tipo no debe ser usado nunca en un ambiente de producción. 
+
+Ya que de ser así, nuestro navegador nos advertirá que el certificado fue emitido por una entidad de no confianza.
+
+#
+## Criptografía asimétrica: el paso a paso
+
+
+
+1. El cliente ingresa a la URL de home banking.
+
+2. El servidor envía al cliente el certificado.
+
+3. El navegador en el cliente verifica que el certificado sea válido (firmado por una entidad confiada, que no haya expirado y que la URL que estamos visitando coincida con la especificada en el certificado) . De no cumplirse alguna de estas condiciones el navegador nos va a indicar que el certificado no es ***seguro***.
+
+4. Una vez que el navegador tiene el certificado, extrae la clave pública para poder intercambiar mensajes de manera segura con el servidor. Pero no es esta clave la que se va a usar para codificar cada mensaje enviado y decodificar cada mensaje recibido. Sino que ahora que pueden establecer una comunicación, lo que hacen es generar y negociar una ‘session key’. Y es esa ‘session key’ la que se utilizará para cifrar el resto de
+la comunicación.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+#
+#
+#
+#
 
 See you on [Day 36](day36.md) 
 
