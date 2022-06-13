@@ -146,8 +146,4 @@ Un factor común clave en todas las compañías de software es la escala de Inte
 #
 #
 
-
-
-
-
-See you on [Day 12](day12.md).
+Seguimos en el [Día 12](day12.md).
