@@ -52,6 +52,19 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ♾️ 40 > [0](Days/day40.md)
 - [✔️] ♾️ 41 > [0](Days/day41.md)
 
+ ## Desafios Semanales
+ 
+- [✔️] ☁️ 40 > [0](Days/day40.md)
+- [✔️] ☁️ 41 > [0](Days/day41.md)
+- [✔️] ☁️ 42 > [0](Days/day42.md)
+- [✔️] ☁️ 43 > [0](Days/day43.md)
+- [✔️] ☁️ 44 > [0](Days/day44.md)
+- [✔️] ☁️ 45 > [0](Days/day45.md)
+- [✔️] ☁️ 46 > [0](Days/day46.md)
+- [✔️] ☁️ 47 > [0](Days/day47.md)
+- [✔️] ☁️ 48 > [0](Days/day48.md)
+- [✔️] ☁️ 49 > [0](Days/day49.md)
+- [✔️] ☁️ 50 > [0](Days/day50.md)
 
 
 
