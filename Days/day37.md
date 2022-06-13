@@ -73,11 +73,9 @@ Es decir, que  ITIL es una respuesta a la necesidad que plantea ITSM.
 
 
 
-
-
 #
 #
 #
 #
 #
-See you on [Day 38](day38.md) 
+Seguimos en el [Día 38](day38.md) 
