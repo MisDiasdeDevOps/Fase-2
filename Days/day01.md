@@ -28,7 +28,7 @@
 #
 
 
-Seguimos en el [Día 2](day2.md).
+Seguimos en el [Día 2](day02.md)
 
 
 
