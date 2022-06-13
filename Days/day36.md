@@ -76,25 +76,9 @@ para el algoritmo que producirá el hash. Una vez obtenido, si el cálculo reali
 
 ![Screenshot_73](https://user-images.githubusercontent.com/96561825/173278335-229cc809-d3da-467a-9719-6beffa3e46ac.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #
 #
 #
 #
-See you on [Day 37](day37.md) 
+Seguimos en el [Día 37](day37.md) 
