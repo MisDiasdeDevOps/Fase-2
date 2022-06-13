@@ -115,6 +115,7 @@ En la pantalla que nos aparece, apretamos “ DISPOSITIVIO MFA VIRTUAL”
 #
 
 A posteriorla  la aplicación de autenticación de Google nos muestra el código QR que escanearámos en nuestro celular ..
+
 Para ello debemos tener instalado el programa Google Authenticator o similar .
 
 
@@ -161,9 +162,8 @@ Demos el nombre del grupo «admins», y luego veremos el siguiente paso que cons
 
 
 ![image](https://user-images.githubusercontent.com/96561825/173447888-c2de2f29-8033-4d54-b484-cbd5df15ad52.png)
+
 #
-
-
 
 Aquí la elección del tipo de acceso es importante. Tenemos dos opciones:
 
@@ -181,13 +181,19 @@ Vamos a asignarlo a nuestro grupo de administradores.
 
 
 ![image](https://user-images.githubusercontent.com/96561825/173447911-aef4fe79-8a3d-4351-bb28-d657e0a2c991.png)
+
 #
+
 Creamos un usuario
+
 ![image](https://user-images.githubusercontent.com/96561825/173447964-dcbcf451-69b3-4396-b9f6-e541ff4029c8.png)
+
 #
 
 Le damos permisos
+
 ![image](https://user-images.githubusercontent.com/96561825/173447994-311e11ca-f3d6-465d-b0c1-ff5a7200233a.png)
+
 #
 
 Si todo esta correcto obtendremos la siguiente pantalla.
@@ -201,8 +207,11 @@ Cuando usamos el botón de abajo «Descargar.csv» todos los detalles de la tabl
 #
 
 Usuario creado exitosamente.
+
 ![image](https://user-images.githubusercontent.com/96561825/173448120-e54658b3-46ae-4c89-acc1-eeebbee9b6fa.png)
+
 #
+
 Como acabamos de crear nuestra cuenta, que ya tiene autenticación de dos factores, no hay necesidad de “Aplicar una politica de contraseña IAM”,  no se tiene que hacer este paso.
 
 
@@ -210,9 +219,13 @@ Como acabamos de crear nuestra cuenta, que ya tiene autenticación de dos factor
 
 
 #
+
 ## CREAR UN PRESUPUESTO 
 
-Iniciamos sesión en la consola como el usuario root (porque es el único que tiene acceso a la información de facturación). Luego en la barra de búsqueda de la consola de administración de AWS, escribimos «Facturacion » y elija en el resultado que aparece “Budget”
+Iniciamos sesión en la consola como el usuario root (porque es el único que tiene acceso a la información de facturación).
+
+Luego en la barra de búsqueda de la consola de administración de AWS, escribimos «Facturacion » y elija en el resultado que aparece “Budget”
+
 
 ![image](https://user-images.githubusercontent.com/96561825/173448228-bffa9464-3f01-46cb-b0c1-f7e998e59456.png)
 
@@ -243,6 +256,7 @@ Siguiente
 #
 
 Aquí aclaramos que nuestro presupuesto mensual es de 5 dolares , y cada vez que superemos los 2.50 dolares recibiremos un correo notificandonos.
+
 ![image](https://user-images.githubusercontent.com/96561825/173448422-c9c4b0f1-bdf0-4818-a9a3-082dbb019de6.png)
 
 #
