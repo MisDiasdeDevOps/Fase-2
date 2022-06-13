@@ -83,7 +83,4 @@ una base de datos legible en espera (combinada con informes) para reducir los co
 #
 #
 
-
-
-
-See you on [Day 11](day11.md).
+Seguimos en el [Día  11](day11.md).
