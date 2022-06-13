@@ -1,5 +1,6 @@
 
 # ¿Qué es una VPC?
+#
 
 ##  Índice
 
@@ -9,8 +10,8 @@
 ### 2. ¿Por qué usar una nube privada virtual? 
 
 #
-
-## Definición 
+#
+## 1 - Definición 
 
 ### ¿Qué es una nube privada virtual?
 
@@ -28,10 +29,10 @@ La virtualización hospedada mantiene sus datos aislados de los de otras empresa
 
 Generalmente, las empresas administran una VPC a través del ***panel de control del proveedor*** de servicio administrado. De esta manera, se puede ver la VPC y hacer los cambios necesarios fácilmente.
 
-#
-#
 
-# ¿Por qué usar una nube privada virtual?
+#
+#
+# 2 - ¿Por qué usar una nube privada virtual?
 
 ## Seguridad
 Una VPC permite proteger ***el ambiente de redes virtual***, incluso las direcciones IP, subredes y puertas de enlace de red. Por ejemplo, podemos aislar de manera
