@@ -244,5 +244,5 @@ Ingresamos nuevamente a la instancia a través del navegador web (repetimos este
 
 
 
-See you on [Day15](day15.md)
+Seguimos en el [Día 15](day15.md)
 
