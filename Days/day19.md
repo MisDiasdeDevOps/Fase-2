@@ -3,7 +3,7 @@
 
 
 # VPC en AWS
-
+#
 
 
 ## Funcionamiento
@@ -81,41 +81,9 @@ Teniendo en cuenta estos valores, son unos de los proveedores de cloud más eleg
 
 
 
-
-
-
-
-
-
-
-
-
 #
 #
 #
 #
 #
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-See you on [Day20](day20.md)
+Seguimos en el [Día 20](day20.md)
