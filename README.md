@@ -53,7 +53,7 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 
  ## Desafios Semanales
  
-- [✔️] ☁️ 40 > [0](Days/day40.md)
+- [✔️] ☁️ 40 > [CREACION y SECURACION de tu CUENTA](Days/day40.md)
 - [✔️] ☁️ 41 > [0](Days/day41.md)
 - [✔️] ☁️ 42 > [0](Days/day42.md)
 - [✔️] ☁️ 43 > [0](Days/day43.md)
