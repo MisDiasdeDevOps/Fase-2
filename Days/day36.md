@@ -1,152 +1,100 @@
----
-title: '#90DaysOfDevOps - Installing & Configuring Git - Day 36'
-published: false
-description: 90DaysOfDevOps - Installing & Configuring Git
-tags: "devops, 90daysofdevops, learning"
-cover_image: null
-canonical_url: null
-id: 1048738
----
-## Installing & Configuring Git
 
-Git is a open source, cross platform tool for version control. If I like me you are using Ubuntu or most Linux environments you might find that you already git installed but we are going to run through the install and configuration. 
+# La criptografía para validar integridad
 
-Even if you already have git installed on your system it is also a good idea to make sure we are up to date. 
 
-### Installing Git
+#
+## Validar la integridad
 
-As already mentioned Git is cross platform, we will be running through Windows and Linux but you can find macOS also listed [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+La idea de verificar la integridad de un dato usando la criptografía es sencilla. El dato para el cual queremos validar su integridad es sometido
+a un algoritmo (los más conocidos para este propósito son SHA y MD5), el resultado es una cadena de caracteres que se conoce como hash.
 
-For [Windows](https://git-scm.com/download/win) we can grab our installers from the official site. 
+De alterarse los datos, al volver a calcular el hash, estos producirían un resultado diferente. 
 
-You could also use `winget` on your Windows machine, think of this as your Windows Application Package Manager. 
+Al compararlo con el hash original, la diferencia sería evidente.
 
-Before we install anything lets see what version we have on our Windows Machine. Open a PowerShell window and run `git --version` 
 
-![](Images/Day36_Git1.png)
+#
+## Integridad para “Data at Rest”
 
-We can also check our WSL Ubuntu version of Git as well. 
+Para escenarios donde los datos no están en uso a en tránsito (por ejemplo, un repositorio de archivos), la forma más habitual de garantizar la integridad de los
+datos es calcular el hash, almacenarlo. 
 
-![](Images/Day36_Git2.png)
+En una instancia posterior cuando el dato deba ser consultado, se puede verificar el hash y así determinar que los contenidos del archivo no fueron alterados. 
 
-At the time of writing the latest Windows release is `2.35.1` so we have some updating to do there which I will run through. I expect the same for Linux. 
+Una ejemplo de esto es cuando vamos a descargar un instalador de Internet y la página nos provee con el hash para que una vez descargado el software podamos verificar su integridad y autenticidad.
 
-I went ahead and downloaded the latest installer and ran through the wizard and will document that here. The important thing to note is that git will uninstall previous versions before installing the latest. 
 
-Meaning that the process shown below is also the same process for the most part as if you were installing from no git. 
+#
+## ¡A probarlo!
 
-It is a very simple installation. Once downloaded double click and get started. Read through the GNU license agreement. But remember this is free and open source software. 
+![Screenshot_72](https://user-images.githubusercontent.com/96561825/173277717-8565e4ea-4968-4b2c-85dd-3c96e8141975.png)
 
-![](Images/Day36_Git3.png)
 
-Now we can choose additional components that we would like to also install but also associate with git. On Windows I always make sure I install Git Bash as this allows us to run bash scripts on Windows. 
+#
+## Integridad para “Data in transit”
 
-![](Images/Day36_Git4.png)
+Dado un escenario donde 2 computadoras van a intercambiar mensajes, por ejemplo, cuando una computadora se conecta por medio de una VPN a un servidor, mediante la criptografía también podemos verificar la integridad de cada uno de los paquetes que vamos a intercambiar.
 
-We can then choose which SSH Executable we wish to use. IN leave this as the bundled OpenSSH that you might have seen in the Linux section. 
+Por cada paquete que vamos a enviar mediante la red, podemos calcular el hash que le corresponda y agregar el resultado a uno de los encabezados del paquete. 
 
-![](Images/Day36_Git5.png)
+El servidor del otro lado, recibe el paquete, lo somete al mismo algoritmo y de producir el mismo hash, podemos determinar que el paquete es íntegro.
 
-We then have experimental features that we may wish to enable, for me I don't need them so I don't enable, you can always come back in through the installation and enable these later on. 
 
-![](Images/Day36_Git6.png)
+#
+## Problemáticas de “Data in transit”
 
-Installation complete, we can now choose to open Git Bash and or the latest release notes. 
+Hasta ahora vimos que los algoritmos que se utilizan para calcular el hash toman como entrada una única variable que son los datos a transmitir y, luego, adjuntan a esos datos el hash.
 
-![](Images/Day36_Git7.png)
+¿Qué sucede si un atacante altera los datos, calcula el hash para el nuevo contenido y reemplaza el hash original con el nuevo?
+El servidor que recibe los datos verificará el hash y coincidirá con aquel que el atacante ha generado. 
 
-The final check is to take a look in our PowerShell window what version of git we have now. 
+¿Cómo resolvemos este problema?  ***¡HMAC al rescate!***
 
-![](Images/Day36_Git8.png)
 
-Super simple stuff and now we are on the latest version. On our Linux machine we seemed to be a little behind so we can also walk through that update process. 
 
-I simply run the `sudo apt-get install git` command. 
+#
+#
+## HMAC (hash message authentication code)
 
-![](Images/Day36_Git9.png)
+***HMAC*** se usa en escenarios de datos en tránsito donde podemos usar una clave simétrica como entrada adicional para el algoritmo de hashing. Es decir que para producir el hash de ambos lados (emisor y receptor) ambos deben conocer la clave.
 
-You could also run the following which will add the git repository for software installations. 
 
-```
-sudo add-apt-repository ppa:git-core/ppa -y
-sudo apt-get update
-sudo apt-get install git -y
-git --version
-``` 
-### Configuring Git
 
-When we first use git we have to define some settings, 
+***Paso 1***: acordar una clave privada.  El emisor y receptor de la comunicación se ponen de acuerdo en qué clave privada van a utilizar y en qué algoritmo criptográfico utilizaran para producir el hash. El primer dato es secreto mientras que los algoritmos son de dominio público y, por lo tanto, no son secretos.
 
-- Name
-- Email 
-- Default Editor
-- Line Ending
+***Paso 2***: calcular el hash del paquete. El emisor calcula el hash correspondiente a cada paquete enviado utilizando los datos del mismo y la clave acordada como
+datos de entrada del algoritmo que producirá el hash. A continuación, adjunta el resultado como un encabezado del paquete a enviar.
 
-This can be done at three levels 
+***Paso 3***: transmitir el paquete. Los paquetes son transmitidos de un extremo al otro.
 
-- System = All users 
-- Global = All repositories of the current user 
-- Local = The current repository
+***Paso 4*** : Recibir el paquete. El receptor toma los datos (que vienen en el paquete), toma la clave acordada en el paso 1, y utiliza ambos datos como elementos de entrada
+para el algoritmo que producirá el hash. Una vez obtenido, si el cálculo realizado por el receptor coincide con el hash incluido en el paquete, podemos decir que el mismo no ha sufrido alteraciones desde su envío.
 
-Example: 
-`git config --global user.name "Michael Cade"` 
-`git config --global user.email Michael.Cade@90DaysOfDevOPs.com"`
-Depending on your Operating System will determine the default text editor. In my Ubuntu machine without setting the next command is using nano. The below command will change this to visual studio code. 
+#
+#
 
-`git config --global core.editor "code --wait"`
 
-now if we want to be able to see all git configuration then we can use the following command. 
+![Screenshot_73](https://user-images.githubusercontent.com/96561825/173278335-229cc809-d3da-467a-9719-6beffa3e46ac.png)
 
-`git config --global -e` 
 
-![](Images/Day36_Git10.png)
 
-On any machine this file will be named `.gitconfig` on my Windows machine you will find this in your user account directory. 
 
-![](Images/Day36_Git11.png)
 
-### Git Theory
 
-I mentioned in the post yesterday that there were other version control types and we can split these down into two different types. One is Client Server and the other is Distributed. 
 
-### Client-Server Version Control 
 
-Before git was around Client-Server was the defacto method for version control. An example of this would be [Apache Subversion](https://subversion.apache.org/) which is an open source version control system founded in 2000. 
 
-In this model of Client-Server version control, the first step the developer downloads the source code, the actual files from the server. This doesnt remove the conflicts but it does remove the complexity of the conflicts and how to resolve them. 
 
-![](Images/Day36_Git12.png)
 
-Now for example lets say we have two developers working on the same files and one wins the race and commits or uploads their file back to the server first with their new changes. When the second developer goes to update they have a conflict. 
 
-![](Images/Day36_Git13.png)
 
-So now the Dev needs to pull down the first devs code change next to theirs check and then commit once those conflicts have been settled. 
 
-![](Images/Day36_Git15.png)
 
-### Distributed Version Control 
 
-Git is not the only distributed version control system. But it is very much the defacto. 
 
-Some of the major benefits of Git are: 
-
-- Fast 
-- Smart 
-- Flexible 
-- Safe & Secure
-
-Unlike the Client-Server version control model, each developer downloads the the source repository meaning everything. History of commits, all the branches etc. etc. 
-
-![](Images/Day36_Git16.png)
-
-## Resources 
-
-- [What is Version Control?](https://www.youtube.com/watch?v=Yc8sCSeMhi4)
-- [Types of Version Control System](https://www.youtube.com/watch?v=kr62e_n6QuQ)
-- [Git Tutorial for Beginners](https://www.youtube.com/watch?v=8JJ101D3knE&t=52s) 
-- [Git for Professionals Tutorial](https://www.youtube.com/watch?v=Uszj_k0DGsg) 
-- [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk&t=8s) 
-- [Complete Git and GitHub Tutorial](https://www.youtube.com/watch?v=apGV9Kg7ics)
-
+#
+#
+#
+#
+#
 See you on [Day 37](day37.md) 
