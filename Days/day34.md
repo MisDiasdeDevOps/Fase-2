@@ -1,196 +1,70 @@
----
-title: '#90DaysOfDevOps - Microsoft Azure Hands-On Scenarios - Day 34'
-published: false
-description: 90DaysOfDevOps - Microsoft Azure Hands-On Scenarios
-tags: "devops, 90daysofdevops, learning"
-cover_image: null
-canonical_url: null
-id: 1048763
----
-## Microsoft Azure Hands-On Scenarios
 
-The last 6 days have been focused on Microsoft Azure and the public cloud in general, a lot of this foundation had to contain a lot of theory to understand the building blocks of Azure but also this will nicely translate to the other major cloud providers as well. 
 
-I mentioned at the very beginning about getting a foundational knowledge of the public cloud and choosing one provider to at least begin with, if you are dancing between different clouds then I believe you can get lost quite easily whereas choosing one you get to understand the fundamentals and when you have those it is quite easy to jump into the other clouds and accelerate your learning. 
+# Usar la criptografía como mecanismo de autenticación
 
-In this final session, I am going to be picking and choosing my hands-on scenarios from this page here which is a reference created by Microsoft and is used for preparations for the [AZ-104 Microsoft Azure Administrator](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/) 
+## Usar criptografía simétrica y/o HMAC
 
-There are some here such as Containers and Kubernetes that we have not covered in any detail as of yet so I don't want to jump in there just yet. 
 
-In previous posts, we have created most of Modules 1,2 and 3. 
 
-### Virtual Networking 
-Following [Module 04](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_04-Implement_Virtual_Networking.html):
+Cuando usamos criptografía simétrica para proteger una  comunicación o un mecanismo como HMAC para proteger la integridad de los datos estamos utilizando una clave
+criptográfica que es secreta y solo conocida por las partes involucradas. 
 
-I went through the above and changed a few namings for the purpose of #90DaysOfDevOps. I also instead of using the Cloud Shell went ahead and logged in with my new user created on previous days with the Azure CLI on my Windows machine. 
+De este modo, podemos decir que al utilizar comunicaciones encriptadas de forma simétrica ***(confidencialidad)***, con una clave que es solo conocida por los receptores y emisores ***(autenticación)*** y sobre la que se monta HMAC ***(integridad)*** estamos cumpliendo con el principio de seguridad CIA (asegurar la confidencialidad, verificar la integridad y autenticar a las partes).
 
-You can do this using the `az login` which will open a browser and let you authenticate to your account. 
+#
+## Usar certificados SSL
 
-I have then created a PowerShell script and some references from the module to use to build out some of the tasks below. You can find the associated files in this folder.
- (Cloud\01VirtualNetworking) 
 
- Please make sure you change the file location in the script to suit your environment. 
+Como ya hemos observado, es posible que organizaciones deseen o deban proteger las comunicaciones contra sus sitios (recuerden el ejemplo de un banco y su plataforma de Home Banking). 
 
-At this first stage we have no virtual network or virtual machines created in our environment, I only have a cloudshell storage location configured in my resource group. 
+Sabemos que para lograrlo, las compañías deben hacer uso de la criptografía asimétrica, y el mecanismo de distribución para la clave pública son los ya conocidos certificados.
 
-I first of all run my [PowerShell script](Cloud/01VirtualNetworking/Module4_90DaysOfDevOps.ps1)
+Para que los mismos sean confiables, deben ser emitidos por una entidad certificante conocida por nuestras computadoras. 
 
- ![](Images/Day34_Cloud1.png)
- 
-- Task 1: Create and configure a virtual network
+Caso contrario, nuestros navegadores indican que las claves siendo utilizadas por el sitio del banco no fueron generadas por una entidad confiable. 
 
- ![](Images/Day34_Cloud2.png)
+Y para que una entidad confiable genere un certificado en nombre de una compañía, esta debe poder verificar su identidad. 
 
-- Task 2: Deploy virtual machines into the virtual network
+De este modo, y por carácter transitivo, podemos decir que los certificados SSL sirven para verificar la identidad de una compañía y así cumplir con el principio de CIA.
 
- ![](Images/Day34_Cloud3.png)
+#
+## Usar pares de claves asimétricas
 
-- Task 3: Configure private and public IP addresses of Azure VMs
-  
- ![](Images/Day34_Cloud4.png)
+En los sistemas ***Linux*** la manera tradicional de conectarnos de forma remota es utilizando el comando y protocolo SSH (Secure Shell). 
 
-- Task 4: Configure network security groups
+El administrador debe ingresar el comando ssh usuario@servidor en una consola para conectarse a otro servidor. 
 
-![](Images/Day34_Cloud5.png)
-![](Images/Day34_Cloud6.png)
+A continuación, se procederá a pedir al usuario que ingrese su contraseña. 
 
-- Task 5: Configure Azure DNS for internal name resolution
+Esto quiere decir que en cada servidor al que nos vayamos a conectar tenemos que tener un conjunto de usuario y password.
 
-![](Images/Day34_Cloud7.png)
-![](Images/Day34_Cloud8.png)
+¿Qué pasa si administramos una cantidad significativa de servidores? 
 
-### Network Traffic Management 
-Following [Module 06](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_06-Implement_Network_Traffic_Management.html):
+Indefectiblemente vamos a tener que recordar combinaciones de usuario y password por cada uno de ellos.
 
-Next walkthrough, from the last one we have gone into our resource group and deleted our resources, if you had not set up the user account like me to only have access to that one resource group you could follow the module changing the name to `90Days*` this will delete all resources and resource group. This will be my process for each of the following lab. 
+Linux provee una alternativa: utilizar ***claves criptográficas asimétricas*** para autenticarnos.
 
-For this lab I have also created a PowerShell script and some references from the module to use to build out some of the tasks below. You can find the associated files in this folder.
- (Cloud\02TrafficManagement) 
+#
+## ¿Cómo utilizar pares de claves asimétricas?
 
 
-- Task 1: Provision the lab environment
+![Screenshot_67](https://user-images.githubusercontent.com/96561825/173274978-3d100eea-b891-46e7-b70c-1206173e220b.png)
 
-I first of all run my [PowerShell script](Cloud/02TrafficManagement/Mod06_90DaysOfDevOps.ps1)
 
-![](Images/Day34_Cloud9.png)
 
-- Task 2: Configure the hub and spoke network topology
 
-![](Images/Day34_Cloud10.png)
 
-- Task 3: Test transitivity of virtual network peering
 
-For this my 90DaysOfDevOps group did not have access to the Network Watcher because of permissions, I expect this is because Network Watchers are one of those resources that are not tied to a resource group which is where our RBAC was covered for this user. I added the East US Network Watcher contributer role to the 90DaysOfDevOps group. 
 
-![](Images/Day34_Cloud11.png)
-![](Images/Day34_Cloud12.png)
-![](Images/Day34_Cloud13.png)
 
-^  This is expected, since the two spoke virtual networks are not peered with each other (virtual network peering is not transitive).
 
-- Task 4: Configure routing in the hub and spoke topology
 
-I had another issue here with my account not being able to run the script as my user within the group 90DaysOfDevOps which I am unsure of so I did jump back into my main admin account. The 90DaysOfDevOps group is an owner of everything in the 90DaysOfDevOps Resource Group so would love to understand why I cannot run a command inside the VM? 
 
-![](Images/Day34_Cloud14.png)
-![](Images/Day34_Cloud15.png)
 
-I then was able to go back into my michael.cade@90DaysOfDevOps.com account and continue this section. Here we are running the same test again but now with the result being reachable. 
-
-![](Images/Day34_Cloud16.png)
-
-- Task 5: Implement Azure Load Balancer
-
-![](Images/Day34_Cloud17.png)
-![](Images/Day34_Cloud18.png)
-
-- Task 6: Implement Azure Application Gateway
-
-![](Images/Day34_Cloud19.png)
-![](Images/Day34_Cloud20.png)
-
-### Azure Storage 
-Following [Module 07](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_07-Manage_Azure_Storage.html):
-
-For this lab I have also created a PowerShell script and some references from the module to use to build out some of the tasks below. You can find the associated files in this folder.
- (Cloud\03Storage) 
-
-- Task 1: Provision the lab environment
-
-I first of all run my [PowerShell script](Cloud/03Storage/Mod07_90DaysOfDeveOps.ps1)
-
-![](Images/Day34_Cloud21.png)
-
-- Task 2: Create and configure Azure Storage accounts
-
-![](Images/Day34_Cloud22.png)
-
-- Task 3: Manage blob storage
-
-![](Images/Day34_Cloud23.png)
-
-- Task 4: Manage authentication and authorization for Azure Storage
-
-![](Images/Day34_Cloud24.png)
-![](Images/Day34_Cloud25.png)
-
-I was a little impatient waiting for this to be allowed but it did work eventually. 
-
-![](Images/Day34_Cloud26.png)
-
-
-- Task 5: Create and configure an Azure Files shares
-
-On the run command this would not work with michael.cade@90DaysOfDevOps.com so I used my elevated account. 
-
-![](Images/Day34_Cloud27.png)
-![](Images/Day34_Cloud28.png)
-![](Images/Day34_Cloud29.png)
-
-
-- Task 6: Manage network access for Azure Storage
-
-![](Images/Day34_Cloud30.png)
-
-### Serverless (Implement Web Apps)
-Following [Module 09a](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_09a-Implement_Web_Apps.html):
-
-
-- Task 1: Create an Azure web app
-
-![](Images/Day34_Cloud31.png)
-
-- Task 2: Create a staging deployment slot
-
-![](Images/Day34_Cloud34.png)
-
-- Task 3: Configure web app deployment settings
-
-![](Images/Day34_Cloud33.png)
-
-- Task 4: Deploy code to the staging deployment slot
-
-![](Images/Day34_Cloud32.png)
-
-- Task 5: Swap the staging slots
-
-![](Images/Day34_Cloud35.png)
-
-- Task 6: Configure and test autoscaling of the Azure web app
-
-This script I am using can be found in (Cloud/05Serverless)
-
-![](Images/Day34_Cloud36.png)
-
-This wraps up the section on Microsoft Azure and the public cloud in general. I will say that I had lots of fun attacking and working through this scenarios. 
-
-## Resources 
-
-- [Hybrid Cloud and MultiCloud](https://www.youtube.com/watch?v=qkj5W98Xdvw)
-- [Microsoft Azure Fundamentals](https://www.youtube.com/watch?v=NKEFWyqJ5XA&list=WL&index=130&t=12s)
-- [Google Cloud Digital Leader Certification Course](https://www.youtube.com/watch?v=UGRDM86MBIQ&list=WL&index=131&t=10s)
-- [AWS Basics for Beginners - Full Course](https://www.youtube.com/watch?v=ulprqHHWlng&t=5352s)
-
-Next we will be diving into version control systems, specifically around git and then also code repository overviews and we will be choosing GitHub as this is my preferred option. 
+#
+#
+#
+#
+#
 
 See you on [Day 35](day35.md) 
