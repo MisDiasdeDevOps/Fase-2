@@ -75,7 +75,9 @@ En la interfaz, el Step 3 lo dejamos tal cual está y apretamos ***Next***.
 
 En el Step 4, dejamos los discos por defecto de 8 GB, volvemos a presionar Next. 
 
-En el Step 5, hacemos lo mismo. Mientras que en el Step 6 vamos a configurar, por ahora, un grupo de seguridad para el acceso a la instancia.
+En el Step 5, hacemos lo mismo. 
+
+Mientras que en el Step 6 vamos a configurar, por ahora, un grupo de seguridad para el acceso a la instancia.
 
 ![Screenshot_11](https://user-images.githubusercontent.com/96561825/173270193-fbb463d2-ff00-4011-ad63-7f1e472f8da6.png)
 
@@ -151,6 +153,31 @@ Ingresamos nuevamente a la instancia a través del navegador web.
 
 ![Screenshot_21](https://user-images.githubusercontent.com/96561825/173270662-0ddf7172-6db6-4657-93c7-5ce097b968cf.png)
 
+![Screenshot_38](https://user-images.githubusercontent.com/96561825/173272105-aff01bda-98b7-46e9-9cba-876ac58acc19.png)
+
+
+![Screenshot_39](https://user-images.githubusercontent.com/96561825/173272100-76603476-9dd3-4d5f-b15e-b3845c32a63b.png)
+
+![Screenshot_40](https://user-images.githubusercontent.com/96561825/173272127-84fe7746-b844-44f2-80c2-3334495ceee5.png)
+
+La ejecución de este comando permitirá obtener un certificado SSL y Certbot modificará automáticamente la configuración de Apache. 
+
+De lo contrario, podríamos obtener el certificado SSL y luego configurar Apache manualmente con el siguiente comando:
+
+![Screenshot_41](https://user-images.githubusercontent.com/96561825/173272173-9a7c0afb-f07e-43fb-904a-620394a900b0.png)
+
+
+Ingresamos nuestro dominio, en este casodevops.ddns.net.
+
+![Screenshot_42](https://user-images.githubusercontent.com/96561825/173272195-5a088615-ac80-4283-aa7f-8b4200d2fcaa.png)
+
+
+![Screenshot_43](https://user-images.githubusercontent.com/96561825/173272219-2e87f867-6a1f-4b63-9de6-e628b28acfec.png)
+
+
+
+
+
 
 
 
@@ -163,7 +190,9 @@ Ingresamos nuevamente a la instancia a través del navegador web.
 Ingresamos en nuestro navegador a ***www.noip.com***.
 
 
-Luego, creamos nuestro nombre de dominio propio. Vale la pena aclarar que en este punto tenemos que colocar nuestro nombre único de dominio para poder redireccionar a nuestra EC2.
+Luego, creamos nuestro nombre de dominio propio. 
+
+Vale la pena aclarar que en este punto tenemos que colocar nuestro nombre único de dominio para poder redireccionar a nuestra EC2.
 
 Tendremos que crear un registro en el sitio web y crear el registro gratuito.
 
@@ -184,7 +213,11 @@ Modificamos el dominio que creamos con la IP de la instancia de EC2 que creamos.
 
 
 
-Damos en actualizar, y ¡listo! Ya tenemos nuestro domino online. En este caso, devopsddns.net (recordá que este es el ejemplo que utilizamos para este tutorial. No podés usar este mismo dominio porque ya está ocupado)
+Damos en actualizar, y ¡listo! Ya tenemos nuestro domino online. 
+
+En este caso, devopsddns.net (recordá que este es el ejemplo que utilizamos para este tutorial.
+
+No podés usar este mismo dominio porque ya está ocupado)
 
 
 ![Screenshot_26](https://user-images.githubusercontent.com/96561825/173270981-a3aa95da-74d0-4599-9cdb-bb8fd317527c.png)
