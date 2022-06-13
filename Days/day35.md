@@ -166,35 +166,11 @@ Ya que de ser así, nuestro navegador nos advertirá que el certificado fue emit
 la comunicación.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #
 #
 #
 #
 
-See you on [Day 36](day36.md) 
+Seguimos en el [Día 36](day36.md) 
 
