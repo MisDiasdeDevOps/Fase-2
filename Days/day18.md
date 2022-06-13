@@ -65,19 +65,4 @@ La elasticidad en Cloud Computing se refiere a la capacidad que se tiene en la n
 #
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-See you on [Day19](day19.md)
+Seguimos en el [Día 19](day19.md)
