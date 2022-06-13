@@ -1,6 +1,7 @@
 
 
 # Usar la criptografía como mecanismo de autenticación
+#
 
 ## Usar criptografía simétrica y/o HMAC
 
@@ -51,20 +52,9 @@ Linux provee una alternativa: utilizar ***claves criptográficas asimétricas***
 ![Screenshot_67](https://user-images.githubusercontent.com/96561825/173274978-3d100eea-b891-46e7-b70c-1206173e220b.png)
 
 
-
-
-
-
-
-
-
-
-
-
 #
 #
 #
 #
 #
-
-See you on [Day 35](day35.md) 
+Seguimos en el [Día  35](day35.md) 
