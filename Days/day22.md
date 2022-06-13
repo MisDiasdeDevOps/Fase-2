@@ -85,14 +85,10 @@ Por último, ***Docker Containers*** es una plataforma de aplicación aislada ba
 
 ![Screenshot_30](https://user-images.githubusercontent.com/96561825/173213828-67697788-764b-48e2-8036-d2b6f7c55e99.png)
 
-
-
-
 #
 #
 #
 #
 #
 
-
-See you on [Day23](day23.md)
+Seguimos en el [Día 23](day23.md)
