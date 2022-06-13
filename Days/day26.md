@@ -1,6 +1,7 @@
 
 
 # Guía de Instalación de Docker para Mac
+#
 
 ## ¿Cómo puedo descargar Docker?
 
@@ -39,15 +40,9 @@ Para ello debemos estar registrados en Docker Hub.
 Visitando https://labs.play-with-docker.com/, hacemos clic en Login ¡y estamos listos para empezar!
 
 
-
-
-
-
 #
 #
 #
 #
 #
-
-
-See you on [Day 27](day27.md)
+Seguimos en el [Día 27](day27.md)
