@@ -5,6 +5,8 @@ The English language version of this exam will be updated on May 5, 2022.
 
 
 Following the current exam guide, we have included a table that compares the current study guide to the new one by functional group, showing the changes that will be made to the exam on that date. 
+#
+#
 
 ### NOTE: Passing score: 700. Learn more about exam scores. 
 
@@ -373,10 +375,4 @@ END
 #
 #
 #
-
-
-
-
-
-
-If you made it this far then you will know if this is where you want to be or not. See you on [Day 5](day05.md).
+Seguimos en el [Día 5](day05.md).
