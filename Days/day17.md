@@ -165,4 +165,4 @@ Por medio de la aplicación, los usuarios pueden almacenar y analizar los datos,
 
 
 
-See you on [Day18](day18.md)
+Seguimos en el [Día 18](day18.md)
