@@ -83,25 +83,10 @@ Si ves la siguiente pantalla, ¡felicidades!, completaste el ejercicio.
 
 ![Screenshot_42](https://user-images.githubusercontent.com/96561825/173250222-291c280a-2983-487f-9912-c697ed4530e8.png)
 
+#
+#
+#
+#
+#
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-See you on [Day 25](day25.md)
+Seguimos en el [Día 25](day25.md)
