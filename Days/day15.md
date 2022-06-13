@@ -51,31 +51,10 @@ Este último es nuestro director de orquesta, va a estar constantemente chequean
 
 
 
-
 #
 #
 #
 #
 #
 
-
-
-
-See you on [Day16](day16.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Seguimos en el [Día 16](day16.md)
