@@ -1,9 +1,8 @@
 
 
 # Certificados en la práctica
+#
 
-#
-#
 ## Objetivos
 
 
@@ -350,4 +349,4 @@ Esta nos permitirá brindar la seguridad necesaria para adjuntar información ci
 #
 #
 
-See you on [Day 34](day34.md) 
+Seguimos en el [Día 34](day34.md) 
