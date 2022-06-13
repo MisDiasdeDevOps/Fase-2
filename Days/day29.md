@@ -272,21 +272,10 @@ Si conocemos para qué sistema operativo y arquitectura se utilizarán las imág
 
 
 
-
-
-
-
-
-fin
-
 #
 #
 #
 #
 #
 
-
-
-
-
-See you on [Day 30](day30.md)
+Seguimos en el [Día 30](day30.md)
