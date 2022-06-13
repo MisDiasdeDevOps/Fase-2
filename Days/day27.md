@@ -1,6 +1,6 @@
 
 # Guía De Instalaciónde Docker para Windows
-
+#
 ## ¿Como puedo descargar Docker?
 
 Docker para Windows es una herramienta pensada para desarrolladores. 
@@ -49,4 +49,4 @@ Visitando https://labs.play-with-docker.com/, hacemos clic en Login ¡y estamos 
 #
 #
 
-See you on [Day 28](day28.md) where will start looking into cloud computing and get a good grasp and foundational knowledge of the topic and what is available. 
+Seguimos en el [Día  28](day28.md) 
