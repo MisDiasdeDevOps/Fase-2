@@ -49,8 +49,7 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ♾️ 37 > [Introduccion ITSM, ITL y alternativas  - ITSM ](Days/day37.md)
 - [✔️] ♾️ 38 > [0](Days/day38.md)
 - [✔️] ♾️ 39 > [0](Days/day39.md)
-- [✔️] ♾️ 40 > [0](Days/day40.md)
-- [✔️] ♾️ 41 > [0](Days/day41.md)
+
 
  ## Desafios Semanales
  
