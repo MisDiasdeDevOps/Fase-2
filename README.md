@@ -46,14 +46,14 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ♾️ 28 > [Taxonomia basica de Docker -  Clase de Docker en profundidadDesafíos semanales ](Days/day28.md)
 - [✔️] ♾️ 29 > [Docker Hub   -  Clase El Ecosistema de DOcker y Mejores Practicas](Days/day29.md)
 - [✔️] ♾️ 30 > [Docker Networking   -  Clase El Ecosistema de DOcker y Mejores Practicas](Days/day30.md)
-- [✔️] ♾️ 31 > [¿Que es una nubr hibrida? ](Days/day31.md)
-- [✔️] ♾️ 32 > [Criptografia](Days/day32.md)
-- [✔️] ♾️ 33 > [Criptografia](Days/day33.md)
-- [✔️] ♾️ 34 > [Criptografia](Days/day34.md)
-- [✔️] ♾️ 35 > [Criptografia](Days/day35.md)
-- [✔️] ♾️ 36 > [Criptografia ](Days/day36.md)
-- [✔️] ♾️ 37 > [Gitting to know Git](Days/day37.md)
-- [✔️] ♾️ 38 > [Staging & Changing](Days/day38.md)
+- [✔️] ♾️ 31 > [¿Que es una nubr hibrida?   -  Cloud Computing ](Days/day31.md)
+- [✔️] ♾️ 32 > [Introduccion a la Criptografia -  Criptografia](Days/day32.md)
+- [✔️] ♾️ 33 > [Certificados en la practica - Criptografia](Days/day33.md)
+- [✔️] ♾️ 34 > [Usando la Criptografia como mecanismo de Autenticacion - Criptografia](Days/day34.md)
+- [✔️] ♾️ 35 > [Usando la Criptografia para generar Confidencialidad  - Criptografia](Days/day35.md)
+- [✔️] ♾️ 36 > [Usando la Criptografia para validar Integridad - Criptografia ](Days/day36.md)
+- [✔️] ♾️ 37 > [Introduccion ITSM, ITL y alternativas  - ITSM ](Days/day37.md)
+- [✔️] ♾️ 38 > [0](Days/day38.md)
  
  ### Use Git Effectively
  
