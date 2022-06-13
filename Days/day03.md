@@ -610,4 +610,4 @@ AWS services are grouped according to their primary functions. While some of the
 #
 
 
- See you on [Day 4](day04.md).  
+Seguimos en el [Día 4](day04.md).  
