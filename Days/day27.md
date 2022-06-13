@@ -1,5 +1,5 @@
 
-# Guía De Instalaciónde Docker para Windows
+# Guía De Instalación de Docker para Windows
 #
 ## ¿Como puedo descargar Docker?
 
