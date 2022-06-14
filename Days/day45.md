@@ -214,16 +214,27 @@ Para nuestro ejemplo no importa, pero en algunos proyectos serios, la práctica 
 
 
 ![Screenshot_16](https://user-images.githubusercontent.com/96561825/173659339-a032bb2a-94ea-42d8-91a5-c71cc1063a92.png)
+#
 
 ![Screenshot_14](https://user-images.githubusercontent.com/96561825/173669648-881ba4b5-63ad-4e33-82c2-e6c460dc1baf.png)
 
+#
+
 ![Screenshot_15](https://user-images.githubusercontent.com/96561825/173669670-1abe3e05-9c4e-450a-b777-f30f8806bd71.png)
+
+#
 
 ![Screenshot_16](https://user-images.githubusercontent.com/96561825/173669677-7d20c204-6ba2-4640-b940-06341877354f.png)
 
+#
+
 ![Screenshot_17](https://user-images.githubusercontent.com/96561825/173669683-a21748f7-8754-40bf-86a8-e78fa06629f1.png)
 
+#
+
 ![Screenshot_18](https://user-images.githubusercontent.com/96561825/173669692-ecf4a6ff-5a9e-4212-b7eb-de26e4e42d6a.png)
+
+#
 
 ![Screenshot_19](https://user-images.githubusercontent.com/96561825/173669703-5325e46a-a83a-4684-9281-4b2172b1533f.png)
 
