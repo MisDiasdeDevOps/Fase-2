@@ -50,7 +50,7 @@ Por lo tanto, cambie la región a la deseada (en nuestro caso, París porque es 
 #
 #
 
-## 3.2 Elegir el AMI
+## 3.2 Elegir el AMI  - AMAZON MACHINE IMAGE -
 En la siguiente pantalla, debemos elegir la imagen que nos gustaría usar para nuestra instancia EC2. 
 
 Igual, en el menú de la derecha, tenemos la opción de filtrar solo AMI de nivel libre. 
@@ -86,6 +86,9 @@ Sobre la columna de tipo de instancia, tiene una etiqueta verde que dice «Free 
 ![Screenshot_9](https://user-images.githubusercontent.com/96561825/173656491-d2fdc4d9-022b-45bf-8339-ad7b45fe1b8e.png)
 
 #
+
+![Screenshot_10](https://user-images.githubusercontent.com/96561825/173671433-32bbea55-cbed-4fab-ad36-a7fe0286a48b.png)
+
 #
 
 ## 3.3 Parar por un momento y entender el pago
@@ -126,6 +129,10 @@ En el momento en que escribo este tutorial, se le cobrará si:
 
 
 ![Screenshot_10](https://user-images.githubusercontent.com/96561825/173657081-e0f9dadf-ee48-43bb-b9fc-d0222b03443c.png)
+
+#
+
+
 
 Sin embargo, si bajamos la tabla, podemos ver que hay imágenes de precios muy altos por hora. 
 
@@ -180,6 +187,11 @@ La primera línea  -   #!/bin/bash    -  es realmente importante y si no está a
 La configuración debería verse así
 
 ![Screenshot_11](https://user-images.githubusercontent.com/96561825/173658074-09ed520e-760c-4085-9962-d7986ba952ff.png)
+
+# 
+
+![Screenshot_12](https://user-images.githubusercontent.com/96561825/173671661-db633f66-4b09-4e6e-99da-7072044ea4dc.png)
+
 
 #
 
@@ -252,7 +264,12 @@ En esta página vemos el resumen de nuestra instancia, haga clic en «botón de 
 
 ![Screenshot_20](https://user-images.githubusercontent.com/96561825/173659622-04b1af34-5cda-4cbb-b179-656466a0e22e.png)
 
-Eso será necesario si queremos conectarnos a la instancia desde nuestra máquina local. Porque, por supuesto, no tendremos una conexión de escritorio, por lo que esa sería la única forma de acceder a ella. Así que vamos a conectarnos a través de la línea de comando, y para identificarnos, necesitaríamos ese par clave-valor.
+Eso será necesario si queremos conectarnos a la instancia desde nuestra máquina local. 
+
+Porque, por supuesto, no tendremos una conexión de escritorio, por lo que esa sería la única forma de acceder a ella. 
+
+Así que vamos a conectarnos a través de la línea de comando, y para identificarnos, necesitaríamos ese par clave-valor.
+
 Entonces elija crear un nuevo par.
 
 Luego inserte el nombre del par, descárguelo e inicie la instancia.
@@ -298,7 +315,11 @@ De lo contrario, puede intentar acceder a él mientras todavía se está inician
 
 Tenga en cuenta que cada vez que reiniciemos nuestra instancia, recibirá una IP pública diferente.
 
+#
+
 ![Screenshot_24](https://user-images.githubusercontent.com/96561825/173660445-407c63b0-1314-422a-9852-5e65a279dd32.png)
+
+#
 
 Bien, acabamos de acceder a la página web que creamos usando el script de User Data.
 
@@ -339,7 +360,8 @@ Deberías recibir el siguiente resultado
 #
 #
 
-## 6. onclusión
+## 6. Conclusión
+
 
 Acabamos de crear nuestra primera instancia de EC2 en AWS, pasando por el proceso lentamente con la comprensión de los puntos clave.
 
@@ -355,22 +377,27 @@ Cuando termine de usar las instancias, no olvide detenerlas para evitar cargos a
 
 Por ultimo, crearemos una snapshot, atendiendo a las siguientes instrucciones accedemos a AWS > Services > EC2 > Volumes buscamos el servidor al que queremos realizar
 el snapshot e identificamos los volúmenes asociados a la instancia.
-
-
-![Screenshot_32](https://user-images.githubusercontent.com/96561825/173666902-e567c29e-f0ab-46aa-bf14-ac8b467911f2.png)
-
 #
+
+
+
+![Screenshot_31](https://user-images.githubusercontent.com/96561825/173672944-a25f2e4b-8e29-4c22-b2e1-17f836b83769.png)
+#
+
 
 Una vez anotados los volumenes nos vamos a la pestaña snapshost >
 
 ![Screenshot_33](https://user-images.githubusercontent.com/96561825/173666863-e236bd01-b2b0-479f-ba2b-c69a0d8b974b.png)
 
 #
-Nos abre un asistente de configuración en el que indicamos el volumen y asignamos un nombre y una descripción.
 
+Nos abre un asistente de configuración en el que indicamos el volumen y asignamos un nombre y una descripción.
 
 ![Screenshot_34](https://user-images.githubusercontent.com/96561825/173666839-fd3d64f9-47af-41b5-b493-b5e0520a3f31.png)
 
+#
+
+![Screenshot_32](https://user-images.githubusercontent.com/96561825/173673015-a198dd39-38f3-4289-8a04-b8dc03048c81.png)
 
 #
 #
