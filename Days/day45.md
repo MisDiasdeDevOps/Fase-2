@@ -22,8 +22,7 @@ Lo que nos interesa a nosotros es EC2.
 Vamos a clicar allí.
 
 
-
-
+![Screenshot_5](https://user-images.githubusercontent.com/96561825/173639081-42b382e1-5abd-4265-bdcf-a3830c3a8190.png)
 
 
 Ahora estamos ubicados en el panel de EC2. 
@@ -34,6 +33,23 @@ encuentra en la esquina superior derecha.
 Cuando proceda a crear una instancia EC2, se ubicará físicamente en el Centro de datos de la región que haya elegido desde arriba. 
 
 Por lo tanto, cambie la región a la deseada (en nuestro caso, París porque es la más cercana) y haga clic en «Launch Instance» como se muestra en la imagen a continuación.
+
+#
+
+3.2 Elegir el AMI
+En la siguiente pantalla, debemos elegir la imagen que nos gustaría usar para nuestra
+instancia EC2. Igual, en el menú de la derecha, tenemos la opción de filtrar solo AMI de
+nivel libre. Entonces, cuando ingresamos con fines de investigación, hacemos clic en esa
+casilla de verificación así que solo aparecen imágenes de nivel libre. Después,
+seleccionamos la AMI de Amazon Linux.
+
+
+![Screenshot_6](https://user-images.githubusercontent.com/96561825/173639157-45d7ce89-3a36-4022-a6d7-637f134864e7.png)
+
+
+
+
+
 
 
 
