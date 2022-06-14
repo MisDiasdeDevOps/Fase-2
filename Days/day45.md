@@ -351,7 +351,7 @@ Ahora podemos proceder a ejemplos más específicos y ampliar nuestro conocimien
 
 Cuando termine de usar las instancias, no olvide detenerlas para evitar cargos adicionales
 
-
+#
 
 Por ultimo, crearemos una snapshot, atendiendo a las siguientes instrucciones accedemos a AWS > Services > EC2 > Volumes buscamos el servidor al que queremos realizar
 el snapshot e identificamos los volúmenes asociados a la instancia.
@@ -359,12 +359,13 @@ el snapshot e identificamos los volúmenes asociados a la instancia.
 
 ![Screenshot_32](https://user-images.githubusercontent.com/96561825/173666902-e567c29e-f0ab-46aa-bf14-ac8b467911f2.png)
 
+#
 
 Una vez anotados los volumenes nos vamos a la pestaña snapshost >
 
 ![Screenshot_33](https://user-images.githubusercontent.com/96561825/173666863-e236bd01-b2b0-479f-ba2b-c69a0d8b974b.png)
 
-
+#
 Nos abre un asistente de configuración en el que indicamos el volumen y asignamos un nombre y una descripción.
 
 
