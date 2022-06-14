@@ -170,5 +170,5 @@ Aquí recibimos la confirmacion de la baja.
 #
 #
 #
-Seguimos en el [Día 42](day042.md)
+Seguimos en el [Día 42](day42.md)
 
