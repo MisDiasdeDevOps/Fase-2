@@ -6,12 +6,12 @@ En este desafio deberemos realizar esta actividad y entregar al tutor nuestra im
 
 #
 
-3. Crear una instancia de EC2
+### Crear una instancia de EC2
 
 #
 #
 
-3.1 Encuentre y elija crear una instancia EC2
+## 3.1 Encuentre y elija crear una instancia EC2
 
 
 Desde la consola de gestión (AWS management console) podemos visualizar distintas opciones o servicios que nos ofrece AWS. 
@@ -38,8 +38,7 @@ Ahora estamos ubicados en el panel de EC2.
 
 #
 
-Antes de ingresar al proceso de inicio de la instancia, hay otra configuración no tan obvia que debemos establecer – establecer la región donde queremos que se cree nuestra instancia. La región activa actual se
-encuentra en la esquina superior derecha. 
+Antes de ingresar al proceso de inicio de la instancia, hay otra configuración no tan obvia que debemos establecer – establecer la región donde queremos que se cree nuestra instancia. La región activa actual se encuentra en la esquina superior derecha. 
 
 Cuando proceda a crear una instancia EC2, se ubicará físicamente en el Centro de datos de la región que haya elegido desde arriba. 
 
@@ -49,12 +48,15 @@ Por lo tanto, cambie la región a la deseada (en nuestro caso, París porque es 
 
 #
 #
-3.2 Elegir el AMI
-En la siguiente pantalla, debemos elegir la imagen que nos gustaría usar para nuestra
-instancia EC2. Igual, en el menú de la derecha, tenemos la opción de filtrar solo AMI de
-nivel libre. Entonces, cuando ingresamos con fines de investigación, hacemos clic en esa
-casilla de verificación así que solo aparecen imágenes de nivel libre. Después,
-seleccionamos la AMI de Amazon Linux.
+
+## 3.2 Elegir el AMI
+En la siguiente pantalla, debemos elegir la imagen que nos gustaría usar para nuestra instancia EC2. 
+
+Igual, en el menú de la derecha, tenemos la opción de filtrar solo AMI de nivel libre. 
+
+Entonces, cuando ingresamos con fines de investigación, hacemos clic en esa casilla de verificación así que solo aparecen imágenes de nivel libre. 
+
+Después, seleccionamos la AMI de Amazon Linux.
 
 ![Screenshot_8](https://user-images.githubusercontent.com/96561825/173654869-e8727002-86d5-46e5-a40f-3a39c980f66b.png)
 
@@ -64,7 +66,15 @@ seleccionamos la AMI de Amazon Linux.
 
 #
 
-El siguiente paso es elegir nuestro tipo de instancia (el AMI). Podemos ver que hay muchos tipos con diferentes características, para diferentes necesidades. A medida que avanzamos en la lista, se vuelven cada vez más caros. Observe de cerca el AMI preseleccionado automáticamente. Sobre la columna de tipo de instancia, tiene una etiqueta verde que dice «Free tier eligible».
+El siguiente paso es elegir nuestro tipo de instancia (el AMI). 
+
+Podemos ver que hay muchos tipos con diferentes características, para diferentes necesidades. 
+
+A medida que avanzamos en la lista, se vuelven cada vez más caros. 
+
+Observe de cerca el AMI preseleccionado automáticamente.
+
+Sobre la columna de tipo de instancia, tiene una etiqueta verde que dice «Free tier eligible».
 
 
 ![Screenshot_9](https://user-images.githubusercontent.com/96561825/173656491-d2fdc4d9-022b-45bf-8339-ad7b45fe1b8e.png)
@@ -72,11 +82,13 @@ El siguiente paso es elegir nuestro tipo de instancia (el AMI). Podemos ver que 
 #
 #
 
-### 3.3 Parar por un momento y entender el pago
+## 3.3 Parar por un momento y entender el pago
 
 La etiqueta dice: «Las micro instancias son elegibles para el nivel de uso gratuito de AWS.
 
-Durante los primeros 12 meses posteriores a la fecha de registro de AWS, obtendrá hasta 750 horas de micro instancias cada mes. Cuando su nivel de uso gratuito caduca o si su uso excede las restricciones del nivel gratuito, usted paga tarifas estándar de servicio de pago por uso. 
+Durante los primeros 12 meses posteriores a la fecha de registro de AWS, obtendrá hasta 750 horas de micro instancias cada mes. 
+
+Cuando su nivel de uso gratuito caduca o si su uso excede las restricciones del nivel gratuito, usted paga tarifas estándar de servicio de pago por uso. 
 
 Obtenga más información sobre la elegibilidad y restricciones del nivel de uso gratuito» 
 
@@ -99,7 +111,9 @@ Por lo tanto, ingrese el enlace que he proporcionado y asegúrese de conocer los
 
 ¿cómo saber el precio de un AMI en particular? – 
 
-Para averiguar el precio del AMI, visitamos la página de precios de AWS, o volvemos al menú superior Pricing -> Learn More About AWS pricing. Desplácese hacia abajo hasta la sección «Services Pricing» de la página y elija EC2″
+Para averiguar el precio del AMI, visitamos la página de precios de AWS, o volvemos al menú superior Pricing -> Learn More About AWS pricing.
+
+Desplácese hacia abajo hasta la sección «Services Pricing» de la página y elija EC2″
 
 
 Aquí debemos elegir la región en la que estamos interesados en los precios y luego encontrar el AMI que queremos usar en la tabla. En nuestro caso, estamos buscando t2-micro. Como podemos ver, si los primeros 12 meses gratuitos caducan o superamos las limitaciones de AWS, se nos cobrará 0.0116 USD por hora.
@@ -123,7 +137,9 @@ Verá la siguiente pantalla que nos brinda la oportunidad de configurar los deta
 
 Para este tutorial, no necesitamos sumergirnos en esto. Sin embargo, quiero mostrarle los detalles avanzados de esta página, en particular el User Data.
 
-EC2 User Data representa un script que se ejecutará solo una vez después de que la máquina se inicie y nunca se ejecutará nuevamente. Es realmente fácil automatizar algunas tareas de arranque como instalar software particular, actualizaciones necesarias, descargando archivos comunes de internet etc.
+EC2 User Data representa un script que se ejecutará solo una vez después de que la máquina se inicie y nunca se ejecutará nuevamente. 
+
+Es realmente fácil automatizar algunas tareas de arranque como instalar software particular, actualizaciones necesarias, descargando archivos comunes de internet etc.
 
 Importante: El User Data Script se ejecuta como root. Entonces, cualquier comando tendrá derechos de sudo, así que tenga cuidado.
 
@@ -162,12 +178,13 @@ podemos omitir por ahora. Así que vaya al paso 6
 «Configure Security Group».
 
 
-Lo importante es saber que el storage que tenemos (el
-storage local de archivos de la instancia) no persiste. Eso
-significa que si cierra la instancia, se pierde.
+Lo importante es saber que el storage que tenemos (el storage local de archivos de la instancia) no persiste. 
 
-Hay soluciones a este problema. Por ejemplo, podemos
-usar el Amazon Simple Storage Service (S3).
+Eso significa que si cierra la instancia, se pierde.
+
+Hay soluciones a este problema.
+
+Por ejemplo, podemos usar el Amazon Simple Storage Service (S3).
 
 #
 #
