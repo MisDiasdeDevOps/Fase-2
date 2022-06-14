@@ -58,7 +58,7 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ☁️ 42 > [3 - Máquinas Virtuales en AZURE](Days/day42.md)
 - [✔️] ☁️ 43 > [4 - Sitio Estático en AWS](Days/day43.md)
 - [✔️] ☁️ 44 > [5 - CREACION DEL BUCKET ](Days/day44.md)
-- [✔️] ☁️ 45 > [6 - Creacion Instancia EC2 Con User Script] (Days/day45.md)
+- [✔️] ☁️ 45 > [6 - Creacion Instancia EC2 Con User Script](Days/day45.md)
 - [✔️] ☁️ 46 > [7 - 0](Days/day46.md)
 - [✔️] ☁️ 47 > [8 - 0](Days/day47.md)
 - [✔️] ☁️ 48 > [9 - Bases de Datos con RDS en AWS](Days/day48.md)
