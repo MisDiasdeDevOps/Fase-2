@@ -1,28 +1,24 @@
 
-BootCamp DevOps Engineer
+## BootCamp DevOps Engineer
 
 
-Máquinas Virtuales en
-AZURE
+## Máquinas Virtuales en AZURE
 
 
 
-Desafío 3 Azure
-Desafío 1 Semana 1 
-Máquinas Virtuales en Azure
-Alumno  Marcelo Piroddi 
-Profesores Gino Rojo – Gastón Baravalle
+### Desafío 3 Azure - Desafío 1 Semana 1  - Máquinas Virtuales en Azure  -  Profesores Gino Rojo – Gastón Baravalle
 
 #
 #
 
 ### Inicio de sesion en Azure
+#
 
-Paso 1
+### Paso 1
 
 Nos dirigimos al portal de Azure ubicado en https://portal.azure.com ,  e iniciamos sesion.
 
-Paso 2
+### Paso 2
 
 Escribimos en la seccion de busqueda ; “maquinas virtuales” , a partir de alli seleccionamos “Crear” y se abrira la pagina con los detalles para la creacion de una maquina virtual.
 
@@ -32,7 +28,7 @@ Si hemos procedido correctamente veremos una pagina con el texto “Crear de maq
 ![image](https://user-images.githubusercontent.com/96561825/173630012-76187b1d-0000-4436-9b2d-7230a5172746.png)
 
 #
-Paso 3
+### Paso 3
 
 Recién comenzamos, debemos seleccionar la suscripción indicada y a esta máquina virtual debemos darle nombre. Usaremos los detalles que nos informa la imagen para completar los espacios.
 
@@ -41,7 +37,7 @@ Recién comenzamos, debemos seleccionar la suscripción indicada y a esta máqui
 
 #
 
-Paso 4
+### Paso 4
 
 Completamos los detalles de instancia, guiándonos con los datos como aparecen en la imagen.
 
@@ -49,7 +45,7 @@ Completamos los detalles de instancia, guiándonos con los datos como aparecen e
 
 #
 
-Paso 5
+### Paso 5
 
 En la sección cuenta de administrador darle un usuario y contraseña. Usamos los datos que aparecen en la imagen.
 
@@ -57,7 +53,7 @@ En la sección cuenta de administrador darle un usuario y contraseña. Usamos lo
 
 #
 
-Pasó 6
+### Pasó 6
 
 Habilitamos en la sección “Reglas de Puerto”, los puertos RDP 3389 y HTTP 80.
 
@@ -65,7 +61,7 @@ Habilitamos en la sección “Reglas de Puerto”, los puertos RDP 3389 y HTTP 8
 
 #
 
-Paso 7
+### Paso 7
 
 A veces da error, volver a insistir. Refrescar la página es también una opción.
 
@@ -77,7 +73,7 @@ A veces Azure tiene estos problemas.
  
  #
  
-Paso 8
+### Paso 8
 
 Ya estamos pronto a finalizar, Máquina virtual creada
 
@@ -104,7 +100,7 @@ Una vez finalizada la implementación, seleccionamos “Ir al recurso”
 #
 #
 
-Ejercicio Conexión a la máquina virtual
+### Ejercicio Conexión a la máquina virtual
 
 Vamos a crear una conexión a Escritorio remoto en la máquina virtual,  lo que nos permitirá conectarnos a la máquina virtual desde un equipo  de Windows.
 
@@ -151,13 +147,16 @@ Al conectarse podremos ver la siguiente imagen .
 #
 #
 
-PAGINA PRINCIPAL DE
- IIS
+### PAGINA PRINCIPAL DE  IIS
+
 Vamos al portal de Azure, seleccionamos  la máquina virtual que creamos, en la información general de la máquina virtual,  mantenemos  el mouse sobre la dirección IP para mostrar el texto “Copiar al Portapapeles”.
+
 Copiamos la dirección IP y la pegamos en una nueva pestaña de nuestro explorador.
+
 Se abrirá la página de bienvenida de IIS predeterminada, y debería tener el siguiente aspecto .
 
 Pero lamentablemente eso no paso.
+
 Usamos dos exploradores diferentes, Google Chrome y Microsoft Edge, con resultado negativo.
 
 
@@ -287,13 +286,18 @@ Y el resultado fue
 
 ![image](https://user-images.githubusercontent.com/96561825/173632181-84ebe601-28fd-416a-a5f0-3f7451bae330.png)
 
+
+
 Resultado negativo.
 
 Seguimos investigando,  ampliaremos más adelante ya que esta última etapa del desafío nos está consumiendo demasiado tiempo en un error que no hemos podido resolver hasta ahora.
 
-Hoy jueves temprano,  quisimos empezar en la mañana con pruebas para estar preparados y poder tener desplegada y lista una VM para la reunión con Gastón Baravalle,  para tratar de buscar soluciones al problema.  Lamentablemente eso no ocurrió,  recién a la tarde se nos habilito el patrocinio de parte de Microsoft gracias a la gentileza de Paola.
+El dia jueves temprano,  quisimos empezar en la mañana con pruebas para estar preparados y poder tener desplegada y lista una VM para la reunión con Gastón Baravalle,  para tratar de buscar soluciones al problema. 
+
+Lamentablemente eso no ocurrió,  recién a la tarde se nos habilito el patrocinio de parte de Microsoft gracias a la gentileza de Paola.
 
 Jueves 22:30hs    -26.05.2022
+
 PS: Quedo en volver a probar más adelante y rever donde está el error, por ahora culmino aquí para no seguir retrasándome. 
 
 #
@@ -302,59 +306,3 @@ PS: Quedo en volver a probar más adelante y rever donde está el error, por aho
 #
 #
 Seguimos en el [Día 43](day43.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
