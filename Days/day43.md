@@ -28,7 +28,9 @@ Le damos un nombre único y dejamos la región por defecto.
 
 #
 
-Un sitio web es accesible por cualquier usuario por lo que debemos permitir el acceso público a nuestro bucket. Desmarcamos el bloqueo del acceso público y podemos dejar el resto de la configuración por defecto.
+Un sitio web es accesible por cualquier usuario por lo que debemos permitir el acceso público a nuestro bucket.
+
+Desmarcamos el bloqueo del acceso público y podemos dejar el resto de la configuración por defecto.
 
 ![image](https://user-images.githubusercontent.com/96561825/173635548-d1d9e179-6f3e-4a1e-b921-c144fab04d46.png)
 
@@ -114,7 +116,7 @@ Al finalizar veremos la confirmación
 
 #
 
-Una vez configurado los permisos, procedemos a subir nuestros ficheros. 
+Una vez configurado los permisos, procedemos a subir nuestros ficheros.
 
 Podemos arrastrar los ficheros a la zona del bucket o usar el botón cargar y seleccionar los ficheros.
 
@@ -126,7 +128,9 @@ Le damos a cargar y volvemos al bucket.
 
 #
 
-Una vez configurado los permisos, procedemos a subir nuestros ficheros. Podemos arrastrar los ficheros a la zona del bucket o usar el botón cargar y seleccionar los ficheros. Le damos a cargar y volvemos al bucket.
+Una vez configurado los permisos, procedemos a subir nuestros ficheros. 
+
+Podemos arrastrar los ficheros a la zona del bucket o usar el botón cargar y seleccionar los ficheros. Le damos a cargar y volvemos al bucket.
 
 ![image](https://user-images.githubusercontent.com/96561825/173636283-e253c512-eaf6-45f5-b975-146c5ef4a2c9.png)
 
