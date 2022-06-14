@@ -61,7 +61,8 @@ Después, seleccionamos la AMI de Amazon Linux.
 ![Screenshot_8](https://user-images.githubusercontent.com/96561825/173654869-e8727002-86d5-46e5-a40f-3a39c980f66b.png)
 
 
-### Importante: Que elijamos usar AMI solo con el nivel gratuito no significa que estemos exentos de pagar por este servicio. Cada AMI tiene diferente «instance type» y algunas de ellas son de pago, otras no. 
+### Importante: Que elijamos usar AMI solo con el nivel gratuito no significa que estemos exentos de pagar por este servicio.
+### Cada AMI tiene diferente «instance type» y algunas de ellas son de pago, otras no. 
 ### Podemos distinguir si un AMI es parte del nivel libre por la etiqueta que buscaremos a continuación.
 
 #
@@ -152,30 +153,30 @@ Desplácese hacia abajo hasta la parte inferior de la página actual y abra las 
 Luego inserte la siguiente secuencia de comandos en el cuadro de entrada de user data.
 
 
-La primera línea
+La primera línea  -   #!/bin/bash    -  es realmente importante y si no está allí, las siguientes líneas no se leerán.
 
-#!/bin/bash es realmente importante y si no está allí, las siguientes líneas no se leerán.
 
-#!/bin/bash
-sudo yum update -y sudo yum -y install httpd -y sudo service httpd start echo "Hello world
-from EC2 $(hostname -f)" > /var/www/html/index.html
+***#!/bin/bash***
 
-#!/bin/bash
-sudo yum update -y
-sudo yum -y install httpd -y
-sudo service httpd start
-echo "Hello world from EC2 $(hostname -f)"
-/var/www/html/index.html
+***sudo yum update -y*** 
 
+***sudo yum -y install httpd -y*** 
+
+***sudo service httpd start*** 
+
+***echo "Hello world from EC2 $(hostname -f)" > /var/www/html/index.html***
+
+
+#
 La configuración debería verse así
 
 ![Screenshot_11](https://user-images.githubusercontent.com/96561825/173658074-09ed520e-760c-4085-9962-d7986ba952ff.png)
 
+#
 
+Los siguientes dos pasos «Add Storage» y «Add Tags» los podemos omitir por ahora. 
 
-Los siguientes dos pasos «Add Storage» y «Add Tags» los
-podemos omitir por ahora. Así que vaya al paso 6
-«Configure Security Group».
+Así que vaya al paso 6 «Configure Security Group».
 
 
 Lo importante es saber que el storage que tenemos (el storage local de archivos de la instancia) no persiste. 
@@ -191,10 +192,12 @@ Por ejemplo, podemos usar el Amazon Simple Storage Service (S3).
 ### 3.5 Configurar Security Group 
 
 Un grupo de seguridad actúa como un firewall virtual para su instancia para controlar el tráfico entrante y saliente. 
+
 Si no tiene ningún grupo de seguridad, le pedirá que cree uno de inmediato.
 
-Entonces, de manera predeterminada, hemos habilitado el acceso SSH a la máquina, y agregamos un HTTP para que podamos acceder a nuestra página web. Para hacerlo, siga
-los pasos de la captura de pantalla a continuación.  
+Entonces, de manera predeterminada, hemos habilitado el acceso SSH a la máquina, y agregamos un HTTP para que podamos acceder a nuestra página web. 
+
+Para hacerlo, siga los pasos de la captura de pantalla a continuación.  
 
 Tenga en cuenta que con las flechas 4 y 5 estamos configurando que podemos acceder a la máquina a través de SSH y HTTP desde cualquier otra dirección IP.
 
@@ -247,8 +250,8 @@ Allí podemos ver su estado, su IP pública e información adicional.
 Además, podemos realizar acciones como start, stop o terminate (es igual a eliminar). La instancia no tendrá nombre, así que simplemente haga clic en la columna de
 nombre para cambiarla.
 
+![Screenshot_23](https://user-images.githubusercontent.com/96561825/173665814-26daeb62-e15b-412b-a44b-e8d44b68662e.png)
 
-![Screenshot_14](https://user-images.githubusercontent.com/96561825/173660235-6d2d4389-a1ad-4d9f-b486-b8046079fb5a.png)
 
 
 Entonces, para acceder a nuestro servidor web, simplemente debemos copiar la dirección IP pública de la máquina y pegarla en el navegador. Es importante que se
@@ -266,10 +269,75 @@ Bien, acabamos de acceder a la página web que creamos usando el script de User 
 #
 #
 ## 5. SSH Access
-Para acceder a la máquina a través de SSH, abre la
-terminal y ejecuta el siguiente comando:
-Para acceder a la máquina a través de SSH, abre la
-terminal y ejecuta el siguiente comando:
+
+Para acceder a la máquina a través de SSH, abre la terminal y ejecuta el siguiente comando: Para acceder a la máquina a través de SSH, abre la terminal y ejecuta el siguiente comando:
+
+***ssh -i /path/to/key/value/pair/my_instance_access.pem***
+***ec2-user@instance_public_ip***
+
+![Screenshot_25](https://user-images.githubusercontent.com/96561825/173665999-ba9d4308-1576-49d3-8c75-8fc4671400e9.png)
+
+
+Una vez que accedemos a la máquina, podemos verificar que lo hemos hecho todo correctamente, ejecuta el siguiente comando
+
+
+***cat /var/www/html/index.html***
+
+
+![Screenshot_26](https://user-images.githubusercontent.com/96561825/173666077-c1ff7cf7-08a6-4537-9d46-113d1c15e865.png)
+
+
+### Importante: En algunos casos, es posible que salga un error indicando que no tienes permisos para acceder al archivo «.pem». Entonces, ejecute chmod 400 contra el archivo. Establecerá – a + rwx, u-wx, g-rwx, o-rwx. Esto significa que el usuario / propietario puede leer, no puede escribir y no puede ejecutar. Los grupos y los otros usuarios no tienen ningún permiso.
+
+Deberías recibir el siguiente resultado
+
+
+![Screenshot_27](https://user-images.githubusercontent.com/96561825/173666404-36b1c33d-6e8e-4f71-9bd9-8ea3aa057b87.png)
+
+#
+#
+
+## 6. onclusión
+
+Acabamos de crear nuestra primera instancia de EC2 en AWS, pasando por el proceso lentamente con la comprensión de los puntos clave.
+
+Además, hemos entendido cómo funcionan los precios. 
+
+Cómo acceder a la máquina a través de ssh y configurar el acceso SSH y HTTP a través de la configuración del grupo de seguridad.
+
+Ahora podemos proceder a ejemplos más específicos y ampliar nuestro conocimiento de AWS. 
+
+Cuando termine de usar las instancias, no olvide detenerlas para evitar cargos adicionales
+
+
+
+Por ultimo, crearemos una snapshot, atendiendo a las siguientes instrucciones accedemos a AWS > Services > EC2 > Volumes buscamos el servidor al que queremos realizar
+el snapshot e identificamos los volúmenes asociados a la instancia.
+
+
+![Screenshot_32](https://user-images.githubusercontent.com/96561825/173666902-e567c29e-f0ab-46aa-bf14-ac8b467911f2.png)
+
+
+Una vez anotados los volumenes nos vamos a la pestaña snapshost >
+
+![Screenshot_33](https://user-images.githubusercontent.com/96561825/173666863-e236bd01-b2b0-479f-ba2b-c69a0d8b974b.png)
+
+
+Nos abre un asistente de configuración en el que indicamos el volumen y asignamos un nombre y una descripción.
+
+
+![Screenshot_34](https://user-images.githubusercontent.com/96561825/173666839-fd3d64f9-47af-41b5-b493-b5e0520a3f31.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
