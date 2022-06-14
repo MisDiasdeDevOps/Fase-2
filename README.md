@@ -53,17 +53,17 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 
  ## Desafios Semanales
  
-- [✔️] ☁️ 40 > [CREACION y SECURACION de tu CUENTA](Days/day40.md)
-- [✔️] ☁️ 41 > [CREA TÚ MAQUINA VIRTUAL](Days/day41.md)
-- [✔️] ☁️ 42 > [0](Days/day42.md)
-- [✔️] ☁️ 43 > [0](Days/day43.md)
-- [✔️] ☁️ 44 > [0](Days/day44.md)
-- [✔️] ☁️ 45 > [0](Days/day45.md)
-- [✔️] ☁️ 46 > [0](Days/day46.md)
-- [✔️] ☁️ 47 > [0](Days/day47.md)
-- [✔️] ☁️ 48 > [0](Days/day48.md)
-- [✔️] ☁️ 49 > [0](Days/day49.md)
-- [✔️] ☁️ 50 > [0](Days/day50.md)
+- [✔️] ☁️ 40 > [1 - CREACION y SECURACION de tu CUENTA](Days/day40.md)
+- [✔️] ☁️ 41 > [2 - CREA TÚ MAQUINA VIRTUAL](Days/day41.md)
+- [✔️] ☁️ 42 > [3 - Máquinas Virtuales en AZURE](Days/day42.md)
+- [✔️] ☁️ 43 > [4 - Sitio Estático en AWS](Days/day43.md)
+- [✔️] ☁️ 44 > [5 - CREACION DEL BUCKET ](Days/day44.md)
+- [✔️] ☁️ 45 > [6 - Creacion Instancia EC2 Con User Script] (Days/day45.md)
+- [✔️] ☁️ 46 > [7 - 0](Days/day46.md)
+- [✔️] ☁️ 47 > [8 - 0](Days/day47.md)
+- [✔️] ☁️ 48 > [9 - Bases de Datos con RDS en AWS](Days/day48.md)
+- [✔️] ☁️ 49 > [10 - ](Days/day49.md)
+- [✔️] ☁️ 50 > [11 - 0](Days/day50.md)
 
 
 
