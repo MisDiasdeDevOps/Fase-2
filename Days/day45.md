@@ -295,6 +295,8 @@ Bien, acabamos de acceder a la página web que creamos usando el script de User 
 #
 #
 ## 5. SSH Access
+#
+
 
 Para acceder a la máquina a través de SSH, abre la terminal y ejecuta el siguiente comando: Para acceder a la máquina a través de SSH, abre la terminal y ejecuta el siguiente comando:
 
@@ -313,7 +315,10 @@ Una vez que accedemos a la máquina, podemos verificar que lo hemos hecho todo c
 ![Screenshot_26](https://user-images.githubusercontent.com/96561825/173666077-c1ff7cf7-08a6-4537-9d46-113d1c15e865.png)
 
 
-### Importante: En algunos casos, es posible que salga un error indicando que no tienes permisos para acceder al archivo «.pem». Entonces, ejecute chmod 400 contra el archivo. Establecerá – a + rwx, u-wx, g-rwx, o-rwx. Esto significa que el usuario / propietario puede leer, no puede escribir y no puede ejecutar. Los grupos y los otros usuarios no tienen ningún permiso.
+### Importante: 
+### En algunos casos, es posible que salga un error indicando que no tienes permisos para acceder al archivo «.pem». Entonces, ejecute chmod 400 contra el archivo.
+### Establecerá – a + rwx, u-wx, g-rwx, o-rwx. Esto significa que el usuario / propietario puede leer, no puede escribir y no puede ejecutar. 
+### Los grupos y los otros usuarios no tienen ningún permiso.
 
 Deberías recibir el siguiente resultado
 
@@ -361,5 +366,4 @@ Nos abre un asistente de configuración en el que indicamos el volumen y asignam
 #
 #
 
-
-
+Seguimos en el [Día 46](day46.md)
