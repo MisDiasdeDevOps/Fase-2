@@ -1,5 +1,6 @@
 
-### Desafio AWS - Creación de Instancia EC2 Con User Script y Creacion de Snapshot
+# Desafio AWS -
+# Creación de Instancia EC2 Con User Script y Creacion de Snapshot
 
 
 En este desafio deberemos realizar esta actividad y entregar al tutor nuestra implementacion en un archivo zip junto con capturas de pantalla de la realizacion (Debe observarse la cuenta del alumno)
@@ -61,7 +62,11 @@ Después, seleccionamos la AMI de Amazon Linux.
 ![Screenshot_8](https://user-images.githubusercontent.com/96561825/173654869-e8727002-86d5-46e5-a40f-3a39c980f66b.png)
 
 
-### Importante: Que elijamos usar AMI solo con el nivel gratuito no significa que estemos exentos de pagar por este servicio.
+#
+
+
+### Importante:
+### Que elijamos usar AMI solo con el nivel gratuito no significa que estemos exentos de pagar por este servicio.
 ### Cada AMI tiene diferente «instance type» y algunas de ellas son de pago, otras no. 
 ### Podemos distinguir si un AMI es parte del nivel libre por la etiqueta que buscaremos a continuación.
 
@@ -95,29 +100,29 @@ Obtenga más información sobre la elegibilidad y restricciones del nivel de uso
 
 Las siguientes dos preguntas que surgen en nuestras mentes son:
 
-● ¿pero cuáles son las otras limitaciones? 
+● ¿Pero cuáles son las otras limitaciones? 
 
 En el momento en que escribo este tutorial, se le cobrará si:
 
-○ Superamos más de 750 horas de tiempo de actividad por mes o la configuración de hardware de la máquina (RAM, cpu credits, .etc).
-○ Los 12 meses de free plan han terminado.
-○ Usando un AMI que NO tiene la etiqueta que indica que es parte del plan gratuito.
+- Superamos más de 750 horas de tiempo de actividad por mes o la configuración de hardware de la máquina (RAM, cpu credits, .etc).
+- Los 12 meses de free plan han terminado.
+- Usando un AMI que NO tiene la etiqueta que indica que es parte del plan gratuito.
 
-●●
-Para conocer las otras limitaciones que nos ofrece el nivel gratuito de cada servicio de AWS, le sugiero que visite el sitio web de AWS y haga clic en el menu Pricing -> AWS Free Tier.
+- Para conocer las otras limitaciones que nos ofrece el nivel gratuito de cada servicio de AWS, le sugiero que visite el sitio web de AWS y haga clic en el menu Pricing -> AWS Free Tier.
 
-El precio y las limitaciones pueden cambiar para cuando lea este tutorial. 
+- El precio y las limitaciones pueden cambiar para cuando lea este tutorial. 
 
-Por lo tanto, ingrese el enlace que he proporcionado y asegúrese de conocer los límites del servicio que está utilizando.
+- Por lo tanto, ingrese el enlace que he proporcionado y asegúrese de conocer los límites del servicio que está utilizando.
 
-¿cómo saber el precio de un AMI en particular? – 
+- ¿cómo saber el precio de un AMI en particular? – 
 
-Para averiguar el precio del AMI, visitamos la página de precios de AWS, o volvemos al menú superior Pricing -> Learn More About AWS pricing.
+- Para averiguar el precio del AMI, visitamos la página de precios de AWS, o volvemos al menú superior Pricing -> Learn More About AWS pricing.
 
-Desplácese hacia abajo hasta la sección «Services Pricing» de la página y elija EC2″
+- Desplácese hacia abajo hasta la sección «Services Pricing» de la página y elija EC2″
 
+- Aquí debemos elegir la región en la que estamos interesados en los precios y luego encontrar el AMI que queremos usar en la tabla. 
 
-Aquí debemos elegir la región en la que estamos interesados en los precios y luego encontrar el AMI que queremos usar en la tabla. En nuestro caso, estamos buscando t2-micro. Como podemos ver, si los primeros 12 meses gratuitos caducan o superamos las limitaciones de AWS, se nos cobrará 0.0116 USD por hora.
+- En nuestro caso, estamos buscando t2-micro. Como podemos ver, si los primeros 12 meses gratuitos caducan o superamos las limitaciones de AWS, se nos cobrará 0.0116 USD por hora.
 
 
 ![Screenshot_10](https://user-images.githubusercontent.com/96561825/173657081-e0f9dadf-ee48-43bb-b9fc-d0222b03443c.png)
@@ -125,6 +130,8 @@ Aquí debemos elegir la región en la que estamos interesados en los precios y l
 Sin embargo, si bajamos la tabla, podemos ver que hay imágenes de precios muy altos por hora. 
 
 Por lo tanto, una buena práctica es siempre investigar el precio de un AMI antes de comenzar a usarlo, para que no tengamos sorpresas al final del mes!
+
+
 
 
 #
@@ -142,7 +149,9 @@ EC2 User Data representa un script que se ejecutará solo una vez después de qu
 
 Es realmente fácil automatizar algunas tareas de arranque como instalar software particular, actualizaciones necesarias, descargando archivos comunes de internet etc.
 
-Importante: El User Data Script se ejecuta como root. Entonces, cualquier comando tendrá derechos de sudo, así que tenga cuidado.
+***Importante: El User Data Script se ejecuta como root.*** 
+
+Entonces, cualquier comando tendrá derechos de sudo, así que tenga cuidado.
 
 Así que desplácese hacia abajo hasta la configuración avanzada de la pantalla actual y elija ejecutar el script como texto.
 
@@ -206,6 +215,21 @@ Para nuestro ejemplo no importa, pero en algunos proyectos serios, la práctica 
 
 ![Screenshot_16](https://user-images.githubusercontent.com/96561825/173659339-a032bb2a-94ea-42d8-91a5-c71cc1063a92.png)
 
+![Screenshot_14](https://user-images.githubusercontent.com/96561825/173669648-881ba4b5-63ad-4e33-82c2-e6c460dc1baf.png)
+
+![Screenshot_15](https://user-images.githubusercontent.com/96561825/173669670-1abe3e05-9c4e-450a-b777-f30f8806bd71.png)
+
+![Screenshot_16](https://user-images.githubusercontent.com/96561825/173669677-7d20c204-6ba2-4640-b940-06341877354f.png)
+
+![Screenshot_17](https://user-images.githubusercontent.com/96561825/173669683-a21748f7-8754-40bf-86a8-e78fa06629f1.png)
+
+![Screenshot_18](https://user-images.githubusercontent.com/96561825/173669692-ecf4a6ff-5a9e-4212-b7eb-de26e4e42d6a.png)
+
+![Screenshot_19](https://user-images.githubusercontent.com/96561825/173669703-5325e46a-a83a-4684-9281-4b2172b1533f.png)
+
+
+
+
 
 #
 #
@@ -247,15 +271,17 @@ Ahora, en esta página, debería ver su instancia EC2 arrancando.
 
 Allí podemos ver su estado, su IP pública e información adicional.
 
-Además, podemos realizar acciones como start, stop o terminate (es igual a eliminar). La instancia no tendrá nombre, así que simplemente haga clic en la columna de
-nombre para cambiarla.
+Además, podemos realizar acciones como start, stop o terminate (es igual a eliminar). 
+
+La instancia no tendrá nombre, así que simplemente haga clic en la columna de nombre para cambiarla.
 
 ![Screenshot_23](https://user-images.githubusercontent.com/96561825/173665814-26daeb62-e15b-412b-a44b-e8d44b68662e.png)
 
 
 
-Entonces, para acceder a nuestro servidor web, simplemente debemos copiar la dirección IP pública de la máquina y pegarla en el navegador. Es importante que se
-espera a que el estado de la máquina sea «running» y que las «status checks» sean 2/2.
+Entonces, para acceder a nuestro servidor web, simplemente debemos copiar la dirección IP pública de la máquina y pegarla en el navegador. 
+
+Es importante que se espera a que el estado de la máquina sea «running» y que las «status checks» sean 2/2.
 
 De lo contrario, puede intentar acceder a él mientras todavía se está iniciando, por lo que no podrá. 
 
@@ -329,37 +355,11 @@ Nos abre un asistente de configuración en el que indicamos el volumen y asignam
 ![Screenshot_34](https://user-images.githubusercontent.com/96561825/173666839-fd3d64f9-47af-41b5-b493-b5e0520a3f31.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#
+#
+#
+#
+#
 
 
 
