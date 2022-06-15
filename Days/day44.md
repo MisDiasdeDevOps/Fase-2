@@ -38,6 +38,13 @@ Aquí podemos ver el BUCKET creado .
 
 #
 
+### Ya tenemos nuestro nuevo bucket llamado "backup" vacío y listo para ser utilizado.
+
+
+
+#
+#
+#
 
 Para cerrar este desafio, y no generar gastos, eliminamos el Bucket .
 
