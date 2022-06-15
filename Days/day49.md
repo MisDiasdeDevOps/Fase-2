@@ -130,7 +130,10 @@ LISTO
 
 Elegimos el formato recomendado : JSON
 
+#
+
 ![Screenshot_20](https://user-images.githubusercontent.com/96561825/173930446-3ce9998f-5729-48e7-9bb2-b9f31178e4b1.png)
+#
 
 La almacenamos en un lugar seguro
 
@@ -139,21 +142,32 @@ La almacenamos en un lugar seguro
 
 # Comenzar con GKE
 #
+
 Una vez que se haya registrado, se le entregará un Proyecto. Aquí es donde crea todos sus recursos de GCP.+
 
 Ahora, haga clic en el menú de la consola en la parte superior izquierda, resalte Kubernetes Engine y haga clic en Clústeres:
 
 
+#
+
 ![Screenshot_22](https://user-images.githubusercontent.com/96561825/173936328-ed3deeca-660e-45f6-a0cc-cfb570ef6576.png)
 
+#
+
 ![Screenshot_23](https://user-images.githubusercontent.com/96561825/173936365-e199c419-ad8d-4f37-9d6b-e29bcdae1be9.png)
+
+#
+
 
 Los clusteres Zonales en GKE son gratuitos (dentro del Free Tier)
 
 Ahora, haga clic en el botón Crear clúster.
 
+#
 
 ![Screenshot_24](https://user-images.githubusercontent.com/96561825/173936472-fc5f395b-197b-41cd-8fd2-cbb692e8f3e1.png)
+
+#
 
 
 En este punto, verá una larga lista de plantillas de clúster y opciones de clúster para elegir.
@@ -183,8 +197,11 @@ Hay muchas opciones para elegir, y puede dejarlo configurado en la opción prede
 
 ### LA SIGUIENTE SECCIÓN LE PERMITE CONFIGURAR EL GRUPO DE NODOS PREDETERMINADO PARA SU CLÚSTER. ESTE ES EL GRUPO DE MÁQUINAS QUE GCP DEDICA A EJECUTAR SU CLÚSTER Y SUS RECURSOS. 
 
+#
 
 ![Screenshot_26](https://user-images.githubusercontent.com/96561825/173937337-8c86d0bb-5439-47e8-947b-18a5ad94d9f9.png)
+
+#
 
 Y SELECCIONAR LA ZONA MAS CERCANA A NUESTRA LOCALIDAD ( SI ESTAS EN SUD AMERICA, SOUTH AMERICA ES LA INDICADA) 
 
@@ -195,45 +212,54 @@ LA VERSIÓN PREDETERMINADA NOS SERÁ ÚTIL ¡
 
 SELECCIONANDO LOS NODOS , NOMBRANDOLOS Y SELECCIONANDO LA CANTIDAD DE NODOS
 
-
+#
 
 ![Screenshot_28](https://user-images.githubusercontent.com/96561825/173938990-f454d81e-ea57-4ecf-ae0a-95fe0c301276.png)
+
+#
 
 
 Para el ejemplo, he nombrado a los nodos “ educacionitpool” con 2 nodos! (Solo 2 recursos en el cluster)
 
+#
 
 ![Screenshot_29](https://user-images.githubusercontent.com/96561825/173939118-f67f5e55-8bbb-4699-9a39-46cc82d96890.png)
+
+#
 
 En la configuración del Pool de nodos “Educacionitpool” he seleccionado en “Nodos” el sistema operativo de los Nodos (las maquinas virtuales en nuestro cluster” y he elegido Ubuntu. 
 
 Luego para no realizar grandes costos, he seleccionado como tipo de maquina, N1-Standard-1
 
+#
 
 ![Screenshot_29](https://user-images.githubusercontent.com/96561825/173939380-a16a74bd-ea26-48d3-a43d-6d4d30e31861.png)
+
+#
 
 Seguridad
 
 En materia de Seguridad he habilitado la cuenta de servicio kuberadmin (Creada al principio) y Habilite la
+
 “Monitorización de Integridad” para monitorear la integridad de los Nodos del Cluster.
 
 
 
 
-
+#
 
 ![Screenshot_30](https://user-images.githubusercontent.com/96561825/173939674-d9707cdb-d555-4bd7-b60f-9825bfdff611.png)
 
-
+#
 
 ANTES DE CREAR EL CLUSTER EN GKE, PUEDO VER UNA VERSIÓN PANORÁMICA DE COMO SE CREAR MI CLUSTER.
-
+#
 
 ![Screenshot_31](https://user-images.githubusercontent.com/96561825/173939727-bcf3320f-18d9-42a6-85c0-3e300ee90f66.png)
 
-
+#
 Ahora ya podemos seleccionar “Crear” y…Creando!!!
-
+#
 
 GCP TARDARÁ ALGÚN TIEMPO EN ACTIVAR SU CLÚSTER (POR LO GENERAL, AL MENOS CINCO MINUTOS). GCP LE ENVIARÁ UNA
 NOTIFICACIÓN EN LA IU CUANDO SU CLÚSTER ESTÉ LISTO.
@@ -253,27 +279,31 @@ ANTES DE QUE SE AGOTE SUS CRÉDITOS GRATUITOS.
 #  Ha Finalizado!
 
 
-
+#
 
 ![Screenshot_33](https://user-images.githubusercontent.com/96561825/173939849-0d473965-d90f-4e6e-b42e-680673135f1b.png)
 
-
+#
 
 ![Screenshot_34](https://user-images.githubusercontent.com/96561825/173939870-e15d4a6a-65a3-40e5-b3c9-0530a7b7db14.png)
 
-
+#
 
 Podemos confirmar en GCP, en la sección Compute Engine, que los nodos como maquinas virtuales, han sido creados y  enlazados al cluster
+#
 
 ![Uploading Screenshot_35.png…]()
 
-Nuestros 2 nodos funcionando y a los cuales podemos acceder via SSH (Siendo ambos
-Ubuntu 18 LTS)
+#
 
+# Nuestros 2 nodos funcionando y a los cuales podemos acceder via SSH (Siendo ambos Ubuntu 18 LTS)
 
+#
+
+#
 
 ![Screenshot_37](https://user-images.githubusercontent.com/96561825/173939935-ad09d637-26c4-4378-9cfa-eda33ee22516.png)
-
+#
 
 
 
