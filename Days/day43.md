@@ -188,6 +188,17 @@ Pantalla de confirmación de eliminación
 
 ![image](https://user-images.githubusercontent.com/96561825/173636641-c8577379-1d8a-4bae-b40e-26357b1e7e16.png)
 
+
+#
+
+## Conclusión
+
+Es bastante útil poder almacenar sitios web estáticos en buckets, en este ejemplo hemos alojado una página muy sencilla pero podemos almacenar páginas más complejas y con más ficheros.
+
+También podríamos separar los recursos y tener por ejemplo, la página en un bucket y las imágenes en otro.
+
+
+
 #
 #
 #
