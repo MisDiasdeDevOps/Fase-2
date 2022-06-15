@@ -59,7 +59,7 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ☁️ 43 > [4 - SITIO ESTATICO EN AWS](Days/day43.md)
 - [✔️] ☁️ 44 > [5 - CREACION DEL BUCKET ](Days/day44.md)
 - [✔️] ☁️ 45 > [6 - CREACION INSTANCIA EC CON USER SCRIPT](Days/day45.md)
-- [✔️] ☁️ 46 > [7 - 0](Days/day46.md)
+- [✔️] ☁️ 46 > [7 - VPC - SG](Days/day46.md)
 - [✔️] ☁️ 47 > [8 - 0](Days/day47.md)
 - [✔️] ☁️ 48 > [9 - Bases de Datos con RDS en AWS](Days/day48.md)
 - [✔️] ☁️ 49 > [10 - ](Days/day49.md)
