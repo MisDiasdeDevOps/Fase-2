@@ -4,9 +4,9 @@
 
 
 
-Amazon RDS es el servicio que facilita la configuración, funcionamiento y escalado de las BD relacionales en AWS. Con éste el BD Admin evita tener que administrar todos los
+Amazon RDS es el servicio que facilita la configuración, funcionamiento y escalado de las BD relacionales en AWS. 
 
-componentes relacionados con este tipo de BD (S.O. del servidor, almacenamiento, copia de seguridad, alta disponibilidad, …).
+Con éste el BD Admin evita tener que administrar todos los componentes relacionados con este tipo de BD (S.O. del servidor, almacenamiento, copia de seguridad, alta disponibilidad, …).
 #
 #
 
