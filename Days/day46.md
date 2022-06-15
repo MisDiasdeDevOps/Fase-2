@@ -67,7 +67,7 @@ Para comenzar se deja la tabla de ruteo y ACL de red con los valores por defecto
 #
 #
 
-## 2 - Subredes
+### 2 - Subredes
 
 Luego es necesario definir las subredes necesarias. Por ejemplo es conveniente definir subredes para correo, servidores de bases de datos (RDS) y DMZ para servidores web.
 
