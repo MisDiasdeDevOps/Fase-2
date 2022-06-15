@@ -125,8 +125,10 @@ Al ejecutar el wizard se crean los siguientes objetos:
 ● Security Group
 
 #
+#
 ![Screenshot_13](https://user-images.githubusercontent.com/96561825/173917761-caf38bf2-2402-4a98-b206-ecd6a90aa293.png)
 
+#
 #
 
 ![Screenshot_14](https://user-images.githubusercontent.com/96561825/173917776-33398f36-c04c-4e54-afb2-2ab1a17af9da.png)
@@ -270,11 +272,11 @@ e. Si la tabla de ruteo actual no es la misma que la tabla de ruteo de la primer
 
 
 ![Screenshot_26](https://user-images.githubusercontent.com/96561825/173921782-c39023d7-86b4-48c3-9c5a-7da86d05bc40.png)
-
+#
 #
 
 ![Screenshot_27](https://user-images.githubusercontent.com/96561825/173921795-5a89be3b-44ae-4e28-810f-8ecdbf86afe6.png)
-
+#
 #
 
 ![Screenshot_28](https://user-images.githubusercontent.com/96561825/173921803-6f192400-ce1b-47d5-ab15-af8771f2fe1d.png)
@@ -446,6 +448,7 @@ MariaDB [(none)]>
 #
 #
 
+
 ![Screenshot_44](https://user-images.githubusercontent.com/96561825/173923547-c08c7394-4954-49f8-ba70-54b5f7d327ed.png)
 
 #
@@ -464,9 +467,14 @@ MariaDB [(none)]>
 ![Screenshot_46](https://user-images.githubusercontent.com/96561825/173923565-61e39872-f79f-4ca6-a5ef-6915381c0a1b.png)
 
 #
+#
 
 ![Screenshot_47](https://user-images.githubusercontent.com/96561825/173923573-54a56294-d2c4-431a-9013-49d3f093eca5.png)
+#
+#
 
+
+![Screenshot_134](https://user-images.githubusercontent.com/96561825/173923642-e50e812d-d7ba-4afe-ad7a-ee0b9db26665.png)
 #
 #
 
@@ -476,6 +484,10 @@ MariaDB [(none)]>
 #
 
 ![Screenshot_49](https://user-images.githubusercontent.com/96561825/173923607-acde2323-26d4-4c30-aa8a-254f3cb7bc62.png)
+
+
+#
+#
 
 
 #
@@ -495,7 +507,6 @@ MariaDB [(none)]>
 
 #
 
-![Screenshot_134](https://user-images.githubusercontent.com/96561825/173923642-e50e812d-d7ba-4afe-ad7a-ee0b9db26665.png)
 
 
 
