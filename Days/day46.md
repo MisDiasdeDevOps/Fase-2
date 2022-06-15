@@ -54,7 +54,6 @@ Para comenzar se deja la tabla de ruteo y ACL de red con los valores por defecto
 
 #
 
-
 ![Screenshot_24](https://user-images.githubusercontent.com/96561825/173689480-199a4205-9e28-41c3-b2a5-b5421c11888b.png)
 
 #
@@ -101,7 +100,6 @@ Desde el Internet Gateway recién creado abrir "Actions > Attach to VPC". Selecc
 
 ![Screenshot_27](https://user-images.githubusercontent.com/96561825/173690083-a2b2d9d3-bfa6-455f-9846-bd4aedb68067.png)
 
-
 ![Screenshot_28](https://user-images.githubusercontent.com/96561825/173690098-4bc54da0-224e-4961-8abf-ef705e961757.png)
 
 ![Screenshot_29](https://user-images.githubusercontent.com/96561825/173690105-39f4afb4-420b-44d7-b7a2-5848e91e4c38.png)
@@ -146,11 +144,19 @@ Agregar la ruta hacia "0.0.0.0/0" (default gateway) a través del Internet Gatew
 #
 # 5 Security Groups 
 
-Por último es necesario crear al menos un grupo de seguridad para permitir el tráfico desde internet a la DMZ en la VPC "vpc_desarrollo".
-
-Acceder al menú "Security Groups" de la consola de VPC y presionar "Create security group".
+Por último es necesario crear al menos un grupo de seguridad para permitir el tráfico desde internet a la DMZ en la VPC "vpc_desarrollo". Acceder al menú "Security Groups" de la consola de VPC y presionar "Create security group".
 
 Los "Security Groups" son esencialmente firewalls que se pueden asociar a diferentes instancias.
+
+La configuración de seguridad de un grupo de seguridad depende de cada caso. 
+
+Para un servidor Web típico es necesario abrir el acceso a los puertos 80 (HTTP) y 443 (HTTP/S) junto con el acceso por SSH.
+
+EL grupo de seguridad luego se debe asociar a la instancia EC2 o RDS a la que se desea tener acceso.
+
+La VPC "vpc_desarrollo" junto con sus subredes, security groups, tablas de ruteo y gateway está lista para funcionar.
+
+Por último es necesario crear al menos un grupo de seguridad para permitir el tráfico desde internet a la DMZ en la VPC "vpc_desarrollo".
 
 
 
