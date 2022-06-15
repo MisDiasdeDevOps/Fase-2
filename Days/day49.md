@@ -108,7 +108,8 @@ LISTO
 ![Screenshot_15](https://user-images.githubusercontent.com/96561825/173930277-625fe3f5-6d94-415d-a233-31ea7625f53f.png)
 #
 
-Ahora debemos crear la Clave de la Cuenta de Servicio y Almacenarla en formato JSON, en nuestro equipo
+#
+### Ahora debemos crear la Clave de la Cuenta de Servicio y Almacenarla en formato JSON, en nuestro equipo
 #
 
 ![Screenshot_16](https://user-images.githubusercontent.com/96561825/173930291-9c094180-f810-4586-aeae-5b1a68213322.png)
@@ -121,12 +122,13 @@ Ahora debemos crear la Clave de la Cuenta de Servicio y Almacenarla en formato J
 #
 
 
-Elegimos el formato recomendado : JSON
+
 
 ![Screenshot_19](https://user-images.githubusercontent.com/96561825/173930423-e38be0b2-65f1-4c57-9c54-4124e568040b.png)
 
 #
 
+Elegimos el formato recomendado : JSON
 
 ![Screenshot_20](https://user-images.githubusercontent.com/96561825/173930446-3ce9998f-5729-48e7-9bb2-b9f31178e4b1.png)
 
