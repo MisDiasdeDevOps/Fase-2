@@ -16,7 +16,7 @@ En este desafio deberemos realizar esta actividad y entregar al tutor nuestra im
 
 
 Desde la consola de gestión (AWS management console) podemos visualizar distintas opciones o servicios que nos ofrece AWS. 
-
+#
 
 ![Screenshot_5](https://user-images.githubusercontent.com/96561825/173652523-3478a95c-96bf-45e5-854c-b597d6e0cf6e.png)
 
