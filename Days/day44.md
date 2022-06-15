@@ -34,23 +34,23 @@ Y vamos a elegir en este caso NEARLINE, el cual es el mas apropiado para nuestro
 
 
 Aquí podemos ver el BUCKET creado .
+
 #
 ![image](https://user-images.githubusercontent.com/96561825/173637857-afaeadea-72da-4ad9-bc05-7d9606266d8b.png)
 #
-
+#
 
 ### Ya tenemos nuestro nuevo bucket llamado "backup" vacío y listo para ser utilizado.
 
 
+#
+#
 
-#
-#
-#
 
 Para cerrar este desafio, y no generar gastos, eliminamos el Bucket .
 
+#
 ![image](https://user-images.githubusercontent.com/96561825/173637913-f4dd5ad3-4291-4981-9628-5ef8f996d44c.png)
-
 #
 
 Nos aparecera la siguiente ventana, confirmamos
@@ -61,9 +61,11 @@ Nos aparecera la siguiente ventana, confirmamos
 
 
 Y aqui podemos ver la confirmacion de la eliminacion del BUCKET 
+
+
 #
 ![image](https://user-images.githubusercontent.com/96561825/173638026-e6b06756-f5f2-4aea-b1d3-a982119ea193.png)
-#
+
 
 #
 #
