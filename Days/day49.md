@@ -309,38 +309,52 @@ LSB_RELEASE -A
 Podremos saber la versión de el OS de nuestro nodo
 
 
+#
 
 ![Screenshot_41](https://user-images.githubusercontent.com/96561825/173940210-6138a9b3-2cfb-4154-b64e-7b1ec124d5ed.png)
 
 
-
-
-
-
+#
 
 ![Screenshot_42](https://user-images.githubusercontent.com/96561825/173940226-493d0eab-be3b-4f24-b1dc-c86714b83a3c.png)
 
 
-Y podremos ver la información de su creación en Kubernetes Engine
+Y podremos ver la información de su creación en Kubernetes Engine 
+
 Hemos creado rápidamente nuestro Cluster de Manera Gratuita!
+
 NO TE OLVIDES DE ELIMINARLO!
 
 
 
 
+#
+#
+#
+
+
 
 ![Screenshot_43](https://user-images.githubusercontent.com/96561825/173940248-925a951e-137c-46d0-9c68-29f8fd3972f7.png)
+
 #
 
 
 ![Screenshot_44](https://user-images.githubusercontent.com/96561825/173940255-39850e6c-5b2b-4016-bb56-20746ec11ed4.png)
+
 #
 
 ![Screenshot_45](https://user-images.githubusercontent.com/96561825/173940264-1160c342-a726-4e03-960b-1977fb659204.png)
 
 
-
 #
+#
+#
+#
+#
+
+FIn 
+
+
 
 
 
