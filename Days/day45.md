@@ -63,13 +63,14 @@ Después, seleccionamos la AMI de Amazon Linux.
 
 
 #
-
+#
 
 ### Importante:
 ### Que elijamos usar AMI solo con el nivel gratuito no significa que estemos exentos de pagar por este servicio.
 ### Cada AMI tiene diferente «instance type» y algunas de ellas son de pago, otras no. 
 ### Podemos distinguir si un AMI es parte del nivel libre por la etiqueta que buscaremos a continuación.
 
+#
 #
 
 El siguiente paso es elegir nuestro tipo de instancia (el AMI). 
@@ -346,11 +347,18 @@ Una vez que accedemos a la máquina, podemos verificar que lo hemos hecho todo c
 
 ![Screenshot_26](https://user-images.githubusercontent.com/96561825/173666077-c1ff7cf7-08a6-4537-9d46-113d1c15e865.png)
 
+#
+#
 
 ### Importante: 
 ### En algunos casos, es posible que salga un error indicando que no tienes permisos para acceder al archivo «.pem». Entonces, ejecute chmod 400 contra el archivo.
-### Establecerá – a + rwx, u-wx, g-rwx, o-rwx. Esto significa que el usuario / propietario puede leer, no puede escribir y no puede ejecutar. 
+### Establecerá – a + rwx, u-wx, g-rwx, o-rwx. 
+### Esto significa que el usuario / propietario puede leer, no puede escribir y no puede ejecutar. 
 ### Los grupos y los otros usuarios no tienen ningún permiso.
+
+#
+#
+
 
 Deberías recibir el siguiente resultado
 
