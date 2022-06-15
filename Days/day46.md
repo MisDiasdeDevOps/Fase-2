@@ -27,8 +27,9 @@ Por esta razón recomiendo siempre utilizar conexiones seguras (TLS) entre insta
 ### 1- VPC
 
 Acceder a la consola de VPC y abrir "Create VPC".
-#
 
+
+#
 ![Screenshot_17](https://user-images.githubusercontent.com/96561825/173689032-1c82530d-6897-44bd-afce-fa8f0e6db794.png)
 #
 
