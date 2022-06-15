@@ -61,7 +61,7 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ☁️ 45 > [6 - CREACION INSTANCIA EC CON USER SCRIPT](Days/day45.md)
 - [✔️] ☁️ 46 > [7 - VPC - SG](Days/day46.md)
 - [✔️] ☁️ 47 > [8 - 0](Days/day47.md)
-- [✔️] ☁️ 48 > [9 - Bases de Datos con RDS en AWS](Days/day48.md)
+- [✔️] ☁️ 48 > [9 - BASES DE DATOS CON RDS EN AWS](Days/day48.md)
 - [✔️] ☁️ 49 > [10 - CREACION DE CLUSTERS CON GOOGLE KUBERNETES ENGINE](Days/day49.md)
 - [✔️] ☁️ 50 > [11 - 0](Days/day50.md)
 
