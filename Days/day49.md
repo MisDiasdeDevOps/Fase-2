@@ -54,33 +54,44 @@ Creando una Cuenta de Servicio
 
 La cuenta de servicio proporciona acceso a sus herramientas para crear y actualizar recursos en su
 clúster.
+
 HAGA CLIC EN EL MENÚ DE LA CONSOLA EN LA PARTE SUPERIOR IZQUIERDA, RESALTE IAM Y ADMINISTRADOR Y HAGA CLIC EN CUENTAS DE
 SERVICIO:
 
 
 ![Screenshot_9](https://user-images.githubusercontent.com/96561825/173929867-ef97c597-3cb0-4513-864c-b4e827c7ea7d.png)
 
+#
 
 
 Haga clic en Crear cuenta de servicio en la parte superior de la página.
 
+#
+
 ![Screenshot_10](https://user-images.githubusercontent.com/96561825/173929957-a055ed8b-bfd3-45e1-94ca-fd16ce692bc6.png)
-
-![Screenshot_11](https://user-images.githubusercontent.com/96561825/173929978-10c39a97-79f1-48bb-a24a-6b888dc347f1.png)
-
-
+#
 Ingrese un nombre para su cuenta de servicio y haga clic en Crear.
-A continuación, debe definir los permisos para la cuenta de servicio. Haga clic en el campo desplegable,
-ingrese Administrador de Kubernetes Engine y haga clic en la función cuando aparezca:
+#
+![Screenshot_11](https://user-images.githubusercontent.com/96561825/173929978-10c39a97-79f1-48bb-a24a-6b888dc347f1.png)
+#
+
+A continuación, debe definir los permisos para la cuenta de servicio. 
+
+Haga clic en el campo desplegable, ingrese Administrador de Kubernetes Engine y haga clic en la función cuando aparezca:
+
+Luego, Al seleccionar los permisos de IAM
+
+- ADMINISTRADOR DE CLUSTERES DE KUBERNETES ENGINE
+
+- ADMINISTRADOR DE KUBERNETES ENGINE
 
 
 ![Screenshot_13](https://user-images.githubusercontent.com/96561825/173930202-b5e57169-75d0-4251-97f9-e120f3850303.png)
 
 
-Luego, Al seleccionar los permisos de IAM
-- ADMINISTRADOR DE CLUSTERES DE KUBERNETES ENGINE
-- ADMINISTRADOR DE KUBERNETES ENGINE
-Podemos dar click en crear
+#
+
+## Podemos dar click en listo
 
 
 ![Screenshot_15](https://user-images.githubusercontent.com/96561825/173930277-625fe3f5-6d94-415d-a233-31ea7625f53f.png)
@@ -95,35 +106,10 @@ Podemos dar click en crear
 
 ![Screenshot_20](https://user-images.githubusercontent.com/96561825/173930446-3ce9998f-5729-48e7-9bb2-b9f31178e4b1.png)
 
-Concedemos a la cuenta que se crea una vez que la nombramos y que esta asociada al nombre de
-nuestro proyecto
+
+Concedemos a la cuenta que se crea una vez que la nombramos y que esta asociada al nombre de nuestro proyecto 
+
 Ya podemos hacer click en
 
 LISTO
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
