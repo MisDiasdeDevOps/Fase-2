@@ -18,15 +18,19 @@
 Paso 1: Nos dirigimos al portal de Azure ubicado en https://aws.amazon.com/es/,  iniciamos sesion.
 
 ![image](https://user-images.githubusercontent.com/96561825/173444793-ce06ed4b-bb3c-4366-b1a1-8f18eb96668b.png)
-
-Seremos  dirigidos a la página de iniciar sesión o a la de crear cuenta.  No se deben  preocupar  por la selección entre «Root y IAM user».  Lo veremos más tarde. 
-
 #
+
+## Paso 1 – Create an AWS account
+#
+Seremos  dirigidos a la página de iniciar sesión o a la de crear cuenta.  No se deben  preocupar  por la selección entre «Root y IAM user».  Lo veremos más tarde. 
 
 Ahora solamente  hacer clic en «Create a new AWS account» y vas a ver la pantalla siguiente.
 
 ![image](https://user-images.githubusercontent.com/96561825/173444849-2ed623eb-d61c-488b-b0f2-1c6bc05f6486.png)
 #
+
+## Paso 2 – personal data
+
 
 Despues veremos la siguiente pantalla. 
 
@@ -67,25 +71,33 @@ Completamos y seguimos completando
 
 ![qq](https://user-images.githubusercontent.com/96561825/173446507-a604106a-cec4-4a0d-9b6f-2053fdf6c484.png)
 #
+## Paso 3 – payment details
 
 Seguimos 
 
 ![image](https://user-images.githubusercontent.com/96561825/173446604-725bf660-76fd-4323-8022-fc711b8547ea.png)
 
+## Aviso: Se recomienda encarecidamente que no utilice el usuario root para sus tareas diarias, incluso las administrativas. En cambio, adhiérase a la mejor práctica de usar el usuario raíz solo para crear su primer usuario de IAM. Luego, bloquee de forma segura las credenciales de usuario raíz y úselas para realizar solo unas pocas tareas de administración de cuentas y servicios. 
+
+#
+
+IAM significa Identity and Access Management. Le permite administrar el acceso a los servicios y recursos de AWS de forma segura. Utilizando IAM, puede crear y administrar usuarios y grupos de AWS, y usar permisos para permitir y denegar su acceso a los recursos de AWS. Así que ingresemos a la consola de AWS como usuario ROOT, ingresando el correo electrónico que utilizamos para registrarnos. 
+#
+#
 
 Aclaracion Importante: 
-
+#
 
 Debido a que ya tengo una cuenta creada bajo otra denominacion y para que no haya problemas de solapamiento y/o  conflicto  con la tarjeta,   ya que solo poseo una sola tarjeta,  aquí suspendo el proceso de la registracion. 
 
 Fin de esta proceso. 
 
-
 #
 #
-## Securizar la cuenta
+#
 
-### Paso 2:  Securizar la cuenta .  
+## 5. Securizar la cuenta
+
 
 Como una buena práctica debemos  inmediatamente después de iniciar sesión es  securizar nuestra cuenta de AWS. 
 
@@ -114,9 +126,12 @@ En la pantalla que nos aparece, apretamos “ DISPOSITIVIO MFA VIRTUAL”
 
 #
 
+Paso 1 – Activate MFA (multi-factor authentication) on your root account
+
 A posteriorla  la aplicación de autenticación de Google nos muestra el código QR que escanearámos en nuestro celular ..
 
 Para ello debemos tener instalado el programa Google Authenticator o similar .
+
 
 
 ![image](https://user-images.githubusercontent.com/96561825/173447725-fbe54f8b-feaa-4e09-9d36-e3d2537bc4a1.png)
@@ -135,8 +150,10 @@ Al concluir,  deberíamos  lograr ver la siguiente pantalla:
 #
 #
 
-
-# Create IAM user
+## Paso 2 - Create IAM user
+#
+## Create IAM user
+#
 
 Primero, hablemos de los usuarios en cuestión de AWS.
 
@@ -219,8 +236,10 @@ Como acabamos de crear nuestra cuenta, que ya tiene autenticación de dos factor
 
 
 #
-
+## 6 . Crear un presupuesto para la cuenta y activar una alerta 
+#
 ## CREAR UN PRESUPUESTO 
+#
 
 Iniciamos sesión en la consola como el usuario root (porque es el único que tiene acceso a la información de facturación).
 
@@ -278,8 +297,20 @@ Aquí tenemos una informacion detallada de nuestro presupuesto y como lo vamos a
 Finalmente tenemos una cuenta segura en AWS que está lista para  propósitos de prueba, investigación y aprendizaje
 
 Fin.
+#
+#
+## 7. Conclusión
+#
 
+En conclusión, tenemos una cuenta segura en AWS que está lista para algunos propósitos de prueba, investigación y aprendizaje.
 
+Entendemos cuál es la diferencia entre un usuario raíz y un usuario de IAM, cómo podemos crear un usuario y asignarlo a un grupo con un permiso específico.
+
+Hemos activado la autenticación de 2 factores para asegurarnos de que nadie se rompa incluso si la contraseña está expuesta. 
+
+Hemos manejado la parte de pago y hemos configurado un presupuesto y una alerta, para que podamos ser notificados si cometemos ciertos errores y se nos cobra. 
+
+El siguiente paso es aprender más sobre la terminología en AWS y luego comenzar a jugar con algunos de sus servicios.
 #
 #
 #
