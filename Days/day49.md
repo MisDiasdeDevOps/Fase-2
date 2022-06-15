@@ -2,20 +2,27 @@
 
 
 # Desafio BootCamp DevOps - 
+#
+
+
 # Creacion de Clusters con Google Kubernetes Engine de GCP
 #
 
 
-Para los desarrolladores con una experiencia mínima en DevOps, la curva de aprendizaje de Kubernetes y de los numerosos proveedores de alojamiento en la nube puede ser empinada. La documentación de Google Cloud Platform proporciona una explicación clara y detallada de
-la plataforma y de cómo comenzar, pero el nivel de detalle puede resultar abrumador para los desarrolladores que no están familiarizados con las arquitecturas nativas de la nube.
+Para los desarrolladores con una experiencia mínima en DevOps, la curva de aprendizaje de Kubernetes y de los numerosos proveedores de alojamiento en la nube puede ser empinada. 
 
+La documentación de Google Cloud Platform proporciona una explicación clara y detallada de la plataforma y de cómo comenzar, pero el nivel de detalle puede resultar abrumador para los desarrolladores que no están familiarizados con las arquitecturas nativas de la nube.
+
+
+#
 
 ## 1 - Como Comenzar
 #
 
 
-En esta guía, le mostraré cómo comenzar rápidamente con un clúster de Kubernetes básico utilizando la interfaz de usuario de GCP. En la última sección, puede configurar opcionalmente su clúster para que
-pueda implementar aplicaciones desde fuera de GCP. Al final, tendrá un clúster de Kubernetes listo para admitir una aplicación básica en contenedores.
+En esta guía, le mostraré cómo comenzar rápidamente con un clúster de Kubernetes básico utilizando la interfaz de usuario de GCP. 
+
+En la última sección, puede configurar opcionalmente su clúster para que pueda implementar aplicaciones desde fuera de GCP. Al final, tendrá un clúster de Kubernetes listo para admitir una aplicación básica en contenedores.
 
 Comenzemos!
 
@@ -204,6 +211,9 @@ La versión maestra define qué versión de Kubernetes utilizará su clúster.
 Hay muchas opciones para elegir, y puede dejarlo configurado en la opción predeterminada.
 
 
+#
+#
+
 
 ## 8 Una vez que la API se habilita, simplemente podremos clear clústeres de GKE
  
@@ -229,6 +239,7 @@ Y SELECCIONAR LA ZONA MAS CERCANA A NUESTRA LOCALIDAD ( SI ESTAS EN SUD AMERICA,
 LA VERSIÓN MAESTRA (EL NODO MAESTRO)
 
 
+#
 ## 10 - LA VERSIÓN PREDETERMINADA NOS SERÁ ÚTIL ¡
 
 SELECCIONANDO LOS NODOS , NOMBRANDOLOS Y SELECCIONANDO LA CANTIDAD DE NODOS
@@ -236,12 +247,12 @@ SELECCIONANDO LOS NODOS , NOMBRANDOLOS Y SELECCIONANDO LA CANTIDAD DE NODOS
 #
 #
 ![Screenshot_28](https://user-images.githubusercontent.com/96561825/173938990-f454d81e-ea57-4ecf-ae0a-95fe0c301276.png)
+
+
+
 #
 #
-
-
-## 11 - Para el ejemplo, he nombrado a los nodos “ educacionitpool” con 2 nodos! (Solo 2 recursos en el cluster)
-
+# 11 - Para el ejemplo, he nombrado a los nodos “ educacionitpool” con 2 nodos! (Solo 2 recursos en el cluster)
 #
 #
 ![Screenshot_29](https://user-images.githubusercontent.com/96561825/173939118-f67f5e55-8bbb-4699-9a39-46cc82d96890.png)
@@ -280,10 +291,9 @@ ANTES DE CREAR EL CLUSTER EN GKE, PUEDO VER UNA VERSIÓN PANORÁMICA DE COMO SE 
 ![Screenshot_31](https://user-images.githubusercontent.com/96561825/173939727-bcf3320f-18d9-42a6-85c0-3e300ee90f66.png)
 #
 #
-
 ## 13 - Ahora ya podemos seleccionar “Crear” y…Creando!!!
 #
-
+#
 GCP TARDARÁ ALGÚN TIEMPO EN ACTIVAR SU CLÚSTER (POR LO GENERAL, AL MENOS CINCO MINUTOS). GCP LE ENVIARÁ UNA NOTIFICACIÓN EN LA IU CUANDO SU CLÚSTER ESTÉ LISTO.
 NO LO OLVIDE: SI EN ALGÚN MOMENTO DECIDE QUE NO NECESITA SU CLÚSTER, DEBE ELIMINARLO ANTES DE QUE SE AGOTE SUS CRÉDITOS GRATUITOS.
 
