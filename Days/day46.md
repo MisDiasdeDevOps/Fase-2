@@ -58,6 +58,7 @@ Para comenzar se deja la tabla de ruteo y ACL de red con los valores por defecto
 ![Screenshot_24](https://user-images.githubusercontent.com/96561825/173689480-199a4205-9e28-41c3-b2a5-b5421c11888b.png)
 
 #
+#
 ## Subredes
 
 Luego es necesario definir las subredes necesarias. Por ejemplo es conveniente definir subredes para correo, servidores de bases de datos (RDS) y DMZ para servidores web.
@@ -168,6 +169,7 @@ Los "Security Groups" son esencialmente firewalls que se pueden asociar a difere
 
 
 #
+#
 ### Network ACL
 
 - Opera “a nivel de la subred”
@@ -179,7 +181,7 @@ Los "Security Groups" son esencialmente firewalls que se pueden asociar a difere
 
 
 
-
+#
 #
 ## 7 Crea un grupo de seguridad para el balanceador de carga - Realizar Desafio Extra
 
@@ -207,22 +209,11 @@ VPC = La VPC que has creado antes (ejemplo TargetVPC)
 ![Screenshot_49](https://user-images.githubusercontent.com/96561825/173694410-33d34d0e-1f10-44b0-8c70-23d4766ef97b.png)
 
 
+#
+#
+#
+#
+#
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Seguimos en el [Día 47](day47.md)
 
