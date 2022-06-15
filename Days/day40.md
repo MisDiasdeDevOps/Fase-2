@@ -42,6 +42,7 @@ Despues veremos la siguiente pantalla.
 #
 
 Completamos los datos y nios pide verificar el email, continuamos
+#
 ![image](https://user-images.githubusercontent.com/96561825/173444979-f74ffe6a-5806-4819-91e3-26d59eade432.png)
 
 Vamos a nuestro correo para verificar el codigo, 
@@ -87,11 +88,19 @@ Seguimos
 ![image](https://user-images.githubusercontent.com/96561825/173446604-725bf660-76fd-4323-8022-fc711b8547ea.png)
 #
 
-## Aviso: Se recomienda encarecidamente que no utilice el usuario root para sus tareas diarias, incluso las administrativas. En cambio, adhiérase a la mejor práctica de usar el usuario raíz solo para crear su primer usuario de IAM. Luego, bloquee de forma segura las credenciales de usuario raíz y úselas para realizar solo unas pocas tareas de administración de cuentas y servicios. 
+## Aviso: 
+## Se recomienda encarecidamente que no utilice el usuario root para sus tareas diarias, incluso las administrativas. 
+## En cambio, adhiérase a la mejor práctica de usar el usuario raíz solo para crear su primer usuario de IAM. 
+## Luego, bloquee de forma segura las credenciales de usuario raíz y úselas para realizar solo unas pocas tareas de administración de cuentas y servicios. 
 
 #
 
-IAM significa Identity and Access Management. Le permite administrar el acceso a los servicios y recursos de AWS de forma segura. Utilizando IAM, puede crear y administrar usuarios y grupos de AWS, y usar permisos para permitir y denegar su acceso a los recursos de AWS. Así que ingresemos a la consola de AWS como usuario ROOT, ingresando el correo electrónico que utilizamos para registrarnos. 
+***IAM significa Identity and Access Management**. Le permite administrar el acceso a los servicios y recursos de AWS de forma segura. 
+
+Utilizando IAM, puede crear y administrar usuarios y grupos de AWS, y usar permisos para permitir y denegar su acceso a los recursos de AWS. 
+
+Así que ingresemos a la consola de AWS como usuario ROOT, ingresando el correo electrónico que utilizamos para registrarnos. 
+
 #
 #
 
