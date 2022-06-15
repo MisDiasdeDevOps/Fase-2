@@ -85,7 +85,7 @@ De la misma forma se agregan las siguientes subredes:
 
 #
 #
-## 3 Acceso a Internet
+### 3 Acceso a Internet
 
 
 El siguiente paso consiste en definir un nuevo Internet Gateway para que las instancias en la subred "DMZ" tengan acceso a Internet y NAT (cuando se les asigne una IP pública o elástica).
@@ -109,7 +109,7 @@ Desde el Internet Gateway recién creado abrir "Actions > Attach to VPC". Selecc
 
 #
 #
-# 4 Tablas de ruteo
+### 4 Tablas de ruteo
 
 El siguiente paso consiste en crear una nueva tabla de ruteo para dirigir el tráfico desde la "DMZ" hacia Internet a través del Internet Gateway creado en el paso anterior.
 
@@ -142,7 +142,7 @@ Agregar la ruta hacia "0.0.0.0/0" (default gateway) a través del Internet Gatew
 
 #
 #
-# 5 Security Groups 
+### 5 Security Groups 
 
 Por último es necesario crear al menos un grupo de seguridad para permitir el tráfico desde internet a la DMZ en la VPC "vpc_desarrollo". Acceder al menú "Security Groups" de la consola de VPC y presionar "Create security group".
 
@@ -162,7 +162,7 @@ Por último es necesario crear al menos un grupo de seguridad para permitir el t
 
 #
 #
-# 6 Network access control list vs security group
+### 6 Network access control list vs security group
 
 ### Security Group
 
@@ -189,7 +189,7 @@ Por último es necesario crear al menos un grupo de seguridad para permitir el t
 
 #
 #
-## 7 Crea un grupo de seguridad para el balanceador de carga - Realizar Desafio Extra
+### 7 Crea un grupo de seguridad para el balanceador de carga - Realizar Desafio Extra
 
 ## Introduce los parametros siguientes para el Grupo de Seguridad (Security group)
 
