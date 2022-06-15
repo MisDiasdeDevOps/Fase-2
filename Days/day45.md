@@ -19,22 +19,24 @@ Desde la consola de gestión (AWS management console) podemos visualizar distint
 #
 
 ![Screenshot_5](https://user-images.githubusercontent.com/96561825/173652523-3478a95c-96bf-45e5-854c-b597d6e0cf6e.png)
-
+#
 
 Así que hagamos clic en el menú expandible y veamos que nos ofrece todos los servicios de AWS, ya categorizados. 
 
 Tiene una variedad tan grande que puede ser confuso para un nuevo usuario.
 
 Lo que nos interesa a nosotros es EC2. 
-
+#
 ![Screenshot_6](https://user-images.githubusercontent.com/96561825/173652801-e0a8c05d-4871-4b3e-a593-3d98dfc145cc.png)
+#
+
 
 Vamos a clicar allí.
 #
 
 
 Ahora estamos ubicados en el panel de EC2. 
-
+#
 ![Screenshot_7](https://user-images.githubusercontent.com/96561825/173653401-fc97b906-1e5d-4ea7-990b-69218bca6ba7.png)
 
 #
@@ -58,9 +60,9 @@ Igual, en el menú de la derecha, tenemos la opción de filtrar solo AMI de nive
 Entonces, cuando ingresamos con fines de investigación, hacemos clic en esa casilla de verificación así que solo aparecen imágenes de nivel libre. 
 
 Después, seleccionamos la AMI de Amazon Linux.
-
+#
 ![Screenshot_8](https://user-images.githubusercontent.com/96561825/173654869-e8727002-86d5-46e5-a40f-3a39c980f66b.png)
-
+#
 
 #
 #
@@ -87,10 +89,9 @@ Sobre la columna de tipo de instancia, tiene una etiqueta verde que dice «Free 
 ![Screenshot_9](https://user-images.githubusercontent.com/96561825/173656491-d2fdc4d9-022b-45bf-8339-ad7b45fe1b8e.png)
 
 #
-
 ![Screenshot_10](https://user-images.githubusercontent.com/96561825/173671433-32bbea55-cbed-4fab-ad36-a7fe0286a48b.png)
-
 #
+
 
 ## 3.3 Parar por un momento y entender el pago
 
@@ -129,6 +130,7 @@ En el momento en que escribo este tutorial, se le cobrará si:
 - En nuestro caso, estamos buscando t2-micro. Como podemos ver, si los primeros 12 meses gratuitos caducan o superamos las limitaciones de AWS, se nos cobrará 0.0116 USD por hora.
 
 
+#
 ![Screenshot_10](https://user-images.githubusercontent.com/96561825/173657081-e0f9dadf-ee48-43bb-b9fc-d0222b03443c.png)
 
 #
@@ -186,14 +188,12 @@ La primera línea  -   #!/bin/bash    -  es realmente importante y si no está a
 
 #
 La configuración debería verse así
-
+#
 ![Screenshot_11](https://user-images.githubusercontent.com/96561825/173658074-09ed520e-760c-4085-9962-d7986ba952ff.png)
-
+#
 # 
-
+#
 ![Screenshot_12](https://user-images.githubusercontent.com/96561825/173671661-db633f66-4b09-4e6e-99da-7072044ea4dc.png)
-
-
 #
 
 Los siguientes dos pasos «Add Storage» y «Add Tags» los podemos omitir por ahora. 
@@ -225,8 +225,9 @@ Tenga en cuenta que con las flechas 4 y 5 estamos configurando que podemos acced
 
 Para nuestro ejemplo no importa, pero en algunos proyectos serios, la práctica es permitir solo direcciones IP conocidas.
 
-
+#
 ![Screenshot_16](https://user-images.githubusercontent.com/96561825/173659339-a032bb2a-94ea-42d8-91a5-c71cc1063a92.png)
+
 #
 
 ![Screenshot_14](https://user-images.githubusercontent.com/96561825/173669648-881ba4b5-63ad-4e33-82c2-e6c460dc1baf.png)
@@ -251,6 +252,7 @@ Para nuestro ejemplo no importa, pero en algunos proyectos serios, la práctica 
 
 ![Screenshot_19](https://user-images.githubusercontent.com/96561825/173669703-5325e46a-a83a-4684-9281-4b2172b1533f.png)
 
+#
 
 
 
@@ -262,8 +264,12 @@ Para nuestro ejemplo no importa, pero en algunos proyectos serios, la práctica 
 
 En esta página vemos el resumen de nuestra instancia, haga clic en «botón de inicio» en la esquina inferior derecha y verá la siguiente pantalla, pidiéndole que cree un par clave-valor. 
 
+#
 
 ![Screenshot_20](https://user-images.githubusercontent.com/96561825/173659622-04b1af34-5cda-4cbb-b179-656466a0e22e.png)
+
+#
+
 
 Eso será necesario si queremos conectarnos a la instancia desde nuestra máquina local. 
 
@@ -275,7 +281,11 @@ Entonces elija crear un nuevo par.
 
 Luego inserte el nombre del par, descárguelo e inicie la instancia.
 
+#
+
 ![Screenshot_21](https://user-images.githubusercontent.com/96561825/173659815-9383ed67-3b6a-437f-8109-24987169910b.png)
+
+#
 
 
 
@@ -287,8 +297,12 @@ El archivo que acaba de descargar se requerirá explícitamente cuando intente a
 ¡La instancia que acaba de crear ahora se está iniciando! Para ver sus instancias EC2, haga clic en el botón «Ver instancias» que se muestra en la captura de
 pantalla a continuación.
 
+#
 
 ![Screenshot_13](https://user-images.githubusercontent.com/96561825/173660069-fe0d8d29-87e8-41df-aece-77bd7482f525.png)
+
+#
+
 
 
 #
@@ -304,7 +318,11 @@ Además, podemos realizar acciones como start, stop o terminate (es igual a elim
 
 La instancia no tendrá nombre, así que simplemente haga clic en la columna de nombre para cambiarla.
 
+#
+
 ![Screenshot_23](https://user-images.githubusercontent.com/96561825/173665814-26daeb62-e15b-412b-a44b-e8d44b68662e.png)
+
+#
 
 
 
@@ -336,16 +354,21 @@ Para acceder a la máquina a través de SSH, abre la terminal y ejecuta el sigui
 ***ssh -i /path/to/key/value/pair/my_instance_access.pem***
 ***ec2-user@instance_public_ip***
 
+#
 ![Screenshot_25](https://user-images.githubusercontent.com/96561825/173665999-ba9d4308-1576-49d3-8c75-8fc4671400e9.png)
-
+#
 
 Una vez que accedemos a la máquina, podemos verificar que lo hemos hecho todo correctamente, ejecuta el siguiente comando
 
 
 ***cat /var/www/html/index.html***
 
-
+#
 ![Screenshot_26](https://user-images.githubusercontent.com/96561825/173666077-c1ff7cf7-08a6-4537-9d46-113d1c15e865.png)
+#
+
+
+
 
 #
 #
@@ -362,8 +385,11 @@ Una vez que accedemos a la máquina, podemos verificar que lo hemos hecho todo c
 
 Deberías recibir el siguiente resultado
 
-
+#
 ![Screenshot_27](https://user-images.githubusercontent.com/96561825/173666404-36b1c33d-6e8e-4f71-9bd9-8ea3aa057b87.png)
+#
+
+
 
 #
 #
@@ -388,23 +414,23 @@ el snapshot e identificamos los volúmenes asociados a la instancia.
 #
 
 
-
+#
 ![Screenshot_31](https://user-images.githubusercontent.com/96561825/173672944-a25f2e4b-8e29-4c22-b2e1-17f836b83769.png)
 #
 
 
 Una vez anotados los volumenes nos vamos a la pestaña snapshost >
-
+#
 ![Screenshot_33](https://user-images.githubusercontent.com/96561825/173666863-e236bd01-b2b0-479f-ba2b-c69a0d8b974b.png)
 
 #
 
 Nos abre un asistente de configuración en el que indicamos el volumen y asignamos un nombre y una descripción.
-
+#
 ![Screenshot_34](https://user-images.githubusercontent.com/96561825/173666839-fd3d64f9-47af-41b5-b493-b5e0520a3f31.png)
 
-#
 
+#
 ![Screenshot_32](https://user-images.githubusercontent.com/96561825/173673015-a198dd39-38f3-4289-8a04-b8dc03048c81.png)
 
 #
