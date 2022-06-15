@@ -85,7 +85,7 @@ Observe de cerca el AMI preseleccionado automáticamente.
 
 Sobre la columna de tipo de instancia, tiene una etiqueta verde que dice «Free tier eligible».
 
-
+#
 ![Screenshot_9](https://user-images.githubusercontent.com/96561825/173656491-d2fdc4d9-022b-45bf-8339-ad7b45fe1b8e.png)
 
 #
