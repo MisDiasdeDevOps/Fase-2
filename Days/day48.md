@@ -1,9 +1,13 @@
-DESAFIO RDS en AWS - BootCamp DevOps Enginner
+# DESAFIO RDS en AWS - BootCamp DevOps Enginner
+#
+#
 
 
 
 Amazon RDS es el servicio que facilita la configuración, funcionamiento y escalado de las BD relacionales en AWS. Con éste el BD Admin evita tener que administrar todos los
 componentes relacionados con este tipo de BD (S.O. del servidor, almacenamiento, copia de seguridad, alta disponibilidad, …).
+#
+
 
 
 
@@ -277,21 +281,26 @@ Y Desplegamos Additional connectivity configuration.
 
 #
 #
-# Comprobar el acceso a la instancia
+# 6 - Comprobar el acceso a la instancia
 
 
-Una vez creada la instancia, podremos comprobar que accedemos a ella mediante
-cualquier cliente instalado en nuestra máquina. Por ejemplo mediante el comando mariadb
+Una vez creada la instancia, podremos comprobar que accedemos a ella mediante cualquier cliente instalado en nuestra máquina. Por ejemplo mediante el comando mariadb
 de la consola:
-Suponemos que el Endpoint que nos ha creado es
-mariadbinstancia.skdimeitllwst.us-west-1.rds.amazonaws.com
-$ mariadb -h mariadbinstancia.skdimeitllwst.us-west-1.rds.amazonaws.com -u username -p
+Suponemos que el Endpoint que nos ha creado es  mariadbinstancia.skdimeitllwst.us-west-1.rds.amazonaws.com
+
+mariadb -h mariadbinstancia.skdimeitllwst.us-west-1.rds.amazonaws.com -u username -p 
 password
+
 Welcome to the MariaDB monitor. Commands end with ; or \g.
+
 Your MariaDB connection id is 60
+
 Server version: 10.1.34-MariaDB MariaDB Server
+
 Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
 MariaDB [(none)]> show databases;
 +--------------------+
 | Database |
@@ -325,6 +334,12 @@ MariaDB [(none)]>
 ![Screenshot_48](https://user-images.githubusercontent.com/96561825/173923598-6602bc4e-fa82-4b7f-91e6-f13c770a8bbe.png)
 
 ![Screenshot_49](https://user-images.githubusercontent.com/96561825/173923607-acde2323-26d4-4c30-aa8a-254f3cb7bc62.png)
+
+#
+#
+
+## Concluyendo, eliminamos todo para no generar gastos . 
+
 
 ![Screenshot_50](https://user-images.githubusercontent.com/96561825/173923617-4b5b6450-476e-4753-aea6-95f4de81a7a6.png)
 
