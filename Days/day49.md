@@ -292,7 +292,8 @@ ANTES DE QUE SE AGOTE SUS CRÉDITOS GRATUITOS.
 Podemos confirmar en GCP, en la sección Compute Engine, que los nodos como maquinas virtuales, han sido creados y  enlazados al cluster
 #
 
-![Uploading Screenshot_35.png…]()
+![Screenshot_35](https://user-images.githubusercontent.com/96561825/173940834-f3ff14f9-2f43-4d8f-a492-c59ecf2458b5.png)
+
 
 #
 
