@@ -29,6 +29,7 @@ Por esta razón recomiendo siempre utilizar conexiones seguras (TLS) entre insta
 Acceder a la consola de VPC y abrir "Create VPC".
 
 ![Screenshot_17](https://user-images.githubusercontent.com/96561825/173689032-1c82530d-6897-44bd-afce-fa8f0e6db794.png)
+#
 
 Ingresar un nombre ("vpc_desarrollo"), rango de red (10.50.0.0/16) y deshabilitar IPv6. 
 
@@ -65,6 +66,7 @@ Luego es necesario definir las subredes necesarias. Por ejemplo es conveniente d
 Acceder a "Subnets" desde el menú de la ***consola de VPC*** y presionar "Create subnet". 
 
 Seleccionar la nueva VPC "vpc_desarrollo":
+#
 
 ![Screenshot_25](https://user-images.githubusercontent.com/96561825/173689764-60ffb807-cbda-4cfe-9ca7-38378147e5f9.png)
 
@@ -76,9 +78,13 @@ Seleccionar la nueva VPC "vpc_desarrollo":
 #
 
 De la misma forma se agregan las siguientes subredes:
+
 ● "Mail": 10.50.5.0/24
+
 ● "RDS-Subnet01-useast1a": 10.50.1.0/24
+
 ● "RDS-Subnet02-useast1b": 10.50.2.0/24
+
 ● "DMZ": 10.50.0.0/24
 
 
@@ -96,14 +102,19 @@ Especificar un nombre ("igw-desarrollo") y crear.
 
 Desde el Internet Gateway recién creado abrir "Actions > Attach to VPC". Seleccionar la VPC "vpc_desarrollo":
 
-
+#
 
 ![Screenshot_27](https://user-images.githubusercontent.com/96561825/173690083-a2b2d9d3-bfa6-455f-9846-bd4aedb68067.png)
 
+#
+
 ![Screenshot_28](https://user-images.githubusercontent.com/96561825/173690098-4bc54da0-224e-4961-8abf-ef705e961757.png)
+
+#
 
 ![Screenshot_29](https://user-images.githubusercontent.com/96561825/173690105-39f4afb4-420b-44d7-b7a2-5848e91e4c38.png)
 
+#
 ![Screenshot_30](https://user-images.githubusercontent.com/96561825/173690110-d10c6a7c-b81b-4ed0-8a1c-756612fa5488.png)
 
 
@@ -205,12 +216,15 @@ Descripcion = VPC Grupo de seguridad del balanceador de carga
 VPC = La VPC que has creado antes (ejemplo TargetVPC)
 
 
+#
 
 ![Screenshot_47](https://user-images.githubusercontent.com/96561825/173694398-626470ec-8093-48be-a42b-ea393147046b.png)
 
+#
 
 ![Screenshot_48](https://user-images.githubusercontent.com/96561825/173694403-4f932983-7459-4a2d-beef-8750ae9b4c65.png)
 
+#
 
 ![Screenshot_49](https://user-images.githubusercontent.com/96561825/173694410-33d34d0e-1f10-44b0-8c70-23d4766ef97b.png)
 
