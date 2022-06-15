@@ -33,9 +33,13 @@ Una vez que se haya registrado, se le entregará un Proyecto.
 
 #
 ![Screenshot_3](https://user-images.githubusercontent.com/96561825/173929444-3e0b7a41-ad8e-49ef-a7c8-507a818421ba.png)
+
 #
+
 ![Screenshot_4](https://user-images.githubusercontent.com/96561825/173929452-9c435124-1f22-412b-9e61-427798fe9095.png)
+
 #
+
 ![Screenshot_5](https://user-images.githubusercontent.com/96561825/173929526-8e11dc09-4a5d-48b8-a74f-38bbef731552.png)
 
 #
@@ -44,6 +48,9 @@ Así se puede visualizar el panel una vez creado el Proyecto
 
 
 ![Screenshot_6](https://user-images.githubusercontent.com/96561825/173929612-e1a5de78-1eb2-40b8-b1cb-6728d3b2ae9f.png)
+
+#
+
 ![Screenshot_7](https://user-images.githubusercontent.com/96561825/173929775-2f49c28f-f4f2-4f1e-b7fc-424df4feacb3.png)
 
 #
@@ -90,26 +97,44 @@ Luego, Al seleccionar los permisos de IAM
 
 
 #
-
-## Podemos dar click en listo
-
-
-![Screenshot_15](https://user-images.githubusercontent.com/96561825/173930277-625fe3f5-6d94-415d-a233-31ea7625f53f.png)
-
-
-![Screenshot_16](https://user-images.githubusercontent.com/96561825/173930291-9c094180-f810-4586-aeae-5b1a68213322.png)
-
-![Screenshot_17](https://user-images.githubusercontent.com/96561825/173930337-289a20af-f243-4309-acd6-5672891ac55c.png)
-
-![Screenshot_18](https://user-images.githubusercontent.com/96561825/173930413-6ef60f4a-3db4-4f6f-9741-44a924eaeedf.png)
-![Screenshot_19](https://user-images.githubusercontent.com/96561825/173930423-e38be0b2-65f1-4c57-9c54-4124e568040b.png)
-
-![Screenshot_20](https://user-images.githubusercontent.com/96561825/173930446-3ce9998f-5729-48e7-9bb2-b9f31178e4b1.png)
-
-
 Concedemos a la cuenta que se crea una vez que la nombramos y que esta asociada al nombre de nuestro proyecto 
 
 Ya podemos hacer click en
 
 LISTO
+
+
+#
+![Screenshot_15](https://user-images.githubusercontent.com/96561825/173930277-625fe3f5-6d94-415d-a233-31ea7625f53f.png)
+#
+
+Ahora debemos crear la Clave de la Cuenta de Servicio y Almacenarla en formato JSON, en nuestro equipo
+#
+
+![Screenshot_16](https://user-images.githubusercontent.com/96561825/173930291-9c094180-f810-4586-aeae-5b1a68213322.png)
+#
+![Screenshot_17](https://user-images.githubusercontent.com/96561825/173930337-289a20af-f243-4309-acd6-5672891ac55c.png)
+#
+![Screenshot_18](https://user-images.githubusercontent.com/96561825/173930413-6ef60f4a-3db4-4f6f-9741-44a924eaeedf.png)
+
+
+#
+
+
+Elegimos el formato recomendado : JSON
+
+![Screenshot_19](https://user-images.githubusercontent.com/96561825/173930423-e38be0b2-65f1-4c57-9c54-4124e568040b.png)
+
+#
+
+
+![Screenshot_20](https://user-images.githubusercontent.com/96561825/173930446-3ce9998f-5729-48e7-9bb2-b9f31178e4b1.png)
+
+La almacenamos en un lugar seguro
+
+#
+
+
+
+
 
