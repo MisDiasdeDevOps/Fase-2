@@ -23,7 +23,11 @@ esta VPC, (que seguramente será del tipo EC2-VPC).
 
 Para el caso que nos ocupa elegiremos el escenario con la instancia de BD en una VPC y una aplicación cliente a través de Internet.
 
-![Uploading Screenshot_3.png…]()
+![Screenshot_3](https://user-images.githubusercontent.com/96561825/173925686-620eec0c-597b-4684-801b-ab4062901f20.png)
+
+#
+#
+
 
 
 ![Screenshot_2](https://user-images.githubusercontent.com/96561825/173917310-7e8cb31a-16b2-48f0-b93b-ef3f94623df6.png)
@@ -32,26 +36,43 @@ Para el caso que nos ocupa elegiremos el escenario con la instancia de BD en una
 
 ![Screenshot_5](https://user-images.githubusercontent.com/96561825/173917354-2d8c8a39-62f9-4d0b-9e16-7e0c935dd4e0.png)
 
+#
 
 ![Screenshot_6](https://user-images.githubusercontent.com/96561825/173917365-228d920f-e31a-4c96-a185-49577e069307.png)
 
+#
+
 ![Screenshot_7](https://user-images.githubusercontent.com/96561825/173917379-ca48d7e6-3c6a-49be-b227-30e1d681eb6d.png)
+
+#
 
 ![Screenshot_8](https://user-images.githubusercontent.com/96561825/173917393-f0e98841-ec9d-4494-b368-6b8b9526bb2e.png)
 
+#
 
 ![Screenshot_9](https://user-images.githubusercontent.com/96561825/173917419-6a68b910-2700-422d-a3ca-a735d90f319e.png)
 
+#
+
 ![Screenshot_10](https://user-images.githubusercontent.com/96561825/173917432-8bba95ff-eab0-4250-859a-1d429812736c.png)
+
+#
 
 ![Screenshot_11](https://user-images.githubusercontent.com/96561825/173917441-3db61eb8-56cf-4a76-9211-1af23da3bca4.png)
 
+#
+
+
 ![Screenshot_12](https://user-images.githubusercontent.com/96561825/173917479-87f18ec3-b10a-4f57-9946-05b7ae089ca0.png)
 
+#
+#
+# 1 - Crear la VPC
 
-Crear la VPC
 Ahora deberá crear una VPC para utilizarla con una instancia de base de datos, con la
+
 configuración descrita en el punto anterior:
+
 ● Abra la consola de Amazon VPC en https://console.aws.amazon.com/vpc/.
 ● En la esquina superior derecha de la Consola de administración de AWS, elija la
 región en la que desea crear la VPC.
@@ -97,7 +118,7 @@ Al ejecutar el wizard se crean los siguientes objetos:
 
 #
 #
-# Configurar el Security Group
+# 2 - Configurar el Security Group
 
 Vaya al apartado Security Groups y seleccione el grupo que ha creado (asociado al nuevo VPC). 
 
@@ -132,7 +153,7 @@ Port range 3306
 Source    56.176.2.108/3
 
 #
-
+#
 ## 3 - Crear las subredes adicionales
 
 
@@ -197,7 +218,7 @@ e. Si la tabla de ruteo actual no es la misma que la tabla de ruteo de la primer
 #
 #
 
-## Crear un grupo de subredes de base de datos
+## 4 - Crear un grupo de subredes de base de datos
 
  Un grupo de subredes de base de datos es una colección de subredes que se crean en una VPC y que después se asignan a las instancias de bases de datos. Un grupo de subredes de base de datos le permite especificar una VPC específica al crear instancias de bases de datos.
  
