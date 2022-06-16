@@ -1,4 +1,7 @@
 # Creacion de VPC en Google Cloud para BootCamp DevOps Enginner
+#
+#
+
 
 
 ## Puede crear una red de VPC en modo automático o personalizado. 
@@ -8,12 +11,14 @@ Cuando se crean las redes en modo automático, estas automáticamente crean una 
 Puede generar las subredes al crear la red o agregarlas más adelante.
 
 No se pueden crear instancias en una región en la que no hay ninguna subred definida.
+#
 
-Requisitos previos
+## Requisitos previos
 
 Asegúrese de tener una cuenta de Google y la información de acceso o inicio de sesión para la consola de Google Cloud Platform (GCP).
+#
 
-Procedimiento
+## Procedimiento
 
 1. Inicie sesión en la consola de GCP.
 2. Haga clic en Redes de VPC (VPC Networks).
@@ -86,7 +91,7 @@ Procedimiento
 ![Screenshot_105](https://user-images.githubusercontent.com/96561825/173975778-eb2d387d-16b8-432b-95a4-9cb56389f7fd.png)
 
 #
-#
+***#***
 
 ![Screenshot_106](https://user-images.githubusercontent.com/96561825/173975791-22dd9ca8-f011-4024-bf40-f726be49524d.png)
 
