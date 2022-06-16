@@ -14,13 +14,13 @@ Con éste el BD Admin evita tener que administrar todos los componentes relacion
 
 Antes de crear la instancia de la BD, se nos pide realizar una serie de acciones:
 
-1. Crear un usuario IAM con permisos de administrador. Será con este usuario con el que realizemos el resto del tutorial. Amazon aconseja no usar nunca el usuario raíz,
+***1***. Crear un usuario IAM con permisos de administrador. Será con este usuario con el que realizemos el resto del tutorial. Amazon aconseja no usar nunca el usuario raíz,
 salvo ocasiones puntuales, y guardar en lugar seguro sus credenciales.
 
-2. La instancia de BD se creará en una VPC (Virtual Private Cloud). Por lo tanto, también será necesario definir las reglas de grupo de seguridad para tener acceso a
+***2***. La instancia de BD se creará en una VPC (Virtual Private Cloud). Por lo tanto, también será necesario definir las reglas de grupo de seguridad para tener acceso a
 esta VPC, (que seguramente será del tipo EC2-VPC).
 
-3. Aquí debe consultar la configuracion necesaria para el escenario elegido para el acceso a una instancia de BD situada en una VPC.
+***3***. Aquí debe consultar la configuracion necesaria para el escenario elegido para el acceso a una instancia de BD situada en una VPC.
 
 #
 
@@ -80,7 +80,7 @@ Para el caso que nos ocupa elegiremos el escenario con la instancia de BD en una
 #
 
 
-# 1 - Crear la VPC
+## 1 - Crear la VPC
 
 Ahora deberá crear una VPC para utilizarla con una instancia de base de datos, con la
 
@@ -178,7 +178,7 @@ Al ejecutar el wizard se crean los siguientes objetos:
 
 #
 #
-# 2 - Configurar el Security Group
+## 2 - Configurar el Security Group
 
 Vaya al apartado Security Groups y seleccione el grupo que ha creado (asociado al nuevo VPC). 
 
@@ -349,7 +349,7 @@ En este caso, elija Availability Zone group (Grupo de zonas de disponibilidad), 
 
 #
 #
-# 5 - Crear la instancia de base de datos en la VPC
+##  5 - Crear la instancia de base de datos en la VPC
 
 1. Abra la consola de Amazon RDS en https://console.aws.amazon.com/rds/. 
 3. Seleccionamos la región en la que queremos crear la instancia de BD (esquina superior derecha). Esta región deberá ser la misma en la que se creó la VPC.
@@ -362,16 +362,15 @@ En este caso, elija Availability Zone group (Grupo de zonas de disponibilidad), 
 10. Pulsamos en Auto generate a password. Cuando creemos la BD nos mostrará en ese único momento la contraseña, que deberemos guardar. Si desea indicar
 manualmente una contraseña desmarque esta opción.
 10. Las siguientes opciones las dejaremos como aparecen por defecto. 
-11. En Connectivity seleccionamos la VPC que hemos creado en el anterior apartado.
-
-Y Desplegamos Additional connectivity configuration.
-
+11. En Connectivity seleccionamos la VPC que hemos creado en el anterior apartado. Y Desplegamos Additional connectivity configuration.
 12. Seleccionamos el Subnet group que hemos creado anteriormente
 13. En Public access seleccionamos Yes para que podamos acceder a la BD desde cualquier equipo en Internet.
 14. Las siguientes opciones las dejaremos como aparecen por defecto.
 15. Pulsamos el botón Create database al final de la página.
 16. Pulsamos el botón View credential details. Se abrirá una ventana para ver:
+
 ● La contraseña creada para el usuario administrador.
+
 ● La dirección (Endpoint) de la instancia a la que nos conectaremos con nuestro cliente.
 
 #
@@ -403,7 +402,7 @@ Y Desplegamos Additional connectivity configuration.
 
 #
 #
-# 6 - Comprobar el acceso a la instancia
+## 6 - Comprobar el acceso a la instancia
 
 
 Una vez creada la instancia, podremos comprobar que accedemos a ella mediante cualquier cliente instalado en nuestra máquina. Por ejemplo mediante el comando mariadb
@@ -512,17 +511,19 @@ MariaDB [(none)]>
 
 #
 #
-## Posibles problemas
+## 7 Posibles problemas
 
 
 ### Route Tables
 
 Desde AWS VPC, vaya a Route Tables y compruebe que la Route table asociada a la VPC de la BD tiene asociadas las dos Subnets creadas, y en Main indica Yes.
-Otros errores. Si ha tenido otros problemas para conectarse a la instancia, en esta página puede consultar algunas soluciones propuestas por AWS.
+
+### Otros errores. 
+
+Si ha tenido otros problemas para conectarse a la instancia, en esta página puede consultar algunas soluciones propuestas por AWS.
 
 ### Mejorar la seguridad
-En este tutorial hemos sugerido el uso del Security Group como firewall para limitar la conexión a la IP de nuestro equipo. Sin embargo, si la BD sólo necesitara estar expuesta a otro componente dentro de AWS (p.e. un servidor HTTP), es posible aumentar su seguridad utilizando una subnet privada y un servidor SSH dentro de la misma VPC para acceder a la
-BD a través de éste.
+En este tutorial hemos sugerido el uso del Security Group como firewall para limitar la conexión a la IP de nuestro equipo. Sin embargo, si la BD sólo necesitara estar expuesta a otro componente dentro de AWS (p.e. un servidor HTTP), es posible aumentar su seguridad utilizando una subnet privada y un servidor SSH dentro de la misma VPC para acceder a la BD a través de éste.
 
 #
 #
