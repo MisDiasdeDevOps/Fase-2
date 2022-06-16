@@ -466,15 +466,25 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 MariaDB [(none)]> show databases;
+
 +--------------------+
+
 | Database |
+
 +--------------------+
+
 | information_schema |
+
 | innodb |
+
 | mysql |
+
 | performance_schema |
+
 +--------------------+
+
 4 rows in set (0.05 sec)
+
 MariaDB [(none)]>
 
 #
@@ -512,11 +522,6 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________________________________________________
 #
 
-![Screenshot_46](https://user-images.githubusercontent.com/96561825/173923565-61e39872-f79f-4ca6-a5ef-6915381c0a1b.png)
-
-#
-______________________________________________________________________________________________________________________________________________________________
-#
 
 ![Screenshot_47](https://user-images.githubusercontent.com/96561825/173923573-54a56294-d2c4-431a-9013-49d3f093eca5.png)
 
