@@ -41,15 +41,12 @@ Asegúrese de tener una cuenta de Google y la información de acceso o inicio de
 
 ## Resultados : Al realizar esta acción, se crean la red y la subred de VPC.
 
-#
 
-
-
-#
 #
 
 ![Screenshot_95](https://user-images.githubusercontent.com/96561825/173975513-2d18c3f2-e7a8-4641-b911-f9f7297b0d56.png)
 
+#
 #
 #
 
@@ -57,9 +54,11 @@ Asegúrese de tener una cuenta de Google y la información de acceso o inicio de
 
 #
 #
+#
 
 ![Screenshot_98](https://user-images.githubusercontent.com/96561825/173975598-ad2cc85c-91c4-46b5-b0da-52a442dfde4b.png)
 
+#
 #
 #
 
@@ -67,9 +66,11 @@ Asegúrese de tener una cuenta de Google y la información de acceso o inicio de
 
 #
 #
+#
 
 ![Screenshot_101](https://user-images.githubusercontent.com/96561825/173975698-df057905-0ffa-4da8-a2ab-a270fa4d3e70.png)
 
+#
 #
 #
 
@@ -77,9 +78,11 @@ Asegúrese de tener una cuenta de Google y la información de acceso o inicio de
 
 #
 #
+#
 
 ![Screenshot_103](https://user-images.githubusercontent.com/96561825/173975740-0a0755e1-af1b-4a0e-af25-1547710464d0.png)
 
+#
 #
 #
 
@@ -87,12 +90,12 @@ Asegúrese de tener una cuenta de Google y la información de acceso o inicio de
 
 #
 #
-
+#
 ![Screenshot_105](https://user-images.githubusercontent.com/96561825/173975778-eb2d387d-16b8-432b-95a4-9cb56389f7fd.png)
 
 #
-***#***
-
+#
+#
 ![Screenshot_106](https://user-images.githubusercontent.com/96561825/173975791-22dd9ca8-f011-4024-bf40-f726be49524d.png)
 
 
