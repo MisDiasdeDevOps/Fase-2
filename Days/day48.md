@@ -27,15 +27,19 @@ esta VPC, (que seguramente será del tipo EC2-VPC).
 Para el caso que nos ocupa elegiremos el escenario con la instancia de BD en una VPC y una aplicación cliente a través de Internet.
 
 #
+______________________________________________________________________________________________________________________________________________________________
 #
 ![Screenshot_3](https://user-images.githubusercontent.com/96561825/173925686-620eec0c-597b-4684-801b-ab4062901f20.png)
 
 #
+______________________________________________________________________________________________________________________________________________________________
 #
 
 ![Screenshot_2](https://user-images.githubusercontent.com/96561825/173917310-7e8cb31a-16b2-48f0-b93b-ef3f94623df6.png)
 
 #
+______________________________________________________________________________________________________________________________________________________________
+
 #
 
 ![Screenshot_5](https://user-images.githubusercontent.com/96561825/173917354-2d8c8a39-62f9-4d0b-9e16-7e0c935dd4e0.png)
@@ -67,6 +71,7 @@ Para el caso que nos ocupa elegiremos el escenario con la instancia de BD en una
 
 #
 #
+
 
 ![Screenshot_11](https://user-images.githubusercontent.com/96561825/173917441-3db61eb8-56cf-4a76-9211-1af23da3bca4.png)
 
