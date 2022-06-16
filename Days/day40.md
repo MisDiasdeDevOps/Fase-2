@@ -11,7 +11,7 @@
 
 # CREACION y SECURACION de tu CUENTA
 
-### Iniciamos con la creacion deuna cuenta en AWS.
+### Iniciamos con la creacion de una cuenta en AWS.
 
 Paso 1: Nos dirigimos al portal de Azure ubicado en https://aws.amazon.com/es/,  iniciamos sesion.
 
