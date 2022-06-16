@@ -60,7 +60,7 @@ Este repositorio es usado como un documento de mi viaje a traves del Bootcamp
 - [✔️] ☁️ 44 > [5 - CREACION DEL BUCKET ](Days/day44.md)
 - [✔️] ☁️ 45 > [6 - CREACION INSTANCIA EC CON USER SCRIPT](Days/day45.md)
 - [✔️] ☁️ 46 > [7 - VPC - SG](Days/day46.md)
-- [✔️] ☁️ 47 > [8 - 0](Days/day47.md)
+- [✔️] ☁️ 47 > [8 - CREACION DE VPC EN GCP](Days/day47.md)
 - [✔️] ☁️ 48 > [9 - BASES DE DATOS CON RDS EN AWS](Days/day48.md)
 - [✔️] ☁️ 49 > [10 - CREACION DE CLUSTERS CON GOOGLE KUBERNETES ENGINE](Days/day49.md)
 - [✔️] ☁️ 50 > [11 - TRABAJO INTEGRADOR GOOGLE CLOUD PLATFORM  - DEVOPS BOOTCAMP ENGINEER](Days/day50.md)
