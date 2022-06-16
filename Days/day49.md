@@ -433,9 +433,5 @@ NO TE OLVIDES DE ELIMINARLO!
 #
 #
 
-
-
-
-
-
+Seguimos en el [Día 50](day50.md)
 
