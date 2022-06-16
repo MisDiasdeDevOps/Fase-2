@@ -199,7 +199,7 @@ Por último es necesario crear al menos un grupo de seguridad para permitir el t
 #
 ### 6 - Network access control list vs security group
 
-### Security Group
+### A) Security Group
 
 - Opera “a nivel de la instancia”
 - Soporta “solo allow rules” 
@@ -210,8 +210,7 @@ Por último es necesario crear al menos un grupo de seguridad para permitir el t
 
 
 #
-#
-### Network ACL
+### B) Network ACL
 
 - Opera “a nivel de la subred”
 - Soporta “allow y deny rules”
