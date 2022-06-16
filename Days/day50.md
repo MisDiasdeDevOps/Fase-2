@@ -1,6 +1,8 @@
 
 
 ## Trabajo Integrador Google Cloud Platform para BootCamp DevOps Enginner 
+#
+#
 
 ### El objetivo de este trabajo es solidificar y acelerar la practica con los servicios estudiados de Google
 
@@ -8,9 +10,14 @@
 #
 
 ### Cloud Platform en nuestro bootcamp,para ello, cada alumno deberá realizar y entregar al final de la semana de Google Cloud, los siguientes contenidos tal cual se especifican en cada anexo.
+#
+#
 
+### ANEXO 0 :
 
-### ANEXO 0 : Virtual Private Cloud : El estudiante deberá crear su propia virtual private cloud, con el nombre del estudiante, y debe tener presencia en todas las regiones de GCP, a su vez, deberá crear satisfactoriamente dicha VPC para poder seguir con la actividad.
+Virtual Private Cloud : El estudiante deberá crear su propia virtual private cloud, con el nombre del estudiante, y debe tener presencia en todas las regiones de GCP, a su vez, deberá crear satisfactoriamente dicha VPC para poder seguir con la actividad.
+
+#
 
 ### Inicio: Deben crear su propio proyecto con su nombre
 
@@ -18,9 +25,11 @@
 #
 
 ### Anexo 1 : Compute Engine – Creacion de Instancias.
-● El estudiante deberá :
 
-Crear 1 instancia de Compute Engine con Windows Server , creando en ella las tags
+#
+
+● El estudiante deberá : Crear 1 instancia de Compute Engine con Windows Server , creando en ella las tags
+
 ● Nombre del estudiante : “sunombre”
 
 ● Curso : Google Cloud Platform
