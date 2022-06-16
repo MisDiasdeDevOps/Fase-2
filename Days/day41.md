@@ -56,7 +56,11 @@ Coloco alertas por correo electronico
 
 Y con eso cierro la primera parte de la Apertura de la cuenta Gratuita.
 
-Creo mi proyecto  y le nombro “ lossimuladores”
+#
+#
+#
+
+## Creo mi proyecto  y le nombro “ lossimuladores”
 #
 ![image](https://user-images.githubusercontent.com/96561825/173628424-07dd51ad-18a8-4eba-9424-451cd8eff785.png)
 
@@ -133,8 +137,10 @@ Y el resultado que obtenemos es el siguiente;
 ![image](https://user-images.githubusercontent.com/96561825/173629084-25f8c98c-3b44-4691-80cd-8b39d4adaf31.png)
 
 #
+#
+#
 
-PRUEBA DEL SERVIDOR
+## PRUEBA DEL SERVIDOR
 #
 ![image](https://user-images.githubusercontent.com/96561825/173629167-4c00fc3e-2bb1-40fb-8ea1-64b19abe8939.png)
 
