@@ -294,8 +294,9 @@ El archivo que acaba de descargar se requerirá explícitamente cuando intente a
 
 ¡Genial! 
 
-¡La instancia que acaba de crear ahora se está iniciando! Para ver sus instancias EC2, haga clic en el botón «Ver instancias» que se muestra en la captura de
-pantalla a continuación.
+¡La instancia que acaba de crear ahora se está iniciando! 
+
+Para ver sus instancias EC2, haga clic en el botón «Ver instancias» que se muestra en la captura de pantalla a continuación.
 
 #
 
